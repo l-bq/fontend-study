@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 封装一个方法，检测完美数
+        function findNum(num) {
+        // 找出除本身外的所有参数
+        var sum = 0;
+        for(var i=0; i<num; i++){
+            if(num % i ===0){
+                sum += i;
+            }
+        }
+        // 判断完美数
+        if (sum === num){
+            return true;
+        } 
+        // else {
+        //     return false;
+        // }
+        // if语句中有return时，else可以省略
+        return false;
+        }
+        findNum(6);
+        findNum(8);
+        findNum(10);
+
+        // 寻找1000以内的完美数,使用函数模块化思想
+        for (var i=1; i <= 1000; i++) {
+            if(findNum(i)) {
+                console.log(i);
+            }
+        }
+    </script>
+
+    <script>
+        console.log(28,findNum(28));
+    </script>
+</body>
+</html>
