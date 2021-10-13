@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            width: 100px;
+            height: 100px;
+            background-color: gold;
+            /* 可以写不默认的样式，但不能出现语法错误 */
+           
+            border-radius: 50%;
+            /* 支持火狐浏览器 */
+            -moz-border-radius:50%;
+            /* 支持IE浏览器 */
+            -mz-border-radius:50%;
+            /* 支持opera浏览器 */
+            -o-border-radius:50%;
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+</body>
+</html>

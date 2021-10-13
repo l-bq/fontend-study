@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @keyframes ickt {
+            from{
+                /* transform: rotateX(30deg) rotateY(30deg); */
+                transform: rotateX(0) rotateY(0);
+            }
+            to{
+                /* transform: rotateX(390deg) rotateY(390deg); */
+                transform: rotateX(360deg) rotateY(300deg);
+            }
+        }
+        .container{
+            width: 300px;
+            height: 300px;
+            margin:200px auto ;
+            border: 3px solid #000;
+            position: relative;
+            transform-style: preserve-3d;
+             transform: rotateX(30deg) rotateY(30deg);
+             animation: ickt 2s linear infinite;
+        }
+        .box{
+            position: absolute;
+            width: 300px;
+            height: 300px;
+            font-size: 100px;
+            line-height: 300px;
+            text-align: center;
+            color: #fff;
+           
+        }
+        .box1{
+            background-color: gold;
+            transform: translateZ(150px);
+        }
+        .box2{
+            background-color: purple;
+            transform: translateZ(-150px);
+            
+        }
+        .box3{
+            background-color:red;
+            transform: translateX(-150px) rotateY(-90deg);
+        }
+        .box4{
+            background-color: green;
+            transform: translateX(150px) rotateY(90deg);
+        }
+        .box5{
+            background-color:orange;
+            transform: translateY(-150px) rotateX(-90deg);
+
+        }
+        .box6{
+            background-color: tomato;
+            transform: translateY(150px) rotateX(-90deg);
+        }
+       
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box box1">1</div>
+        <div class="box box2">2</div>
+        <div class="box box3">3</div>
+        <div class="box box4">4</div>
+        <div class="box box5">5</div>
+        <div class="box box6">6</div>
+        
+    </div>
+</body>
+</html>

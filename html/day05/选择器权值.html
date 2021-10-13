@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 两个标签选择器，权值更大，显现红色 */
+        /* div strong {
+            color: red;
+        }
+        strong {
+            color: green;
+        } */
+        /* 类选择器的权值比标签选择器更大 */
+        /* div p strong {
+            color: red;
+        }
+        .demo  strong{
+            color: green;
+        } */ 
+        /* 选择器一定要作用到对应的元素上，如果未选择元素，则选择继承性，权值很低 */
+        #ickt strong {
+            color: pink;
+        }
+        div .demo strong {
+            color: red;
+        }
+        .demo p strong {
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <div id="ickt">
+        <div>
+            <div class="demo">
+                <span>
+                    <p><strong>爱创课堂</strong></p>
+                </span>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=for, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- anction为提交方式 -->
+    <form action="./creation">
+    <label for="">用户</label>
+    <input type="text" name="username" value="用户名">
+    <input type="text">
+    <!-- 不设置type，IE低版本与提交按钮一样 -->
+    <button>按钮</button>
+    <!-- 设置type的普通按钮 -->
+    <input type="button" value="普通按钮">
+<hr>
+    <button type="submit">提交</button>
+    <button type="reset">重置</button>
+<!-- 与input相比
+ 1设置内容，button在标签间设置内容，input在value内设置内容-->
+ <!-- input不能设置其他内容 -->
+    <button>
+        <a href="https://www.sogou.com/">百度</a>
+    </button>
+    <input type="button" value="https://www.sogou.com/">
+</form>
+</body>
+</html>

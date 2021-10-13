@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 关键帧 */
+
+        @keyframes ickt{
+            /* 第一帧 */
+            0%{
+                transform: translate(0,0) scale(1) rotate(0);
+            }
+            /* 第二帧  */
+            25%{
+                transform: translate(600px,300px);
+            }
+            /* 第三帧  */
+            50%{
+                transform: scale(3) rotate(270deg);
+            }
+            /* 第四帧  */
+            75%{
+                transform: scale(0.5) translate(100px.300px);
+            }
+            /* 第五帧  */
+            100%{
+                transform: translate(800px,0) scale(1) rotate(0);
+            }
+        }
+        /* .demo{
+            animation: ickt 2s linear 1s 3 reverse forwards;
+        } */
+        @keyframes music {
+            /* 开始状态，相当于0% */
+            from{
+                transform: rotate(0);
+            }
+            /* 结束状态 */
+            to{
+                transform: rotate(360deg);
+            }
+        }
+        /* infinite:无限循环 */
+        .demo{
+            animation: music 3s linear infinite;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <img src="./images/1.jpg" alt="" class="demo" width="285px" height="285pxs">
+</body>
+</html>

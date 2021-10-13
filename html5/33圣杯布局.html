@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            margin: 0 auto;
+            width: 80%;
+            background-color: #fff;
+            border: 5px solid #000;
+            overflow: hidden;
+        }
+        .box1{
+            width: 20%;
+            height: 300px;
+            float: left;
+            background-color: red;
+            padding-bottom: 500px;
+            /* 通过负margin,让盒子占用空间减少 */
+            margin-bottom:-500px;
+        }
+        .box2{
+            width: 50%;
+            height: 500px;
+            background-color: green;
+            float: left;
+            padding-bottom: 500px;
+            margin-bottom:-500px;
+        }
+        .box3{
+            width: 30%;
+            height: 400px;
+            background-color: orange;
+            float: left;
+            padding-bottom: 500px;
+            margin-bottom:-500px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box1"></div>
+        <div class="box2"></div>
+        <div class="box3"></div>
+    </div>
+</body>
+</html>

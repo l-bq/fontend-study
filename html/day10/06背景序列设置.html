@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        li span{
+            /* background-color: gold; */
+            font-size: 30px;
+            padding: 20px;
+            background-repeat: no-repeat;
+            vertical-align: middle ;
+            display: inline-block;
+            
+        }
+         .demo1 span{
+            background-image: url(./images/1.png);
+        }
+         .demo2 span{
+            background-image: url(./images/2.png);
+        }
+         .demo3 span{
+            background-image: url(./images/3.png);
+         }
+        li:before{
+            content:"";
+            display:inline-block;
+            background-repeat: no-repeat;
+            padding: 25px;
+            vertical-align: middle;
+           
+
+            
+        }
+        .text1:before{
+            background-image: url(./images/1.png);
+        }
+        .text2:before{
+            background-image: url(./images/2.png);
+        }
+        .text3:before{
+            background-image: url(./images/3.png);
+        }
+    </style>
+</body>
+    <ul>
+        <li class="demo1"><span ></span>游戏</li>
+        <li class="demo2"><span ></span>飞机</li>
+        <li class="demo3"><span ></span>火车</li>
+    </ul>
+    <hr>
+    <ul>
+        <li class="text1">游戏</li>
+        <li class="text2">飞机</li>
+        <li class="text3">火车</li>
+    </ul>
+</html>

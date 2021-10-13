@@ -1,0 +1,94 @@
+body{
+    background: url(./images/index.jpg) center top no-repeat;
+}
+.nav{
+    height: 36px;
+    opacity: 0.5;
+    /* background-color: pink; */
+    background-color: #191d3a;
+}
+.nav-container{
+    background-color: #191d3a;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    height: 36px;
+}
+.nav-inner{
+    margin: 0 auto;
+    line-height: 36px;
+    height: 36px;
+    width: 1000px;
+
+}
+.nav ul{
+    float: left;
+    color: white;
+}
+.nav nav-lang{
+    float: right;
+}
+.nav .logo{
+    float: left;
+    margin-left: 448px;
+}
+.nav ul li{
+    float: left;
+    font-size: 12px;
+    background-color: #252847;
+    
+}
+.nav .nav-item{
+    
+    height: 36px;
+    margin-top: -16px;
+    margin-left:-16px;
+    width: 79px;
+    text-align: center;
+    cursor: pointer;
+}
+.nav .nav-item .choose{
+    height: 36px;
+    width: 69px;
+    text-align: center;
+
+}
+.nav .nav-lang .lang-chinese{
+    float: right;
+    background-color: purple;
+}
+.nav .nav-lang .lang-english{
+    background-color:purple;
+    float: right;
+}
+.nav choose{
+    background-color: #252847;
+}
+.nav .nav-item .choose:hover{
+    background-color: #252847;
+}
+.nav .last-item{
+    height: 36px;
+    line-height: 36px;
+    width: 100px;
+    height: 34px;
+    background-color: green;
+}
+.banner{
+    height: 161px;
+    opacity: 0.5;
+    /* background-color: gold; */
+}
+.content{
+    height: 562px;
+    opacity:0.5;
+   
+    /* background-color: green; */
+
+}
+.footer{
+    opacity: 0.5;
+    /* background-color: purple; */
+    height: 80px;
+}

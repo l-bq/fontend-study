@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            margin: 100px;
+            padding: 100px;
+            border: 100px solid purple;
+            background-color: gold;
+            width: 400px;
+            height: 400px;
+            /* 父元素设置定位，常用，不会脱离原来的文档流，不会影响后面发元素*/
+            position: relative;
+        }
+        .box{
+            margin: 0;
+            padding: 0;
+            width: 100px;
+            height: 100px;
+            background-color: pink;
+            border: 1px solid #000;
+            /* 默认相对于body定位 
+            相对于离他最近的设置了元素*/
+            position:absolute;
+            top:0px;
+            left: 0px;
+        }
+        .inner{
+            width: 200px;
+            height: 200px;
+            border: 1px solid #000;
+            background-color: green;
+            position: relative;
+        }
+        span{
+            font-size: 10px;
+            position: absolute;
+            top: 100px;
+            left: 100px;
+            background-color:black;
+            width: 200px;
+            height: 200px;
+            /* 压盖现象，后面元素会压在前面元素上 */
+        }
+        .box2{
+            width: 500px;
+            height: 400px;
+            background-color: skyblue;
+            position: absolute;
+            top:50%;
+            left: 50%;
+            margin-top:-250px;
+            margin-left: -200px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="inner">
+             <div class="box"></div>
+             <span>11</span>
+    </div>
+    </div>
+    <div class="box2"></div>
+</body>
+</html>

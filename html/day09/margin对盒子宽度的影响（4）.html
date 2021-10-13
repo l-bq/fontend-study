@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            height: 800px;
+            width: 1000px;
+            border: 1px solid #000;
+            margin:0 auto;
+            background-color: skyblue;
+        }
+        .container div{
+            height: 100px;
+            width: 100px;
+            font-size: 50px;
+            float:left
+        }
+        .box1{
+            background-color: red;
+            margin-left: -50px;
+        }
+        .box2{
+            background-color: gold;
+            /* 盒子2移动至盒子1之前，需要设置移动的距离为两个盒子的宽度和 */
+            margin-left: -200px;
+            opacity: 0.8;
+
+        }
+        .box3{
+            background-color: purple;
+            /* 盒子3的移动距离=盒子1移动的距离+盒子的宽度+盒子3移动的距离 */
+            margin-left: -50px;
+        }
+        .ickt{
+            height: 100px;
+            background-color: pink;
+        }
+        .ickt div{
+            margin-left: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container ickt">
+        <div class="box1">1</div>
+        <div class="box2">2</div>
+        <div class="box3">3</div>
+    </div>
+    <div class="container">
+        <div class="box1">1</div>
+        <div class="box2">2</div>
+        <div class="box3">3</div>
+    </div>
+</body>
+</html>

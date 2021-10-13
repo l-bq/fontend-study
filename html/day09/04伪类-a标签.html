@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            height: 800px;
+            width: 800px;
+            background-color: green;
+        }
+        /* 鼠标滑过，设置颜色 */
+        .container:hover input{
+            color: red;
+        }
+        /* 语法不对，只能设置在选择器的最后面 */
+        /* .container:befor .demo{
+            content: "befor div";
+            font-size: 50px;
+        } */
+        .container .demo:before{
+            content: "befor div";
+            font-size: 50px;
+            }
+            /* 爱恨准则 */
+        a:link{
+            color: red;
+        }
+        a:visited{
+            color: green;
+        }
+        a:hover{
+            color:blue ;
+        }
+        a:active{
+            color: chocolate;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+       <span>
+             <input type="text" value="hell0">
+       </span>
+       <div class="demo"></div>
+    </div>
+    <a href="#/demo1-1-1">#/demo1-1-1</a><br>
+    <a href="#/demo2-2-2">#/demo2-2-2</a><br>
+    <a href="#/demo3-3-3">#/demo3-3-3</a><br>
+    <a href="#/demo4-4-4">#/demo4-4-4</a>
+</body>
+</html>

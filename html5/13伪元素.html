@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1::before{
+            content: "hello";
+            color:red;
+        }
+        h1::after{
+            content: "like";
+            color: gold;
+        }
+        p{
+            width: 200px;
+            border: 1px solid green;
+        }
+        /* 第一个 */
+        p::first-letter{
+            
+            color: purple;
+            font-size: 20px;
+        }
+        /* 第一行 */
+        p::first-line{
+            background-color: orange;
+        }
+        /* 被选择 */
+        p::selection{
+            background-color: pink;
+        }
+    </style>
+</head>
+<body>
+    <h1>爱创课堂</h1>
+    <p>
+        爱创课堂爱创课堂爱创课堂爱创课堂爱创课堂爱创课堂爱创课堂爱创课堂
+        爱创课堂爱创课堂爱创课堂爱创课堂爱创课堂爱创课堂爱创课堂爱创课堂
+        爱创课堂爱创课堂爱创课堂
+    </p>
+</body>
+</html>

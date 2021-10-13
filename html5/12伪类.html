@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        input:checked{
+            border: 1px solid #000;
+            width: 100px;
+            height: 100px;
+        }
+        /* 选中时候的伪类 */
+        input[type="text"]:focus{
+            color: red;
+        }
+        /* .demo:disabled{
+            padding:20px;
+        } */
+        .demo:enabled{
+            background-color: red;
+            padding:20px;
+        }
+        /* 不要给input设置样式 */
+        /* :not(input){
+            font-size: 20px;
+        } */
+        /* 活动的状态 */
+        /* :target{
+            color: pink;
+        } */
+        .demo:only-child{
+            color: indigo;
+            font-size: 50px;
+        }
+        .box{
+            width: 100px;
+            height: 100px;
+            border: 1px solid #000;
+        }  
+           获取空盒子  /*  */
+         .box:empty{
+            background-color: pink;
+        }
+    </style>
+</head>
+<body>
+    <input type="checkbox" name="" id="">
+    <input type="checkbox" name="" id="">
+    <hr>
+    <input type="text" name="" id="">
+    <input type="text" name="" id="">
+    <hr>
+    <input type="text" name="" id="" class="demo">
+    <input type="text" name="" id="" class="demo">
+    <hr>
+    <p>hello</p>
+    <hr>
+    <h1>h001</h1>
+    <h1>h002</h1>
+    <h1>h003</h1>
+    <h1 id="demo">h004</h1>
+    <h1>h005</h1>
+    <h1>h006</h1>
+    <h1>h007</h1>
+    <h1>h008</h1>
+    <h1>h009</h1>
+    <h1>h010</h1>
+    <div>
+        <div class="demo">1</div>
+    </div>
+    <div>
+        <div class="demo">2</div>
+        <div class="demo">3</div>
+        <div class="demo">4</div>
+    </div>
+    <hr>
+    <div class="box"></div>
+    <div class="box">f</div>
+    <div class="box">
+
+    </div>
+    <div class="box">   </div>
+</body>
+</html>

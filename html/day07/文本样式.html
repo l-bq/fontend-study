@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .ickt {
+            width: 200px;
+            height: 200px;
+            border: 1px solid #000;
+            /* 单行文本水平方向居中 */
+            text-align: center;
+            /* 设置行高为200px，与盒子的高度相等 */
+            line-height: 200px;
+        }
+        .box1 {
+            width: 200px;
+            /* 多行文本设置不用设置高度，用padding挤出来 */
+            /* height: 200px; */
+            border: 1px solid #000;
+            text-align: center;
+            /* 不能使用行高来设置多行文本的居中 */
+            /* line-height: 200px; */
+            padding:100px 0;
+
+        }
+        .box2 {
+            /* 行内元素居中:块元素设置*/
+            width: 300px;
+            height: 300px;
+            text-align: center;
+            border: 1px solid #000;
+            background: pink;
+            
+        }
+        .box3 {
+            width: 100px;
+            /* height: 100px; */
+            background:blue;
+            border: 1px solid #000;
+            /*已知盒子的高度，通过设置margin来调整盒子居中 块元素文本居中 */
+            /* margin: 100px auto; */
+            /* 不设置高度，可以通过padding来调控块元素居中 */
+            padding: 100px auto;
+        }
+        /* 通过表格，可以对行内元素，行内块元素，行内元素进行居中 */
+        .ickt {
+            width: 400px;
+            height: 400px;
+            border: 10px solid yellow;
+            /* 模拟表格居中 */
+            display: table-cell;
+            text-align: center;
+            vertical-align: center;
+
+        }
+          </style>
+</head>
+<body>
+    <!-- 表格居中，盒子居中-->
+    <table border="1" width="500" height="500" align="center">
+        <tbody>
+            <tr>
+                <!-- 通过标题设置居中 -->
+                <!-- <th>
+                    hello ickt
+                </th> -->
+                <!-- 单行文本可通过align来设置居中 -->
+                <!-- <td align="center">
+                    hello ickt -->
+                <!-- </td> -->
+                <!-- 多行文本居中 -->
+                <!-- <td align="center">
+                    hello ickt
+                    <br>
+                    hllo
+                </td> -->
+                <!-- 行内元素居中 -->
+                <!-- <td align="center">
+                    <span >hello</span>
+                </td> -->
+                <!-- 块元素居中 -->
+                <!-- <td align="center">
+                    <div >hello ickt</div>
+                </td> -->
+                <!-- 图片居中 -->
+                <td align="center">
+                    <img src="./images/3.png" alt="">
+                </td>
+            </tr>
+        </tbody>
+    </table>
+   <div class="ickt">
+       hell0 ickt
+   </div> 
+   <div class="box1">
+       hello ickt
+       <br>
+       hello world!
+   </div>
+   <div class="box2">
+       <div class="box3">hello</div>
+
+   </div>
+</body>
+</html>

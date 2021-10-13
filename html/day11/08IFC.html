@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            border: 5px solid green;
+        }
+        div .span{
+            border: 1px solid #000;
+            background-color: pink;
+        }
+        .span1{
+            margin-top: 20px;
+        }
+        .span2{
+            margin-bottom: 20px;
+        }
+        .span3{
+            padding-top: 30px;
+            float: left;
+        }
+        .span4{
+            padding-bottom:40px；
+        }
+        .span5{
+            /* 父盒子高度由最高度高度决定 */
+            height:70px;
+            display: inline-block;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <span class="span span1">span1</span>
+        <span class="span span2">span2</span>
+        <span class="span span3">span3</span>
+        <!-- 插入块元素，将其设为IFC，切割后与块元素垂直并列 -->
+        <div></div>
+        <span class="span span4">span4</span>
+        <span class="span span5">span5</span>
+    </div>
+</body>
+</html>

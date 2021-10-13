@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container1,
+        .container2{
+            width: 800px;
+            background-color: green;
+           
+        }
+        .box1,
+        .box2,
+        .box3{
+            width: 100px;
+            height: 100px;
+            float: left;
+        }
+        .box1{
+            background-color: red;
+        }
+        .box2{
+            background-color:gold;
+        }
+        .box3{
+            background-color: purple;
+        }
+        .box4{
+            height: 50px;
+            background-color: pink;
+            
+        }
+        .clearfix:after{
+            /* 设置content空白 */
+            content: "";
+            clear: both;
+            display: block;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container1 clearfix">
+        <div class="box1"></div>
+        <div class="box2"></div>
+        <div class="box3"></div>
+    </div>
+    <div class="box4"></div>
+    <div class="container2 clearfix">
+        <div class="box1"></div>
+        <div class="box2"></div>
+        <div class="box3"></div>
+    </div>
+    <div class="box4"></div>
+</body>
+</html>

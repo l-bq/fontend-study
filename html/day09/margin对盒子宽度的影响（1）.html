@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .parent{
+            width: 800px;
+            height: 600px;
+            background-color: pink;
+        }
+        .child{
+            height: 100px;
+            background-color: gold;
+            /* margin-right和margin-left是正值时，子盒子宽度减小 */
+            /* margin-left: 100px; */
+            /* margin-right和margin-left是负值时，子盒子宽度减大 */
+            /* margin-left: -100px; */
+            /* 设置了宽度，设置margin，宽度不会变，只有盒子位置会发生变化 */
+            /* width: 500px; */
+            margin-right: 200px;
+            /* margin-left优先性大于 margin-right*/
+            /* margin-left: -100px; */
+
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="child"></div>
+    </div>
+</body>
+</html>

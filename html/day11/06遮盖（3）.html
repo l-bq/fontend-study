@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+             width: 400px;
+             height: 500px;
+             background-color: pink;
+             margin: 0 auto;
+             position: relative;
+        }
+        /* .box{
+            width: 100px;
+            height: 100px;
+            float: left;
+            background-color: blue;
+        } */
+        /* 定位覆盖 */
+        .box{
+            width: 100px;
+            height: 100px;
+            
+        }
+        /* 相对定位 */
+        .box1{
+            background-color: gold;
+            position: relative;
+            left: 0px;
+            top: 150px;
+            z-index: 100;
+        }
+        /* 没有定位 */
+        .box2{
+            background-color: red;
+            /* 未进行定位，无效 */
+            z-index: 200;
+        }
+        .box3{
+            position: absolute;
+            background-color: skyblue;
+            left: 100px;
+            top: 50px;
+        }
+        .box4{
+            background-color: purple;
+            position: fixed;
+            left: 50%;
+            top: 100px;
+            margin-left: -150px;
+            z-index: 150;
+        }
+        .demo1{
+            background-color: tomato;
+            position:absolute;
+            top: 450px;
+            left: 40px;
+            z-index: 10;
+
+        }
+        .demo2{
+            background-color: blue;
+            position: absolute;
+            left: 70px;
+            z-index:-10;
+        }
+        .demo3{
+            background-color: violet;
+        }
+        .parent1{
+            background-color: yellow;
+            position: relative;
+            
+            /* z-index: 10; */
+        }
+        .parent2{
+            background-color: black;
+            position: relative;
+            /* z-index: 5; */
+
+        }
+        .child1{
+            background-color: orange;
+            position: absolute;
+            top: 50px;
+            left: 200px;
+            z-index: 100;
+        }
+        .child2{
+            background-color: green;
+            position: absolute;
+            top: 0px;
+            left: 200px;
+             /* 父盒子1大于父盒子2，不管z-index多大，都无法盖过*/
+            z-index: 200;
+        }
+    </style>
+</head>
+<body>
+    <!-- 设置定位，都会产生遮盖现象：设置定位的盒子会遮盖住未设置定位的盒子； -->
+    <div class="container">
+        <div class="box box1">01</div>
+        <div class="box box2">02</div>
+        <div class="box box3">03</div>
+        <div class="box box4">04</div>
+        <div class="box box5">05</div>
+    </div>
+    <div class="box demo1">1</div>
+    <div class="box demo2">2</div>
+    <div class="box demo3">3</div>
+    
+    <div class="box parent1">00
+        <div class="box child1">11</div>
+    </div>  
+     <div class="box parent2">22
+         <div class="box child2">33</div>
+    </div>
+   
+</body>
+</html>

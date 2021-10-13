@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .ickt{
+            border: 10px solid red;
+            width: 100px;
+            height: 100px;
+            text-align: center;
+            line-height: 100px;
+        }
+        .ickt2{
+            border: 10px solid blue;
+            width: 200px;
+            height: 200px;
+            text-align: center;
+            /* 会直接跳出框架外 */
+            /* line-height: 200px; */
+            /* 通过padding设置多行文本居中 */
+            padding: 90px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="ickt">hello ickt</div>
+    <div class="ickt2">
+        hello
+        <br>
+        hello
+        hello
+    </div>
+
+</body>
+</html>

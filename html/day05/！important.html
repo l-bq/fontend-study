@@ -1,0 +1,35 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 当都选择了！important时，则比较权值大小 */
+        #ickt strong {
+            color: pink!important;
+        }
+        div .demo strong {
+            /* 权值最大 */
+            color: red !important;
+        }
+        .demo p strong {
+            color: green !important;
+        }
+    </style>
+</head>
+<body>
+    <div id="ickt">
+        <div>
+            <div class="demo">
+                <span>
+                    <p>
+                        <strong style="color: blue!important">爱创课堂</strong>
+                    </p>
+                </span>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

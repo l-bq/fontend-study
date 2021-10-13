@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 儿子类型选择器，不会考虑其他不同标签,每个容器中都会找一次，不会受不同容器的影响 */
+        /* P:first-of-type{
+            background-color: gold;
+        } */
+        /* 儿子序列选择器会在容器中从开始就找标签 */
+        /* p:last-of-type{
+            background-color: red;
+        } */
+        /* 偶数个 */
+        /* p:nth-of-type(even){
+            background-color: pink;
+        } */
+        /* 奇数个 */
+        /* P:nth-of-type(odd){
+            background-color: red;
+        } */
+        /* P:nth-of-type(2n+1){
+            background-color: purple;
+        } */
+        h1:nth-last-of-type(1){
+            background-color: orange;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <div>div</div>
+        <p class="demo">001</p>
+        <p class="demo">002</p>
+        <p class="demo">003</p>
+        <p class="demo">004</p>
+        <p class="demo">005</p>
+        <p class="demo">006</p>
+        <p class="demo">007</p>
+        <p class="demo">008</p>
+        <p class="demo">009</p>
+        <p class="demo">010</p>
+        <h1 class="demo">01</h1>
+        <h1 class="demo">02</h1>
+        <h1 class="demo">03</h1>
+        <h1 class="demo">04</h1>
+        <h1 class="demo">05</h1>
+        <h1 class="demo">06</h1>
+        <h1 class="demo">07</h1>
+        <h1 class="demo">08</h1>
+        <h1 class="demo">09</h1>
+        <h1 class="demo">10</h1>
+    </div>
+    <div>
+        <div>div</div>
+        <p class="demo">001</p>
+        <p class="demo">002</p>
+        <p class="demo">003</p>
+        <p class="demo">004</p>
+        <p class="demo">005</p>
+        <p class="demo">006</p>
+        <p class="demo">007</p>
+        <p class="demo">008</p>
+        <p class="demo">009</p>
+        <p class="demo">010</p>
+        <h1 class="demo">01</h1>
+        <h1 class="demo">02</h1>
+        <h1 class="demo">03</h1>
+        <h1 class="demo">04</h1>
+        <h1 class="demo">05</h1>
+        <h1 class="demo">06</h1>
+        <h1 class="demo">07</h1>
+        <h1 class="demo">08</h1>
+        <h1 class="demo">09</h1>
+        <h1 class="demo">10</h1>
+    </div>
+</body>
+</html>

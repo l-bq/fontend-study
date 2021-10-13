@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 是第一个，可以被选中 */
+        /* p:first-child{
+            background-color: pink;
+        } */
+    /* 不是第一个 */
+        h3:first-child{
+            background-color: pink;
+        }
+        /* .item:first-child{
+            background-color: gold;
+        } */
+        /* 实际排列的最后一个要匹配,否则无效 */
+        .item:last-child{
+            background-color: gold;
+        }
+        /* .demo:first-child{
+            background-color: red;
+        } */
+        /* 偶数 */
+        /* .demo:nth-child(even){
+            background-color: gold;
+        } */
+        /* 奇数 */
+        /* .demo:nth-child(odd){
+            background-color: red;
+        } */
+        /* 序数 */
+        /* .demo:nth-child(2){
+            background-color: purple;
+        } */
+        /* n是从0开始 */
+        /* .demo:nth-child(2n+5){
+            background-color: green;
+        } */
+        /* 从后面开始 */
+        /* .demo:nth-last-child(2n+2){
+            background-color: black;
+        } */
+        /* .item:nth-child(2n+1){
+            background-color: green;
+        } */
+        /* .item:last-child{
+            background-color:green;
+        } */
+    </style>
+</head>
+<body>
+    <div>
+    <p class="demo">1-1-1</p>
+    <p class="demo">2-2-2</p>
+    <p class="demo">3-3-3</p>
+    <p class="demo">4-4-4</p>
+    <p class="demo">5-5-5</p>
+    <p class="demo">6-6-6</p>
+    <p class="demo">7-7-7</p>
+    <p class="demo">8-8-8</p>
+    <p class="demo">9-9-9</p>
+    <p class="demo">10-10-10</p>
+    <h1 class="item">1-1</h1>
+    <h1 class="item">2-2</h1>
+    <h1 class="item">3-3</h1>
+    <h1 class="item">4-4</h1>
+    <h1 class="item">5-5</h1>
+</div>
+</body>
+</html>

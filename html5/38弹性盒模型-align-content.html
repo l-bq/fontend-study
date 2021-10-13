@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            width: 600px;
+            height: 600px;
+            border: 1px solid #000;
+            background-color: pink;
+            margin: 0 auto;
+            display: flex;
+            flex-wrap: wrap;
+            /* 交叉轴对齐 */
+            /* align-items: flex-start;
+            align-items: flex-end;
+            align-items: center; */
+            /* 多条交叉轴对齐 */
+            align-content: flex-start;
+            align-content: flex-end;
+            align-content: center;
+            align-content: space-between;
+            align-content: space-around;
+
+        }
+        .box{
+            width: 150px;
+            height: 150pdx;
+            border: 5px solid green;
+            background-color: skyblue;
+            font-size: 40px;
+            text-align: center;
+        }
+        .box1{
+            width: 100px;
+            height: 150px;
+        }
+        .box2{
+            width: 150px;
+            height: 200px;
+        }
+        .box3{
+            width: 200px;
+            height: 250px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box box1">1</div>
+        <div class="box box2">2</div>
+        <div class="box box3">3</div>
+        <div class="box box1">1</div>
+        <div class="box box2">2</div>
+        <div class="box box3">3</div>
+    </div>
+    
+</body>
+</html>

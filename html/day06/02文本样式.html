@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        a {
+            color: red;
+            text-decoration: none;
+        }
+        p {
+            width: 80px;
+            /* 删除线 */
+            text-decoration: line-through;
+            /* test-align:对齐方式，left，right，center */
+            text-align: center;
+        }
+        img {
+            /*  行内元素对齐方式 *,middle:居中对齐,top:上面对齐,bottom:底部对齐 baseline:基线对齐/ */
+            vertical-align: middle;
+        }
+        .ickt {
+            border: 1px dotted red;
+            color: red;
+            width: 50px;
+            /* white-space:nowrap 文本超出不换行 */
+            /* white-space: pre-line; 文本正常换行 */
+            /* 字体截取 */
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+        .demo{
+            text-indent: 2em;
+            /* 对齐方式 */
+            text-align: center;
+        }
+        .demo2{
+            text-indent: 2em;
+            letter-spacing:10px;
+            word-spacing:0 ;
+        }
+        .demo3{
+            word-spacing: 20px;
+            text-indent: 0px;
+        }
+        img{
+           vertical-align:-100px; 
+        }
+        .ickt{
+            /* 文本不换行 */
+            white-space:pre;
+            width: 80px;
+        }
+        #test{
+            width: 100px;
+            white-space:pre;
+            border: 1px solid #000;
+            text-overflow: ellipsis;
+            overflow: hidden;
+        }
+    </style>
+</head>
+<body>
+    <div class="ickt">
+        ickt!
+        ickt!
+    </div>
+    <div class="ickt">hello ickt hello ickt hello ickt </div>
+    <a href="">hello ickt</a>
+    <a href="#abc">hello</a>
+    <ins>111</ins>
+    <!-- html5新增，语义很强 -->
+    <!-- <del>222 </del> -->
+    <p>你好，美女<img src="./images/2.jpg" width="200" height="300" alt="美女"></p>
+    <p>222</p>
+    <p class="demo">
+        NewS是日本杰尼斯事务所旗下的男子偶像团体（隶属杰尼斯娱乐株式会社），
+        于2003年9月15日成立，于2004年5月12日正式出道。
+        NEWS代表North（北）East（东）West（西）South（南）四个方向，
+        寓意NEWS能向国际四方发展，并有“新信讯”的意味。NEWS于2011年从6人体制变为4人体制，
+        发表了专辑《NEWS》《White》等。2020年5月27日、28日，在宫城县综合运动公园综合体育馆
+        举办“NEWS LIVE TOUR 2020 STORY”演唱会。
+    </p>
+    <h1 class="demo2">hello world</h1>
+    <h1 class="demo3">新闻标题</h1>
+    <img src="./images/1.jpg" alt="美女">
+   <div id="test">
+       hello hello!
+       hello hello!
+   </div>
+</body>
+</html> 

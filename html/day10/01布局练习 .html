@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            margin: 0 auto;
+        }
+        .clearfix:after{
+            clear: both;
+            content: "";
+            display: block;
+           
+           
+        }
+        .main{
+            width: 970px;
+        }
+        .header .headerleft{
+            float: left;
+            width: 277px;
+            height: 103px;
+            background-color: red;
+        }
+        .header .headerright{
+            float: left;
+            margin-left: 14px;
+            width: 679px;
+           
+        }
+        .header .headerright .title{
+            float: right;
+            width: 137px;
+            height: 49px;
+            margin-bottom: 8px;
+            background-color: green;
+        }
+        .header .headerright .intro{
+            clear: right;
+            height: 46px;
+            
+            background-color: green;
+        }
+        .body{
+            margin-top: 10px;
+        }
+        .body .bodyleft{
+            float: left;
+            width: 310px;
+            height: 435px;
+            background-color:gold;
+        }
+        .body .bodyright{
+            float: left;
+            margin-left: 10px;
+            width: 650px;
+        }
+        .body .bodyright .model{
+            float: left;
+            width: 450px;
+        }
+        .body .bodyright .slider{
+            float: left;
+            width: 190px;
+            height: 401px;
+            margin-left: 10px;
+            background-color: purple;
+        }
+        .body .bodyright .model .model1{
+            height: 240px;
+            background-color: rgb(135, 206, 235);
+            margin-bottom: 10px;
+        }
+        .body .bodyright .model .model2{
+            height: 110px;
+            background-color: rgb(135, 206, 235);
+            margin-bottom: 10px;
+        }
+        .body .bodyright .model .model3{
+            height: 30px;
+            background-color: rgb(135, 206, 235);
+            margin-bottom: 10px;
+        }
+        .body .bodyright .status{
+            height: 25px;
+            width: 650px;
+            background-color: green;
+        }
+        .foot{
+            margin-top: 10px;
+            height: 35px;
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="header clearfix">
+            <div class="headerleft">
+            </div>
+            <div class="headerright">
+                <div class="title"></div>
+                <div class="intro"></div>
+            </div>
+        </div>
+        <div class="body clearfix">
+            <div class="bodyleft"></div>
+            <div class="bodyright">
+                <div class="clearfix"></div>
+                    <div class="model">
+                        <div class="model1"></div>
+                        <div class="model2"></div>
+                        <div class="model3"></div>
+                        <div class="status"></div>
+                    </div>
+            
+                    <div class="slider"></div>
+            </div>
+               
+        </div>
+        <div class="foot clearfix"></div>
+    </div>
+</body>
+</html>

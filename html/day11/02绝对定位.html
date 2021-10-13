@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            width: 100px;
+            height: 100px;
+            background-color: pink;
+            margin: 0 auto ;
+            font-size: 20px;
+            text-align: center;
+            padding: 50px;
+            border: 1px solid #000;
+        }
+        .box2{
+            /* 设置绝对定位，脱离文档流 */
+            position: absolute;
+            /* 默认相对于左上角，不说body内容主体部分 */
+            top: 200px;
+            left: 200px;
+            right:200px ;
+            bottom: 200px;
+            /* 如果没有设置宽高，此时top，left，right。bottom可以改变元素的宽高 */
+            /* auto是默认值 */
+            width: auto;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <!-- 绝对定位：
+    设置top是相对顶边进行设置  
+    设置bottom时，相对底边进行设置 -->
+    <div class="box box1">1</div>
+    <div class="box box2">2</div>
+    <div class="box box3">3</div>
+    <div class="box box4">4</div>
+    <div class="box box5">5</div>
+    <div class="box box6">6</div>
+    <div class="box box7">7</div>
+    <div class="box box8">8</div>
+    <div class="box box9">9</div>
+    <div class="box box10">10</div>
+</body>
+</html>

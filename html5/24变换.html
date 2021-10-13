@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            width: 258px;
+            height: 258px;
+            border: 5px solid green;
+            margin: 50px auto;
+        }
+        img{
+            width: 258px;
+            height: 258px;
+        /* 顺时针旋转30度 */
+            /* transform: rotate(30deg); */
+            /* 逆时针旋转30度 */
+            /* transform: rotate(-30deg); */
+            /* 放大与缩小,没有单位 */
+            /* transform: scale(2); */
+            /* [0-1]缩小 */
+            /* transform: scale(0.5); */
+            /* 平移，右下为正，左下为负 */
+            /* transform: translate(100px,50px); */
+            /* 与相对定位相比，都能移动到某些位置 */
+
+            /* 斜切*/
+            transform: skew(30deg);
+            /* 垂直方向斜切 */
+            transform: skewY(30deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="box"><img src="./images/4.jpg" alt=""></div>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 容器级=>块级，文本级=>行内级 */
+        .container {
+            height: 800px;
+            width: 600px;
+            background: pink;
+        }
+        img {
+            width: 30px;
+        }
+        textarea {
+            width: 20px;
+        }
+        input {
+            width: 200px;
+        }
+        span {
+            /* 行内元素块化 */
+            display: inline-block;
+            background: red;
+            width: 200px;
+        }
+        div {
+            width: 100px;
+            height: 100px;
+            background: orange;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="./images/2.jpg" alt="">
+        <textarea name="" id="" cols="10" rows="5"></textarea>
+        <input type="text">
+        <span>hello</span>
+        <div>box</div>
+    </div>
+</body>
+</html>

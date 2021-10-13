@@ -1,0 +1,57 @@
+/* 清空默认样式 */
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+a{
+    color: #000;
+    text-decoration: none;
+
+}
+.container{
+    width: 1128px;
+    margin: 0 auto;
+}
+.status{
+    height: 28px;
+    line-height: 28px;
+    font-size: 14px;
+    background-image: -webkit-linear-gradient(top,#037ecc,#1bbae2);
+}
+.status .container{
+    display: flex;
+    justify-content: flex-end;
+}
+.status .text{
+    margin-left: 15px;
+}
+.status span{
+    white-space: pre;
+}
+.status .user{
+    width: 20px;
+    /* height: 20px; */
+    position: relative;
+    margin-left: 50px;
+}
+.status .user::before{
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    height: 6px;
+    width: 6px;
+    top: 8px;
+}
+.status .user::after{
+    border-radius: 6px 6px 0 0;
+    content: "";
+    position: absolute; 
+    border-bottom: none;
+    border: 1px solid #fff;
+    top: 14px;
+    left:-3px;
+    width: 12px;
+    height: 6px;
+}

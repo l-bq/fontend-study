@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            width: 800px;
+            height: 600px;
+            background:pink;
+             }
+            .box1 {
+                /* 为设置宽高则充满整个容器的宽度 */
+                height: 80px;
+                width: 50px;
+                background:orange;
+            }
+            .box2 {
+                background:red;
+                height: 100px;
+            }
+            .box3 {
+                /* 对非块级元素设置为块级元素，块级元素会独占一行 */
+                display: block;
+                font-size: 20px;
+            }
+           
+        span {
+            font-size: 100px;
+        }
+        h1 {
+            width: 400px;
+        }
+    </style>
+</head>
+<body>
+    <h1>hello  ggg                      <span>ickt yyy   yyyy</span></h1>
+    <div class="container">
+        <div class="box1"></div>
+        <span class="box3">hello1</span>
+        <span>hello2</span>
+        <div class="box2"></div>
+        
+    </div>
+</body>
+</html>

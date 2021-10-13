@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            margin: 100px;
+            padding: 100px;
+            width: 400px;
+            height: 400px;
+            background-color: pink;
+        }
+        .box{
+            /* width: 100px;
+            height: 100px; */
+            background-color: green;
+            /* 相对浏览器窗口，固定不变 */
+            position: fixed;
+            /* top: 100px;
+            left: 100px;
+            right: 100px;
+            bottom: 100px; */
+            /* 底部菜单栏 */
+            /* top: 0;
+            left: 0;
+            right: 0;
+            bottom: 80px; */
+            /* 右侧菜单栏 */
+            width: 200px;
+            height: 600px;
+            right: 100px;
+            bottom: 200px;
+            top: 100px;
+
+        }
+    </style>
+</head>
+<body>
+    <!-- 固定定位：脱离文档流；相对于浏览区窗口；块元素与行元素都可以设置宽高；display失效；可以通过top、left来调整 -->
+    <div class="container">
+        <div class="box"></div>
+    </div>
+</body>
+</html>

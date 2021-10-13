@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            width: 800px;
+            height: 600px;
+            border: 1px solid #000;
+            background-color: pink;display: flex;
+            flex-flow: wrap;
+            /* 交叉对齐方式 */
+            /* 交叉轴起点对齐 */
+            /* align-items: flex-start; */
+            /* 交叉轴重点对齐 */
+            /* align-items: flex-end; */
+            /* 交叉轴中点对齐 */
+            /* align-items: center; */
+            /* 交叉轴基线对齐 */
+            /* align-items: baseline; */
+            /* 盒子未设置高度，会占满整个容器高度 */
+            align-items:stretch ;
+        }
+        .box{
+            width: 180px;
+            /* height: 180px; */
+            border: 2px solid gold;
+            background-color: green;
+            font-size: 50px;
+        }
+        .box2{
+            font-size: 20px;
+        }
+        .box3{
+            font-size: 80px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box box1">1</div>
+        <div class="box box2">2</div>
+        <div class="box box3">3</div>
+    </div>
+</body>
+</html>

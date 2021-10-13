@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 子元素设置的上边距会自动传递给父元素
+        父元素设置上边距会与子元素，会与子元素合并，合并时会与大的上边距为准
+        后代元素设置的上边距会一直传递到body
+        父元素会与后代元素合并，保留大的
+        可以通过设置padding、boreder以及overflow来组织margin-top的塌陷
+        兄弟元素间上下会进行合并，保留大的*/
+        .demo1{
+            height:200px;
+            background-color:red;
+        }
+        .demo2{
+            height: 100px;
+            margin-top: 100px;
+            margin-left: 100px;
+            background-color:yellowgreen;
+            padding: 2px;
+        }
+        .demo3{
+            height: 50px;
+            margin-top: 50px;
+            background-color:blue;
+        }
+    </style>
+</head>
+<body>
+    <div class="icke">
+        <img src="./images/a.jpeg" alt="美女" width="100ox" height="100px">
+        <img src="./images/2.jpg" alt="爱创" width="100px" height="100px">
+    </div>
+    <!-- 父子元素塌陷 -->
+    <div class="demo1">
+        <div class="demo2">
+            <div class="demo3"></div>
+        </div>
+    </div>
+    </div>
+</body>
+</html>

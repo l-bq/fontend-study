@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            border-color:pink;
+            border: 5px solid #000;
+            height: 400px;
+        }
+        /* 上下浮动出现塌陷问题 */
+        .container .div{
+            margin-top:50px 0;
+        }
+        .box1{
+            width: 100px;
+            height: 100px;
+            background-color: gold;
+            float: left;
+        }
+        .box2{
+            width: 200px;
+            height: 200px;
+            background-color: purple;
+            /* 盒子设置bfc后，不会与浮动区域重合 */
+            /* display: inline-block; */
+            /* float: left; */
+            /* 设置overflow不为visible */
+            overflow: hidden;
+            /* bfc计算高度要考虑浮动 */
+        }
+    </style>
+</head>
+<body>
+
+    <!-- BFC:块级格式上下文，块元素特征 -->
+    <div class="container">
+        <div class="box1"></div>
+        <div class="box2"></div>
+    </div>
+</body>
+</html>

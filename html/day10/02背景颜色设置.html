@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .demo{
+            /* 背景色从border开始渲染 */
+            background-color: gold;
+            margin: 100px;
+            padding: 400px;
+            width: 100px;
+            height: 400px;
+            border: 50px dashed green;
+            /* 背景图片从padding开始渲染 */
+            background-image: url(../images/2.jpg);
+            /* 平铺 */
+            /* background-repeat: no-repeat; */
+            /* 水平方向平铺 */
+            /* background-repeat: repeat-x; */
+            /* 垂直方向平铺 */
+            background-repeat: repeat-y;
+        }
+    </style>
+</head>
+<body>
+    <div class="demo">123123</div>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            width: 400px;
+            height: 400px;
+            border: 100px  dotted #000;
+            background-color: pink;
+            background-image: url(./images/1.jpg);
+            background-repeat: no-repeat;
+            /* 从内容去设置 */
+            /* background-origin: content-box; */
+            /* 从内边距区设置 */
+            /* background-origin: padding-box; */
+            /* 从边框区设置 */
+            /* background-origin: border-box; */
+            /* 背景图片与背景色裁剪 */
+           /* background-clip: padding-box; */
+           /* background-size: 200px 200px; */
+           /* 计算百分比的时候是高度/宽度+padding的百分比 */
+           /* background-size: 100% 50%; */
+           /* 特殊变量 */
+           background-size: cover;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+</body>
+</html>

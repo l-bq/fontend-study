@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container > p{
+            /* 渲染容器中的p元素,儿子关系 */
+            background-color: gold;
+        }
+        /*紧挨着后面第一个div元素 */
+        /* .demo + div{
+            background-color: green;
+        } */
+        /* 可以隔一个 */
+        /* .item + h1{
+            background-color: purple;
+        }
+        .item + .demo{
+            background-color: black;
+        } */
+        /* 后面所有的item */
+        .demo ~ .item{
+            background-color: orange;
+        }
+    </style>
+</head>
+<body class="container">
+    <p class="item">p1</p>
+    <p class="item">p2</p>
+    <p class="item">p3</p>
+    <p class="item">p4</p>
+    <p class="item">p5</p>
+    <div>
+        <div>
+            <div>
+                <div>
+                    <p>inner</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="item">div1</div>
+    <div class="item demo">div2</div>
+    <div class="item">div3</div>
+    <h1 class="item">h1</h1>
+    <h2 class="item">h2</h2>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box1{
+            border: 10px solid #000;
+            width: 200px;
+            height: 200px;
+            text-align: center;
+            line-height: 200px;
+        }
+        .container{
+            border: 1px solid #000;
+            width: 300px;
+            height: 300px;
+            /* 让块元素居中，可以设置padding */
+            padding: 100px 0;
+        }
+        .box2{
+            border: 1px solid red;
+            /* 如果已知父元素容器高度，则可以通过设置margin-top来设置盒子居中 */
+            width: 100px;
+            height: 100px;
+            /* margin-top: 100px;
+            margin: 100px auto; */
+            /* 如果不知父元素容器高度，则可以在父容器中设置padding来实现居中设置 */
+        }
+    </style>
+</head>
+<body>
+    <div class="box1">
+        <!-- 行内元素居中 -->
+        <span>hello</span>
+        <hr>
+        <!-- 盒子居中 -->
+        <div class="container">
+            <div class="box2">hello</div>
+        </div>
+    </div>
+</body>
+</html>
