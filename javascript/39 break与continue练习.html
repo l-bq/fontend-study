@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // // 找到n平方根除了1之外的是否为n的约数
+        // var num = prompt('请输入一个正整数');
+        // for(var i = 2; i <= Math.sqrt(num); i++) {
+        //     if(num % i === 0) {
+        //         continue;
+               
+        //     }
+        //     console.log('找到了这个质数，质数为' + i);
+        // }
+
+        // // 寻找1000以内的质数
+        // for (var i = 1; i <= 1000; i++){
+        //     var sum = 0;
+        //     for(var j = 1; j <= i; j++) {
+        //         if(i % j === 0) {
+        //             sum++;
+        //         }
+        //     }
+        //     if(sum === 2) {
+        //         console.log('是一个质数' + i);
+        //     }
+        // }
+
+        // 优化
+        ickt:for (var i = 1; i <= 1000; i++){
+            // var sum = 0;
+            for(var j = 2; j <= i-1; j++) {
+                if(i % j === 0) {
+                    // sum++;
+                    
+                    continue ickt;
+                    
+                }
+            }
+            // if(sum === 2) {
+                console.log('是一个质数' + i);
+            }
+        
+    </script>
+</body>
+</html>

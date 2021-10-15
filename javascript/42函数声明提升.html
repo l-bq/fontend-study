@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // // 变量声明提升
+        // console.log(a);
+        // // 后声明变量
+        // var a = 10;
+
+        // // 等价语法
+        // var a;
+        // console.log(a);
+        // a = 10
+
+        // // 函数变量提升
+        // // 访问demo
+        // console.log(demo());
+        // demo();
+        // function demo(){
+        //     console.log('demo');
+        // }
+
+        // // 访问函数
+        // // 函数表达式的提升与变量提升一致
+        // console.log(ickt);
+        // var ickt = function() {
+        //     console.log('ickt');
+            
+        // }
+
+        function ickt(num) {
+            console.log(111,num);
+            // 定义一个变量
+            var num = 20;
+            console.log(333,num);
+            // 定义一个函数,函数覆盖
+            function num(){
+                console.log(1111);
+            }
+            console.log(222,num);
+        }
+        ickt(10);
+
+        // 提升步骤，形参-变量（函数表达式）-函数
+        // 变量：原来无属性，则增加属性，如果有，则不做任何操作
+        // 函数:原来无属性,则增加属性,如果有,则直接覆盖
+        function ickt(num) {
+            console.log(111,num);
+            // 定义一个变量
+            var num = 20;
+            console.log(333,num);
+            var num = function(){
+                console.log(2222);
+            }
+            // 定义一个函数,函数覆盖
+            function num(){
+                console.log(1111);
+            }
+            console.log(222,num);
+        }
+        ickt(10);
+    </script>
+</body>
+</html>

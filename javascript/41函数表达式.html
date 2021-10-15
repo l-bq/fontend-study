@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 函数定义的两种方式
+        function demo(){
+            console.log('demo');
+        }
+        var ickt = function() {
+            console.log('ickt');
+        }
+        demo();
+        ickt();
+
+        // // 简单类型
+        // var a = 20;
+        // var b = a;
+        // var b = 30;
+        // console.log(a,b);
+
+        // 引用类型
+        var a = function() {
+            console.log('这是一个函数');
+        }
+        var b = a;
+        // 引用数据类型可以添加属性，通过点语法进行添加
+        // a与b都是指向同一个数据，通过b修改数据，a也会受到影响
+        b.color = 'red';
+        // 为b添加属性
+        console.log('a',a.color);
+        console.log(a,b);
+        
+    </script>
+</body>
+</html>
