@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // // function demo() {
+        // //     var num = 10;
+        // //     // 内部语句
+        // //     console.log(num) ;
+        // // }
+        // // // demo();
+        // // // 外部函数不能使用内部函数的变量；
+        // // console.log(num) ;
+
+        // // function demo() {
+        // //     var num = 10;
+        // //     function inner() {
+        // //         console.log(num);
+        // //     }
+        // //     // 如果将外部函数暴露在外部，就可以访问函数内部的数据
+        // //     inner();
+        // // }
+        // // demo();
+        
+
+        // // function demo() {
+        // //     var num = 10;
+        // //     function inner() {
+        // //         console.log(num);
+        // //     }
+        // //     // 如果将外部函数暴露在外部，就可以访问函数内部的数据
+        // //     return inner;
+        // // }
+        // // // 测试demo执行的就是函数内部的数据
+        // // var outer = demo();
+        // // console.log(outer);
+        // // // 通过outer访问函数内部的数据
+        // // outer();
+
+        // function demo() {
+        //     var num = 10;
+        //     return function inner() {
+        //         num++;
+        //         console.log(num);
+        //     }
+        // }
+        // // // 获取闭包
+        // // var outer = demo();
+        // // outer();
+        // // outer();
+        // // outer();
+        // // outer();
+        // // outer();
+        
+        // var outer1 = demo();
+        // outer1();
+        // outer1();
+        // outer1();
+        
+        // // 此时环境都是全新的
+        // var outer2 = demo();
+        // outer2();
+        // outer2();
+        // outer2();
+
+        // var outer3 = demo();
+        // outer3();
+        // outer3();
+        // outer3();
+
+        // // 总结，1执行一侧demo函数，闭包inner函数每次执行，外部环境可能会变化
+        // // 2 多次执行inner函数,每次函数执行的环境都会发生变化
+        // // 3 外部函数可以起到封闭空间存储数据的作用，供闭包使用，无法被js垃圾回收机制回收
+
+
+        // function init(x,y) {
+        //     // 返回一个闭包
+        //     return function(y) {
+        //         console.log(x + y)
+        //     }
+        // }
+        // var add = init(2,4);
+        // add(5)
+        // add(6)
+        // add(7)
+
+        var num = 1;
+        function a() {
+            num++;
+        }
+        a()
+        a()
+        a()
+        // 全局变量能够被所有函数访问，数据无法得到有效保护
+        function b() {
+            num += 2;
+            console.log(num);
+        }
+        b()
+        
+    </script>
+</body>
+</html>

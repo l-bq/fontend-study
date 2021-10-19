@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // if(true) {
+        //     var a = 1;
+        // }
+        // do {
+        //     b = 2;
+        //     // false仍旧会执行一次
+        // } while (false);
+        // for (var c = 3; c < 4; c++) {
+        //     var d = 4;
+        // }
+        // // js中变量名的作用域都是函数级别的
+        // function demo() {
+        //     e = 5;
+        // }
+        // console.log(a,b,c,d);
+        // console.log(e);
+
+
+        // 函数作用域与变量类似，只能在函数声明的地方确定，不能再函数的的其他地方使用,不收函数外界的影响
+        // var num = 1;
+        // function fn1() {
+        //     function fn2() {
+        //         function fn3() {
+        //             console.log(num);
+        //         }
+        //         // 执行fn3
+        //         fn3();
+        //     }
+        //     // 函数内部定义的函数，可以看成是局部函数，只能在函数内部使用
+        //     // fn3();
+        //     fn2();
+
+        // }
+        // // 函数跟变量一样，在函数内部定义只能在函数内部使用，使用fn3只能在函数内部使用，不能咱函数外部使用
+        // // fn3();
+        // // fn1相当于全局函数，可以在任何地方访问；
+        // fn1();
+
+        var num = 1;
+        function fn1() {
+            // 查找变量，按照作用域链，一层一层向上寻找变量，直到找到该变量，就不会向上寻找
+            var num = 2;
+            function fn2() {
+                // // 当前作用域中有了形参变量，就不会向上寻找了
+                var num = 3;
+                // function fn3(num) {
+                //     console.log(num);
+                // }
+
+                 // 当前作用域中有了形参变量，就不会向上寻找了
+               
+                function fn3() {
+                    // 当前作用域有了形参变量，就不会向上寻找了
+                    // var num = 4;
+                    console.log(num);
+                    // 函数声明提升
+                    // var num = 4;
+                    // function num() {};
+                }
+                var num = 6;
+                // 执行fn3
+                fn3();
+            }
+            // 函数内部定义的函数，可以看成是局部函数，只能在函数内部使用
+            // fn3();
+            fn2();
+
+        }
+        // 函数跟变量一样，在函数内部定义只能在函数内部使用，使用fn3只能在函数内部使用，不能咱函数外部使用
+        // fn3();
+        // fn1相当于全局函数，可以在任何地方访问；
+        // 只能向上寻找
+        var num = 5;
+        fn1();
+        var num = 7;
+    </script>
+</body>
+</html>

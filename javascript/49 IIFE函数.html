@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // // 普通函数
+        //  function demo() {
+        //     console.log('demo');
+        // }
+        // var demo2 = function() {
+        //     console.log('demo2');
+        // }
+
+        // // 创建立即执行函数
+        // var demo3 = function () {
+        //     console.log('demo3');
+        // }()
+        
+
+        // 直接在函数定义中添加（），会出现语法错误，要将函数转换成表达式,表达式后面需要加；
+        // 
+        
+        +function demo() {
+            console.log('demo')
+       
+        }();
+        //此时函数已将转变成表达式了，不能函数访问与提升，存储的是函数的执行结果
+        console.log(demo());
+        // -function demo() {
+        //     console.log('demo')
+        // }();
+        // !function demo() {
+        //     console.log('demo')
+        // }();
+        // (function demo() {
+        //     console.log(demo)
+        // })();
+    </script>
+</body>
+</html>
