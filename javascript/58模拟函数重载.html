@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // // 同步函数
+        // // add
+        // // 1个函数返回1+参数
+        // // 两个参数返回二者之和
+        // // 三个函数返回第一个参数乘以10加上后两个参数
+        // function add(num1) {
+        //     return num1 + 10;
+        // }
+        // function add(num1, num2) {
+        //     return num1 + num2;
+        // }
+        // // 函数执行
+        // console.log(add(5));
+        // console.log(add(5,6));
+        // // js没有重载，定义同名函数的时候，后面的覆盖前面的
+        // console.log(add);
+
+        // // 模拟函数重载
+        // function add() {
+        //     // 判断参数个数
+        //     // 1个参数返回10 + 参数
+        //     if(arguments.length === 1) {
+        //         return arguments[0] + 10;
+        //         // 2个参数返回二者之和
+        //     } else if (arguments.length === 2) {
+        //         return arguments[0] + arguments[1];
+        //     } else {
+        //         return arguments[0] * 10 + arguments[1] + arguments[2];
+        //     }
+        // }
+        // // 函数执行
+        // console.log(add(5));
+        // console.log(add(5,6));
+        // console.log(add(5,6,7));
+
+        // // 工作中，由于arguments访问参数麻烦 ，可以用形参进行简化
+        // function add(a,b,c) {
+        //     // 不是数组，不能用数组的方法
+        //     // console.log(arguments.slice,arguments);
+        //     if(arguments.length === 1) {
+        //         return a + 10;
+        //     } else if(arguments.length === 2) {
+        //         return a + b;
+        //     } else {}
+        //     return 10 *a + b +c;
+        // }
+        // // 函数执行
+        // console.log(add(5));
+        // console.log(add(5,6));
+        // console.log(add(5,6,7));
+
+
+        function add(a,b) {
+            if(arguments.length === 1) {
+                return 10 + a;
+            } else if(arguments === 2) {
+                return a + b;
+            } else {
+                return 10 * a +b;
+            }
+        }
+        // 函数执行
+        console.log(add(5));
+        console.log(add(5,6));
+
+
+    </script>
+</body>
+</html>

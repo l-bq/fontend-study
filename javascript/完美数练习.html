@@ -8,29 +8,20 @@
 </head>
 <body>
     <script>
-        // 定义函数，确定传形参
-        function findNum(num){
-            var sum = 0;
-            for (var i = 1; i < num; i++) {
-                if(num % i === 0) {
-                    sum += i;
+        var num = 1;
+        function fn1() {
+            // var num = 3;
+            function fn2() {
+                function fn3() {
+                    console.log(num);
                 }
+            fn3();
             }
-            if (sum === num) {
-               return true;
-            }
-            return false;
+            fn2();
         }
-        findNum(6);
-        findNum(8);
-        findNum(10);
-        // console.log(6, findNum(6));
+        var num = 6;
+        fn1();
 
-        for (var i = 1; i <= 1000; i++) {
-            if(findNum(i)) {
-                console.log(i);
-            }
-        }
     </script>
 </body>
 </html>

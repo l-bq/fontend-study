@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var arr1 = [1,2,3,4,5,6];
+            arr2 = [7,8,9];
+            // 数组合并
+        // var result = arr1.concat(arr2);
+        // 零散数组合并
+        // var result = arr1.concat(arr2,[10,11,12]);
+        // console.log(result,arr1,arr2);
+
+        
+        // 数组拆分,不改变原数组，不设置参数则表示截取全部
+        var arr = [0,1,2,3,4,5,6,7,8,9];
+        // 截取4,5,6，包含起始，不包含结束
+        var result = arr.slice(4,7)
+        console.log(result);
+        // 复制数组
+        var a = arr.slice();
+        // 复制
+        console.log(arr,a);
+        a[5] = 10;
+        console.log(a);
+
+        // 传递负数表示倒数（倒数加上长度）
+        // 相当于slice(5,8)
+        var b = arr.slice(-5,-2);
+        console.log(b);
+        // 当start大于end时候，截取不到
+        var c = arr.slice(8,5);
+        console.log(c);
+    </script>
+</body>
+</html>

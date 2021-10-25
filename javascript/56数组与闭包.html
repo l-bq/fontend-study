@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var arr = [];
+        // // for循环
+        // for(var i = 0; i < 5; i++) {
+        //     // 存储函数
+        //     arr[i] = function () {
+        //         console.log(i);
+        //     }
+        // }
+        // arr[3]();
+
+        // 希望输出结果是3，函数该如何改动
+        for(var i = 0; i < 5; i++) {
+            // 存储函数
+            arr[i] = function (i) {
+                // 变量，内部定义，参数
+                // 返回函数是闭包
+                return function inner() {
+                    console.log(i);
+                }
+            }(i)
+        }
+        arr[3]();
+        arr[2]();
+
+
+    </script>
+</body>
+</html>

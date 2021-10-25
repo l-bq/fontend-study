@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // var arr = [0,1,2,3,4,5];
+        // 数组倒序（倒置）
+        // var result = arr.reverse();
+        // console.log(result,arr);
+
+        // sort()可以不书写参数，表示排序，从小到大排序
+        // a < b，返回值是负数，biaoshi排序后的数组，a在b的前面。
+        var arr = [5,8,4,7,1,6,9,2,0];
+        // // 数组排序
+        // var result = arr.sort();
+        // console.log(result,arr);
+
+        // // 参数可以是比较函数,升序
+        // var result = arr.sort(function(a,b) {
+        //     if(a < b) {
+        //         return -10;
+        //     }
+        //     if(a == b) {
+        //         return 0;
+        //     }
+        //     if(a > b) {
+        //         return 20;
+        //     }
+        // });
+        // // 简写,a代表后一项，b代表前一项
+        // // 升序
+        // var result = arr.sort(function (a,b) {
+        //     return a - b;
+        // })
+        // console.log(result,arr);
+
+
+        // // 降序
+        // var result = arr.sort(function(a,b) {
+        //     return b - a;
+        // }) 
+        // console.log(result,arr);
+
+        // 乱序
+        console.log(Math.random());
+        var result = arr.sort(function(a,b) {
+            return Math.random() > 0.5 ? 1 : -1;
+        })
+        console.log(a,b,result,arr);
+    </script>
+</body>
+</html>

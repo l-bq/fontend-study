@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 汽车
+        var obj = {
+            // 属性可以用引号，在出现不合法名称时，可以使用变量
+            color:'red',
+            'car-num':10,
+            'price':100,
+            // JSON对象不会保存函数
+            getColor:function() {},
+            size: {
+                width:10,
+                height:20,
+            },
+            // undefined,NaN,Infinity转成对象后都是null，单引号都转换成双引号
+            num: [1,2,3,'4',null,false,undefined,NaN,Infinity]
+        };
+        // console.log(obj);
+        // json表示
+        var json ='{"color":"red","num":10,"price":100}';
+        // 将对象转换成json
+        // console.log(JSON.stringify(obj));
+        // JSON转换成对象
+        console.log(JSON.parse(json));
+
+        // 
+    </script>
+</body>
+</html>

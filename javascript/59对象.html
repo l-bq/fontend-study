@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 对象是特征与行为的集合
+        // 描述汽车
+        var car = {
+            // 属性描述tez
+            color:'red',
+            run:function() {
+                console.log('汽车跑起来了');
+            }
+        }
+        // // 获取属性
+        // console.log(car.color);
+        // console.log(car['color']);
+        // // 执行方法
+        // car.run();
+        // car['run']();
+
+        // // 当属性名用变量表示时，使用[]语法
+        // var key = 'color';
+        // // 访问对象key的属性
+        // console.log(car.key);
+        // console.log(car[key]);
+        // // // []中可以使用表达式
+        // // console.log(car[key] + 'or');
+
+        // // 修改数据
+        // car.color = 'green';
+        // car['color'] = 'pink';
+
+        // // 修改方法
+        // car.run = function() {
+        //     console.log('新方法');
+        // }
+        // car['run'] = function() {
+        //     console.log('通过[]修改方法');
+        // }
+        // car.run();
+
+        // // 添加新的属性
+        // car.price = 10000;
+        // console.log(car);
+        // // js对象使用的循环语句
+        // for (var key in car) {
+        //     // key表示的是属性的名称
+        // // car[key]代表的是属性值
+        // console.log(key,car[key]);
+        // }
+
+        // // for循环和forin循环都可以遍历数组
+        // var colors = ['red', 'green', 'pink', 'blue'];
+        // // 遍历
+        // for(var i = 0; i < colors.length; i++) {
+        //     console.log(colors[i],i,typeof i);
+        // }
+        // // for in遍历数组
+        // for(var key in colors) {
+        //     console.log(colors[key],key,typeof key);
+        // }
+        // // 总结，for循环常应用数组，forin常应用于对象,引用类型的数据不能用typeof去判断
+
+
+        // typeof只能检测值类型数据，不能输出引用类型数据（可以判断函数）
+        console.log(typeof []);
+        console.log(typeof []);
+    </script>
+</body>
+</html>

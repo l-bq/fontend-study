@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function demo(a,b,c) {
+            // 存储的是实参，与形参无关
+            console.log(arguments);
+            // 有length属性，可以通过索引值访问参数
+            // arguments可以访问实参，也可以修改实参或者添加实参
+            // 改变实参大小，赋值不通的数
+            arguments[2] = 50
+            console.log(arguments[2])
+        // 通过索引值访问参数
+            console.log(a,111,arguments[0]);
+            console.log(b,222,arguments[1]);
+            console.log(arguments.length);
+        }
+        // demo();
+        // demo(1);
+        // demo(1,2);
+        // demo(1,2,3);
+        // demo(1,2,3,4)
+        demo(1,2,3,4,5);
+
+        
+        
+    </script>
+</body>
+</html>
