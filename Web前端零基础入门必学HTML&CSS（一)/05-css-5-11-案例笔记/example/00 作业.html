@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+        <!-- gray灰色 -->
+        <table border="0" width="800" align="center" cellspacing="0" cellpadding="10" color="gray">
+            <!-- caption+(tr>(td[align=right]>label)+td>input)*11 -->
+            <caption>用户注册</caption>
+            <tr>
+                <td align="right"><label for="username">用户名：</label></td>
+                <td><input id="username" type="text" placeholder="请输入6位用户名" name="username"></td>
+            </tr>
+            <tr>
+                <td align="right"><label for="">密码：</label></td>
+                <td><input type="password" placeholder="请输入15位密码"></td>
+            </tr>
+            <tr>
+                <td align="right"><label for="">性别：</label></td>
+                <td>
+                    <label for="">男<input type="radio" name="sex" value="man" checked id=""></label>
+                    <label for="">女<input type="radio" name="sex" value="woman" id=""></label>
+                    <!-- name不同，就不是一组单选框了 -->
+                    <input type="radio">
+                </td>
+            </tr>
+            <tr>
+                <td align="right"><label for="">年龄：</label></td>
+                <td><input type="text" placeholder="请输入年龄"></td>
+            </tr>
+            <tr>
+                <td align="right"><label for="">学历：</label></td>
+                <td>
+                    <select name="" id="">
+                        <option value="">本科</option>
+                        <option selected value="">大专</option>
+                        <option value="">硕士</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td align="right"><label for="">特长：</label></td>
+                <td>
+                    <label for=""><input type="checkbox" name="" checked id="">H5前端</label>
+                    <label for=""><input type="checkbox" name="" id="">PHP</label>
+                    <label for=""><input type="checkbox" name="" id="">JavaEE</label>
+                    <label for=""><input type="checkbox" name="" id="">Java大数据</label>
+                    <label for=""><input type="checkbox" name="" id="">Android物联网</label>
+                    <label for=""><input type="checkbox" name="" id="">UI设计</label>
+                </td>
+            </tr>
+            <tr>
+                <td align="right"><label for="">Email：</label></td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td align="right"><label for="">电话：</label></td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td align="right"><label for="">上传简历：</label></td>
+                <td><input type="file""></td>
+            </tr>
+            <tr>
+                <td align="right"><label for="">自我介绍：</label></td>
+                <td><textarea placeholder="文字在600子以内" name="" id=""></textarea></td>
+            </tr>
+            <tr>
+                <td><label for=""></label></td>
+                <td>
+                    <!-- 用button和input都可以 -->
+                    <input type="reset" value="重置">
+                    <input type="submit" value="注册">
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

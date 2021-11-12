@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<script>
+// 穷举思想
+var num = prompt('输入一个整数');
+// 打印该整数的所有约数
+// 遍历所有情况
+for (var i = 1; i <= num; i++) {
+    // num是倍数，i是约数
+    // 内部设置条件
+    // 穷举法：将所有清空一一列举出来，然后找出符合条件的。
+    if (num % i === 0) {
+        console.log(i)
+    }
+}
+</script>
+</body>
+</html>

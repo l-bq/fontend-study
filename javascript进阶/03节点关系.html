@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="app"><ul><li>1</li><li>2</li> <li>3</li> <li>4</li><li>5</li><li>6</li><li>7</li><li>8</li><li>9</li> <li>10</li></ul></div>
+    <script>
+    var app = document.getElementById('app');
+    var ul = app.getElementsByTagName('ul')[0];
+
+    // 获取所有子节点
+    console.log(ul.childNodes);
+    // 获取第一个节点
+    console.log(ul.firstChild);
+    // 获取最后一个节点
+    console.log(ul.lastChild);
+
+    // 获取第5个li
+    var li = ul.childNodes[4];
+    console.log(li);
+    // 获取父节点
+    console.log(li.parentNode);
+
+    // 兄弟节点
+    console.log(li.previousSibling);
+    console.log(li.nextSibling);
+    </script>
+</body>
+</html>

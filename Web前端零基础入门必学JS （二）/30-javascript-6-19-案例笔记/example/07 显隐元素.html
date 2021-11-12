@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            width: 400px;
+            height: 300px;
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+    <button>显示</button>
+    <button>隐藏</button>
+    <button>切换</button>
+    <hr>
+    <div class="box"></div>
+<script src="./jquery.js"></script>
+<script>
+// // 获取元素
+var btns = $('button');
+// // 获取元素
+var box = $('.box');
+// // 通过索引值获取，通过eq方法获取
+// // console.log(btns[0], btns.eq(0));
+// // eq方法返回jquery对象，因此可以连续打点调用
+btns.eq(0).click(function() {
+    // 显示
+    // box.show();
+    // 参数表示变化的时间，单位是ms
+    // box.show(1000);
+    // fadeIn淡入
+    box.fadeIn(1000);
+})
+btns.eq(1).click(function() {
+    // 隐藏
+    // box.hide();
+    // box.hide(1000);
+    // fadeOut淡出
+    box.fadeOut(1000);
+})
+btns.eq(2).click(function() {
+    // 切换显隐
+    // box.toggle();
+    // box.toggle(1000);
+    // fadeToggle切换
+    box.fadeToggle(1000);
+})
+
+// 源生js的实现
+// var box = document.getElementsByTagName('div')[0]
+// var btns = document.getElementsByTagName('button');
+
+// 绑定事件
+// btns[0].onclick = function() {
+//     // 1秒显示
+//     // 最初的结果
+//     var width = 0,
+//         height = 0,
+//         opacity = 0,
+//         // 多少次
+//         num = parseInt(1000 / 33);
+//     // 循环设置
+//     var timebar = setInterval(function() {
+//         // 更改数据
+//         width += 400 / num;
+//         height += 300 / num;
+//         opacity += 1 / num;
+//         // 设置样式
+//         box.style.width = width + 'px';
+//         box.style.height = height + 'px';
+//         box.style.opacity = opacity;
+//         // 判断终止条件
+//         if (width >= 400) {
+//             clearInterval(timebar)
+//         }
+//     })
+// }
+// btns[1].onclick = function() {
+//     // 1描述隐藏
+//     // 宽度和高度从400变成0，透明度从1变成0
+//     // 记录当前宽度，高度，和透明度
+//     var width = 400,
+//         height = 300,
+//         opacity = 1,
+//         // 用来多少次
+//         num = parseInt(1000 / 33);
+//     var timebar = setInterval(function() {
+//         // 修改数值
+//         width -= 400 / num;
+//         height -= 300 / num;
+//         opacity -= 1 / num; 
+//         box.style.width = width + 'px';
+//         box.style.height = height + 'px';
+//         box.style.opacity = opacity;
+//         // 当width小于等于0.要停止
+//         if (width <= 0) {
+//             // 停止循环
+//             clearInterval(timebar)
+//         }
+//     }, 33)
+// }
+
+
+</script>
+</body>
+</html>

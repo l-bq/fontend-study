@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 表格: 学生信息统计表 -->
+    <table border="10" bordercolor="green" width="500" height="200" align="center" cellspacing="20" cellpadding="10" background="./images/a.png" bgcolor="pink">
+        <!-- (tr>td*4)*4 + tab      将（）内部的元素创建4遍 -->
+        <tr>
+            <!-- 表头用th创建 -->
+            <th>姓名</th>
+            <th>性别</th>
+            <th>年龄</th>
+            <th>电话</th>
+        </tr>
+        <tr>
+            <td>张三</td>
+            <td>男</td>
+            <td>20</td>
+            <td>12345678901</td>
+        </tr>
+        <tr>
+            <td>李四</td>
+            <td>女</td>
+            <td>18</td>
+            <td>12345678901</td>
+        </tr>
+        <tr>
+            <td>王五</td>
+            <td>男</td>
+            <td>21</td>
+            <td>12345678901</td>
+        </tr>
+        
+    </table>
+
+    <table border="10" bordercolor="green" width="500" height="200" align="center" cellspacing="20" cellpadding="10">
+        <!-- (tr>td*4)*4 + tab      将（）内部的元素创建4遍 -->
+        <tr>
+            <!-- 表头用th创建 -->
+            <th>姓名</th>
+            <th>性别</th>
+            <th>年龄</th>
+            <th>电话</th>
+        </tr>
+        <tr align="center">
+            <td>张三</td>
+            <td>男</td>
+            <td>20</td>
+            <td>12345678901</td>
+        </tr>
+        <tr>
+            <td>李四</td>
+            <td>女</td>
+            <td>18</td>
+            <td>12345678901</td>
+        </tr>
+        <tr>
+            <td>王五</td>
+            <td>男</td>
+            <td>21</td>
+            <td>12345678901</td>
+        </tr>
+        
+    </table>
+
+    <!-- 案例 -->
+    <!-- table>(tr>td*5)*4 + tab   创建4行5列表格 -->
+    <!-- 合并单元格步骤 -->
+        <!-- 1 将单元格完整的创建出来
+        2 找出要合并的单元格
+        3 将单元格合并
+        4 注释掉多余的单元格 -->
+    <table width="500" height="200" border="1" cellspacing="0">
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+            <td>5</td>
+        </tr>
+        <tr>
+            <td rowspan="2">6</td>
+            <td colspan="2">7</td>
+            <!-- <td>3</td> -->
+            <td>8</td>
+            <td>9</td>
+        </tr>
+        <tr>
+            <!-- <td>1</td> -->
+            <td colspan="4">10</td>
+            <!-- <td>3</td>
+            <td>4</td>
+            <td>5</td> -->
+        </tr>
+        <tr>
+            <td>11</td>
+            <td colspan="2">12</td>
+            <!-- <td>3</td> -->
+            <td colspan="2">13</td>
+            <!-- <td>5</td> -->
+        </tr>
+    </table>
+</body>
+</html>

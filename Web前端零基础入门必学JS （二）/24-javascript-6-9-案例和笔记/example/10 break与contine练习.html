@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<script>
+// 判断整数 n 的平方根之前除了1之外，还有没有其它的约数（1-Math.sqrt(n)）。
+// var num = prompt('输入一个正整数');
+// // 循环
+// for (var i = 2; i <= Math.sqrt(num); i++) {
+//     // 是否是num的约束
+//     if (num % i === 0) {
+//         console.log('找到该约数了，该约数就是' + i);
+//         // 调高性能。不用再往下寻找了
+//         break;
+//     }
+// }
+
+
+// // 输出1000以内所有质数。
+// for (var i = 1; i < 1000; i++) {
+//     // 判断i是不是质数
+//     // 累加器
+//     var sum = 0;
+//     // 内部循环
+//     for (var j = 1; j <= i; j++) {
+//         // 说明j是i的约数
+//         if (i % j === 0) {
+//             // 更新累加器
+//             sum++;
+//         }
+//     }
+//     // 超过两个就不是了
+//     // 有两个约束，就是一个质数。
+//     if (sum === 2) {
+//         console.log(i + '就是一个质数')
+//     }
+// }
+
+// 输出1000以内所有质数。
+ickt: for (var i = 1; i < 1000; i++) {
+    // 判断i是不是质数
+    // 内部循环
+    for (var j = 2; j <= i - 1; j++) {
+        // 说明j是i的约数
+        if (i % j === 0) {
+            // console.log(i + '不是一个质数')
+            continue ickt;
+        }
+    }
+    console.log('找到了，' + i + ' 就是一个质数')
+}
+
+</script>
+</body>
+</html>

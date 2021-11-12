@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div></div>
+<!-- <script>
+// 给div中，设置内容hello，字号是50px, 颜色是红色
+var div = document.getElementsByTagName('div');
+// console.log(div);
+div[0].innerHTML = 'hello'
+div[0].style.fontSize = '50px';
+div[0].style.color = 'red';
+</script> -->
+<!-- 引入jquery -->
+<script src="./jquery.js">
+    // 绝对不能在引入文件的标签内书写
+    // console.log(1111)
+</script>
+<!-- 在后面书写jQuery语句 -->
+<script>
+    // 口号：写的更高，做的更多
+    $('div').html('hello').css({
+        color: 'red',
+        fontSize: 50
+    })
+</script>
+</body>
+</html>

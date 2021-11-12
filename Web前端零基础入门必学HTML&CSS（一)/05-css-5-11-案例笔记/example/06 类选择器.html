@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* 类选择器 */
+        .title {
+            color: red;
+            /* px代表像素单位 */
+            font-size: 50px;
+        }
+        /* 原子类：一个类选择器，只定义一条样式 */
+        /* 设置字号是100 */
+        .fz-50 {
+            font-size: 50px;
+        }
+        /* 设置字号是50 */
+        .fz-100 {
+            font-size: 100px;
+        }
+        /* 设置字号是30 */
+        .fz-30 {
+            font-size: 30px;
+        }
+        /* 字体颜色是红色 */
+        .red {
+            color: red;
+        }
+        /* 字体颜色是绿色 */
+        .green {
+            color: green;
+        }
+        /* 字体颜色是粉色 */
+        .pink {
+            color: pink;
+        }
+        
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <!-- 类名命名规范：建议用横线分割单词，如 page-title -->
+    <div class="title pink">爱创课堂</div>
+    <div class="title">爱创课堂</div>
+    <p class="title fz-100">爱创课堂</p>
+    <h1 class="title">爱创课堂</h1>
+    <span>爱创课堂</span>
+    <p class="fz-100 green">爱创课堂</p>
+    <!-- 类名之间用空格隔开 -->
+    <span class="green fz-50">爱创课堂</span>
+</body>
+</html>

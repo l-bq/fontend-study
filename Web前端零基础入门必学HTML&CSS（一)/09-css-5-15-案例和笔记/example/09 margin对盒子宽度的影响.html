@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+        .parent {
+            width: 800px;
+            height: 800px;
+            margin: 0 auto;
+            background: pink;
+        }
+        .child {
+            height: 400px;
+            background: green;
+            /* margin-left和margin-right是正直，盒子宽度减小 */
+            /* margin-left: 100px;
+            margin-right: 200px; */
+            /* margin-left和margin-right是正直，盒子宽度增加 */
+            /* margin-left: -100px;
+            margin-right: -200px; */
+            /* 设置了宽度，margin无法改变宽度 */
+            width: 500px;
+            /* 左边距 */
+            /* margin-left: 200px; */
+            margin-left: -200px;
+            /* 右边距 */
+            margin-right: 200px;
+        }
+    </style>
+</head>
+<body>
+    <!-- 可以通过align属性更改盒子的对齐方式 -->
+    <div class="parent" align="right">
+        <div class="child"></div>
+    </div>
+</body>
+</html>

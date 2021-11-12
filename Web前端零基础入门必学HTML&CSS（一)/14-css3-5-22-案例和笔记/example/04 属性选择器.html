@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* img {
+            border: 5px solid green;
+        } */
+        /* 属性存在 */
+        /* img[alt] {
+            border: 5px solid green;
+        } */
+        /* 属性值精确匹配 */
+        /* img[alt="hello"] {
+            border: 5px solid orange;
+        } */
+    </style>
+</head>
+<body>
+    <img src="./images/gamepic2.jpg" alt="hello">
+    <img src="./images/gamepic6.jpg" alt="ickt">
+    <img src="./images/gamepic9.jpg" alt="hello">
+    <img src="./images/gamepic10.jpg">
+    <hr>
+    <style>
+        div {
+            width: 100px;
+            height: 100px;
+            float: left;
+            margin-left: 20px;
+            border: 5px solid green;
+            font-size: 20px;
+        }
+        /* hello开头 */
+        /* 条件：完整的单词或者是-分割 */
+        /* div[class|="hello"] {
+            background-color: pink;
+        } */
+        /* 包含hello */
+        /* 完整单词或者空格分割 */
+        /* div[class~="hello"] {
+            background-color: orange;
+        } */
+        /* hello开头 */
+        /* div[class^="hello"] {
+            background-color: pink;
+        } */
+        /* hello结尾 */
+        /* div[class$="hello"] {
+            background-color: orange;
+        } */
+        /* 包含hello */
+        /* div[class*="hello"] {
+            background-color: gold;
+        } */
+        /* 多个属性 */
+        div[class*="hello"][data-ickt="msg"] {
+            background-color: pink;
+        }
+    </style>
+    <div class="hello">1 hello</div>
+    <div class="hello ickt">2 hello ickt</div>
+    <div class="ickt hello">3 ickt hello</div>
+    <div class="helloickt">4 helloickt</div>
+    <div class="ickthello">5 ickthello</div>
+    <div class="hello-ickt">6 hello-ickt</div>
+    <div class="ickt-hello">7 ickt-hello</div>
+    <div class="hello_ickt">8 hello_ickt</div>
+    <div class="ickt_hello">9 ickt_hello</div>
+    <!-- 必须完整结尾 -->
+    <div class="ickt_hello ">10 ickt_hello</div>
+    <div class=" hello_ickt">11 hello_ickt</div>
+    <div class=" hello_ickt" data-ickt="msg">12 hello_ickt</div>
+</body>
+</html>

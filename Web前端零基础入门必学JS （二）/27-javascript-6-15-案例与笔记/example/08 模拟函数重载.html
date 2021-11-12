@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<script>
+// 同步函数
+// add  
+    // 1个参数返回 10 + 参数
+    // 2个参数返回二者之和
+    // 3个参数返回第一个参数乘以10加上后两个参数
+// 函数重载
+// function add(num1) {
+//     return num1 + 10;
+// }
+// function add(num1, num2) {
+//     return num1 + num2;
+// }
+// 模拟函数重载
+// function add() {
+//     // 判断参数的个数
+//     // 1个参数返回 10 + 参数
+//     if (arguments.length === 1) {
+//         return arguments[0] + 10;
+//     // 2个参数返回二者之和
+//     } else if (arguments.length === 2) {
+//         return arguments[0] + arguments[1]
+//     // 3个参数返回第一个参数乘以10加上后两个参数
+//     } else if (arguments.length === 3) {
+//         return arguments[0] * 10 + arguments[1] + arguments[2] 
+//     }
+// }
+// 工作中，由于arguments访问参数很麻烦，因此我们可以用形参来简化，用arguments判断参数个数
+// function add(a, b, c) {
+//     // arguments不是数组，不能使用数组的方法
+//     // console.log(arguments.slice, arguments)
+//     // 判断参数个数
+//     if (arguments.length === 1) {
+//         return a + 10;
+//     } else if (arguments.length === 2) {
+//         return a + b;
+//     } else if (arguments.length === 3) {
+//         return 10 * a + b + c
+//     }
+// }
+function add(a, b) {
+    // 遍历参数
+    for (var i = 0; i < arguments.length; i++) {
+        console.log(arguments[i])
+    }
+    // 判断参数个数
+    if (arguments.length === 1) {
+        return a + 10;
+    } else if (arguments.length === 2) {
+        return a + b;
+    } else if (arguments.length === 3) {
+        return 10 * a + b + arguments[2]
+    }
+}
+// 使用
+console.log(add(5));
+console.log(add(5, 6));
+console.log(add(5, 6, 7));
+// js没有重载，定义同名函数的时候，后面的覆盖前面的
+// console.log(add);
+</script>
+</body>
+</html>

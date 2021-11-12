@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<script>
+// 数组拉长
+// var arr = [1, 2, 3];
+// // 通过索引值拉长
+// // arr[10] = 20;
+// // 通过length拉长
+// arr.length = 8;
+// console.log(arr.length, arr)
+
+// 定义函数
+function demo(a, b, c) {
+    // 存储的是实参，与形参无关。
+    console.log(arguments)
+    // 数组可以通过length和索引值修改数组长度，但是类数组不可以，只能通过length修改
+    // 通过索引值不能拉长
+    // arguments[10] = 20;
+    // arguments.length = 10;
+
+    // arguments可以访问实参，也可以修改实参或者添加实参
+    arguments[2] = 50;
+    arguments[10] = 50;
+    console.log(arguments[2], arguments)
+
+    // 可以通过索引值访问参数
+    console.log(a, 111, arguments[0])
+    console.log(b, 222, arguments[1])
+    // 有length属性
+    console.log(arguments.length)
+}
+// 执行函数
+// demo()
+// demo(1)
+// demo(1, 2)
+// demo(1, 2, 3)
+// demo(1, 2, 3, 4)
+demo(1, 2, 3, 4, 5)
+</script>
+</body>
+</html>

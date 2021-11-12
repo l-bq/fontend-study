@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 设置样式 */
+        div {
+            width: 100px;
+            height: 100px;
+            background-color: pink;
+            font-size: 50px;
+            color: green;
+            border: 1px solid #000;
+        }
+        .box2 {
+            /* 浮动后，兄弟元素受到影响，脱离文档流，后面元素挤上来了 */
+            /* float: left; */
+            /* margin-left: 200px; */
+            /* 不希望影响兄弟元素的位置 */
+            position: relative;
+            /* 设置偏移量 */
+            /* 相对于原来的位置 */
+            top: 100px;
+            left: 200px;
+            /* left和top优先级要高于bottom和right */
+            bottom: 100px;
+            right: -100px;
+            /* auto表示自适应，是默认值 */
+            /* top,left,right,bottom无法改变元素宽高 */
+            /* width: auto;
+            height: auto; */
+        }
+        span {
+            padding: 12px;
+            background: url(./images/1.png) no-repeat;
+            font-size: 0;
+            /* 设置margin影响了文字的位置 */
+            /* margin-top: 20px;
+            display: inline-block; */
+            /* 我们可以使用相对定位来解决 */
+            position: relative;
+            top: -7px;
+        }
+        strong {
+            font-size: 14px;
+            font-weight: normal;
+            /* 在文件的右上角显示 */
+            position: relative;
+            top: -20px;
+            left: 10px;
+            /* 设置margin可以影响兄弟元素 */
+            margin-right: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1">1</div>
+    <div class="box2">2</div>
+    <div class="box3">3</div>
+    <div class="box4">4</div>
+    <!-- 设置列表 -->
+    <ul>
+        <li><span></span>标题</li>
+    </ul>
+    <h1>爱创<strong>100</strong>课堂</h1>
+</body>
+</html>

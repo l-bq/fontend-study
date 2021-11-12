@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            margin: 100px;
+            padding: 100px;
+            width: 400px;
+            height: 400px;
+            background-color: pink;
+            /* border: 50px solid #ccc; */
+            border: 100px solid #ccc;
+            /* 父元素设置定位，工作中，relative常用：1 不会脱离文档流， 2 不会影响后面的元素 */
+            position: relative;
+            /* position: absolute; */
+        }
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: green;
+            /* 绝对定位 */
+            position: absolute;
+            /* 默认相对于body定位 */
+            /* 相对于离它最近的设置了定位的元素 */
+            top: 100px;
+            left: 100px;
+        }
+        /* 中间插入了元素 */
+        .inner {
+            width: 200px;
+            height: 200px;
+            background-color: gold;
+            /* position: relative; */
+        }
+        /* 行内元素设置绝对定位 */
+        .box2 {
+            width: 100px;
+            height: 100px;
+            /* 设置了定位，display属性失效了 */
+            /* display: block; */
+            background: greenyellow;
+            position: absolute;
+            top: 150px;
+            left: 150px;
+            /* 定位居中 */
+            top: 50%;
+            left: 50%;
+            /* margin-top: -50px;
+            margin-left: -50px; */
+            /* 通过margin复合属性设置 */
+            margin: -50px -50px;
+        }
+        .box3 {
+            width: 500px;
+            height: 400px;
+            background-color: skyblue;
+            /* 居中 */
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            /* 通过margin移动盒子: 负宽高的一半 */
+            /* 默认相对于body，在屏幕中间 */
+            margin-top: -200px;
+            margin-left: -250px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="inner">
+            <div class="box"></div>
+            <span class="box2">span</span>
+        </div>
+    </div>
+    <h1>hello</h1>
+    <h1>hello</h1>
+    <h1>hello</h1>
+    <h1>hello</h1>
+    <h1>hello</h1>
+    <div class="box3"></div>
+</body>
+</html>

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            border: 1px solid blue;
+            width: 800px;
+            height: 800px;
+        }
+        .box1,
+        .box2 {
+            width: 100px;
+            height: 100px;
+            /* 背景 */
+            background: pink;
+        }
+        /* 为box1设置下外边距，为box2设置上外边距 */
+        .box1 {
+            /* margin-bottom: 50px; */
+            /* margin-bottom: 100px; */
+            /* 200大于100，所以保留200 */
+            margin-bottom: 200px;
+        }
+        .box2 {
+            margin-top: 100px;
+        }
+        /* 父子元素之间的margin塌陷 */
+        .demo1 {
+            height: 800px;
+            background-color: yellowgreen;
+            margin-top: 150px;
+            /* 阻止传递 */
+            overflow: hidden;
+        }
+        .demo2 {
+            height: 500px;
+            margin-left: 100px;
+            background-color: skyblue;
+            /* 子元素设置上边距, 上边距传递到父元素上去了 */
+            margin-top: 100px;
+            /* 不想让demo3向上传递 */
+            /* 1 设置padding */
+            /* padding: 1px; */
+            /* padding: 0.1px; */
+            /* padding的值必须大于0，保险起见：值要大于等于1 */
+            /* padding: 0; */
+            /* 2 设置border */
+            /* border: 1px solid red; */
+            /* overflow: hidden; */
+        }
+        /* 后代元素 */
+        .demo3 {
+            height: 50px;
+            background: gold;
+            margin-left: 100px;
+            /* 后代元素设置上边距 */
+            /* margin-top: 50px; */
+            margin-top: 300px;
+        }
+        /* 总结 */
+        /* 1 子元素设置了上边距，默认传递给父元素 */
+        /* 2 父元素设置了上边距，会与子元素合并 */
+            /* 合并的时候，以大的为准 */
+        /* 3 后代元素设置的上边距会一直传递到body */
+        /* 4 父元素的上边距会与后代元素上边距合并，保留大的 */
+        /* 5 可以通过padding, overflow, border来阻止margin-top的传递，必须显性设置 */
+        /* 6 兄弟元素之间上下外边距会合并，保留大的 */
+        /* 7 左右边距不会合并 */
+
+        /* 左右边距 */
+        .ickt {
+            width: 1200px;
+            height: 800px;
+        }
+        .img1 {
+            margin-right: 50px;
+        }
+        .img2 {
+            margin-left: 100px;
+        }
+        .ickt span {
+            background: red;
+            margin: 20px;
+        }
+        /* .ickt {
+            font-size: 0;
+        }
+        .ickt img {
+            display: block;
+        } */
+    </style>
+</head>
+<body>
+    <!-- 左右边距 -->
+    <div class="ickt">
+        <span>1</span>
+        <span>2</span>
+        <img class="img1" src="./images/a.png" alt="">
+        <img class="img2" src="./images/1.jpg" alt="">
+    </div>
+    <!-- 父子与后代元素之间的塌陷 -->
+    <div class="demo1">
+        <div class="demo2">
+            <!-- 后代元素 -->
+            <div class="demo3"></div>
+        </div>
+    </div>
+    <!-- 左右 -->
+    <!-- 兄弟元素之间的塌陷 -->
+    <div class="container">
+        <!-- 同一个父元素中的两个子元素互为兄弟元素。 -->
+        <div class="box1">box1</div>
+        <div class="box2">box2</div>
+    </div>
+</body>
+</html>

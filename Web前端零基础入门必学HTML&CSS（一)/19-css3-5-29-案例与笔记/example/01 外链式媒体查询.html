@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 通用的样式写在最前面 -->
+    <link rel="stylesheet" href="./css/common.css">
+    <!-- 针对不同视口，选择不同的样式 -->
+    <!-- <link rel="stylesheet" href="./css/small.css" media="screen and (max-width:1000px)"> -->
+    <!-- <link rel="stylesheet" href="./css/large.css" media="screen and (min-width:1000px)"> -->
+    <!-- 为了避免更改了顺序。导致临界点发生改变，通常我们会错开1px -->
+    <!-- <link rel="stylesheet" href="./css/large.css" media="screen and (min-width:1001px)">
+    <link rel="stylesheet" href="./css/small.css" media="screen and (max-width:1000px)"> -->
+    <!-- 注意：在工作中，各个视口相似的样式，要提取出来，防止书写多次 -->
+    <!-- 多个条件 -->
+    <link rel="stylesheet" href="./css/large.css" media="screen and (min-width:1001px)">
+    <link rel="stylesheet" href="./css/middle.css" media="screen and (min-width:801px) and (max-width:1000px)">
+    <link rel="stylesheet" href="./css/small.css" media="screen and (max-width:800px)">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 在视口大于1000的时候，显示红色字体，绿色背景 -->
+    <!-- 在视口小于等于1000的时候，显示蓝色字体，粉色背景 -->
+    <div class="box">爱创课堂</div>
+</body>
+</html>

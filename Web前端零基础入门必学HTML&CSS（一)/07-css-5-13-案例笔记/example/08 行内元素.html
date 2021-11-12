@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            width: 800px;
+            height: 800px;
+            background: pink;
+        }
+        .text1 {
+            background: gold;
+            /* 不生效 */
+            width: 100px;
+            height: 100px;
+            margin: 50px;
+            padding: 50px;
+
+        }
+        .text2 {
+            background: green;
+            margin: 50px;
+            padding: 50px;
+        }
+        .text3 {
+            background: skyblue;
+        }
+        .box {
+            height: 100px;
+            background: yellowgreen;
+            margin-left: 100px;
+            /* 转成行内元素 */
+            display: inline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <span class="text1">text 1-1-1</span><span class="text2">text 2-2-2</span><span class="text3">text 3-3-3</span>
+        <div class="box">box</div>
+    </div>
+</body>
+</html>

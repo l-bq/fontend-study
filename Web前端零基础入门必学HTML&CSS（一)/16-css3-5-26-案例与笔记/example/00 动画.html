@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 定义关键帧 */
+        @keyframes move {
+            0% {
+                transform: translate(0);
+            }
+            25% {
+                transform: translate(750px) rotate(180deg) scale(3);
+            }
+            50% {
+                transform: translate(750px, 550px)  rotate(360deg);
+            }
+            75% {
+                transform: translate(0, 550px);
+            }
+            /* 要回到原来的位置，0%与100%相同 */
+            /* 100% {
+                transform: translate(0);
+            } */
+        }
+        .container {
+            width: 800px;
+            height: 600px;
+            border: 2px solid green;
+            margin: 0 auto;
+        }
+        .box {
+            width: 50px;
+            height: 50px;
+            background-color: pink;
+            border-radius: 50%;
+            /* 启动动画 */
+            /* animation: move 2s forwards; */
+            animation: move 5s;
+            font-size: 20px;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">1111</div>
+    </div>
+</body>
+</html>

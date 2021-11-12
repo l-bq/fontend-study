@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<script>
+// // 定义函数
+// function demo() {
+//     console.log(1);
+//     console.log(2);
+//     console.log(3);
+//     // 终止执行
+//     // return;
+//     // return 后面还可以添加数据
+//     return 100;
+//     // return 后面的语句不会在执行了
+//     console.log(4);
+//     console.log(5);
+//     console.log(6);
+// }
+// // 执行函数
+// console.log('demo函数执行的结果', demo())
+
+// 函数
+// function print(val) {
+//     // 打印数据
+//     console.log('输出的结果为：', val)
+// }
+// // 对两个参数求和
+// function add(num1, num2) {
+//     // 有返回值
+//     return num1 + num2;
+//     // return 是函数的返回值
+//     // console.log 是在控制台中输出结果，不会中断函数的执行。
+// }
+// // console.log(add(5, 6))
+// // 有返回值的函数可以将函数的执行结果传递给另一个函数
+// print(add(5, 6))
+
+// return 是给函数使用的，打断函数
+// break和contine是给循环语句用的（break还可以给swithc语句用）
+function demo() {
+    // 训话语句
+    for (var i = 0; i < 10; i++) {
+        // i等于5，终止循环
+        if (i === 5) {
+            // continue;
+            // break;
+            // 打断的是函数
+            return;
+        }
+        console.log('当前的i是: ' + i)
+    }
+    // 执行完毕
+    console.log('执行完毕')
+}
+// 调用函数
+demo();
+
+</script>
+</body>
+</html>

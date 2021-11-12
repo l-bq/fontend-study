@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- 自定义字体 -->
+    <style>
+        @font-face {
+            font-family: "ickt";
+            src: url("./fonts/glyphicons-halflings-regular.ttf"), url("./fonts/glyphicons-halflings-regular.woff"), url("./fonts/glyphicons-halflings-regular.eot");
+        }
+        .title {
+            font-family: "ickt";
+        }
+        .title::before {
+            content: "\e005";
+            /* content: "hello"; */
+        }
+        .title::after {
+            content: "\e006";
+        }
+        .title::after {
+            /* content: "hello"; */
+            /* 超出范围无法渲染 */
+            content: "\e999";
+        }
+    </style>
+</head>
+<body>
+    <h1>hello 爱创课堂</h1>
+    <h1 class="title">hello 爱创课堂 &gt;</h1>
+</body>
+</html>

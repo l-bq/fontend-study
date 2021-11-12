@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<script>
+// var str = 'hello ickt!';
+// // 获取长度
+// console.log(str.length);
+// // 通过索引值访问每一个字符, 从0开始计数
+// console.log(str[1]);    // e
+// // 通过charAt获取字符
+// console.log(str.charAt(2));
+// // 编码
+// console.log(str.charCodeAt(0));
+// // 字符顺序：数字(0~9 => [48, 57])，大写字母(A~Z => [65, 90])，小写字母(a~z => [97, 122])  空格 32
+// var str = '019AZaz ';
+// // 查看编码
+// for (var i = 0, len = str.length; i < len; i++) {
+//     console.log(str.charAt(i), str.charCodeAt(i))
+// }
+
+// 寻找子字符串位置
+//         0123456
+// var str = 'hello ickt';
+// // 是否包含ickt
+// // console.log(str.indexOf('ickt'));
+// // 参数字符串不存在，返回-1
+// // console.log(str.indexOf('abc'));
+// var str2 = 'abc';
+// // 字符串拼接
+// var result = str.concat(str2, 'day', 1, 'aaa', 123)
+// console.log(result, 111, str);
+
+// 字符串切割
+var str = 'hello ickt';
+console.log(str.split());
+// 传递空字符串，将切除出每一个字符
+console.log(str.split(''), str);
+// 根据空格切割
+console.log(str.split(' '), str);
+
+// 数组降维
+var arr = ['c', ['d', 'e'], 'e', ['c', ['d', ['e']]], true, 100];
+// 先转成字符串，再切割
+console.log(arr.join());
+// 降维：要保证成员都是字符串
+console.log(arr.join().split(','));
+
+</script>
+</body>
+</html>

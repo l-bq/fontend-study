@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 单词定时器
+        // console.log('start');
+        // // 过2s时间后打印hello
+        // setTimeout(function() {
+        //     console.log('hello');
+        // }, 2000);
+
+        // // 定时器是异步的，不会堵塞后面程序的运行
+        // // 可以传递实名函数
+        // function demo(){
+        //     console.log('hello');
+        // }
+        // setTimeout(demo,2000);
+
+        // // 从第二个参数开始，表示传递的数据
+        // let timebar = setTimeout(function() {
+        //     console.log('hello',arguments);
+        // }, 2000,'ickt',100,true);
+        // // 清除定时器
+        // clearTimeout(timebar)
+        // console.log('end');
+
+        // 循环定时器
+        console.log('start');
+        // setInterval(function() {
+        //     console.log('hello');
+        // }, 1000);
+        // // 可以传递具名函数
+        // function demo(){
+        //     console.log('hello');
+        // };
+        // setInterval(demo,1000);
+
+        // 回调函数
+        // 给方法传递参数的函数就是回调函数
+        var timbar = setInterval(function() {
+            console.log('hello',arguments);
+        }, 1000,100,false,'abc');
+        // 中断函数
+        clearInterval(timbar);
+        console.log('end');
+    </script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 表单 -->
+        <!-- action      提交数据的地址
+        method      提交数据的方式
+        target      在哪里查看结果 -->
+    <form action="./create" method="GET" target="_blank">
+        <!-- 对表单控件的标注 -->
+        <!-- 指向表单控件的id -->
+        <label for="description">商品描述</label>
+        <!-- 多行文本框 -->
+        <!-- cols和rows代表的是字节 -->
+        <textarea id="description" cols="40" rows="10"></textarea>
+
+        <label>
+            简介
+            <textarea cols="30" rows="10"></textarea>
+        </label>
+        <!-- 引入其它位置的 -->
+        <label for="demo">介绍</label>
+    </form>
+    <hr>
+    <textarea id="demo" cols="30" rows="10"></textarea>
+</body>
+</html>

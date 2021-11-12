@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // var str = "hello ickt";
+        // console.log(str.length);
+        // // 通过索引值访问字符
+        // console.log(str[1]);
+        // // charAt获取字符
+        // console.log(str.charAt(2));
+        // // charCodeAt()返回字符串的编码
+        // console.log(str.charCodeAt(0));
+        // // 字符顺序、数字0~9=>[48,57]、大写字母[65,90]、小写字母[97,122]
+        // var str = '03AaZz';
+        // for(var i = 0,len = str.length; i < len; i++) {
+        //     console.log(str.charAt(i),str.charCodeAt(i))
+        // }
+
+        // // 寻找字符串的位置
+        // var str = "hello ickt";
+        // console.log(str.indexOf('ickt'));
+        // // 参数字符不存在时，返回-1
+        // console.log(str.indexOf('abc'))
+
+        // // 字符串拼接
+        // var str = "hello ickt";
+        // var str2 = '666'
+        // var result = str.concat(str2,'1','abc','+');
+        // console.log(result);
+
+        // 字符串切割,不传递不会切割,注意只能切割字符串
+        var str = "hello ickt"; 
+        console.log(str.split());
+        console.log(str.split(""),str);
+        console.log(str.split(" "),str);
+
+        // 数组降纬
+        var arr = ['c',['d','e'],'e',['c',['d',['e']]]];
+        // 将数组转换成字符串
+        console.log(arr.join());
+        // var result = arr.join();
+        console.log(arr.join().split(','));
+        
+    </script>
+</body>
+</html>

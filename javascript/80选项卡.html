@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .app {
+            border: 1px solid #000;
+            display: inline-block;
+        }
+        .app .header {
+            line-height: 30px;
+        }
+        .app .header span {
+            padding: 0 18px;
+            font-size: 20px;
+        }
+        .app .header span.choose {
+            color:pink;
+        }
+        .app .body{
+            height: 150px;
+            padding: 10px;
+        }
+        .app .body p {
+            display: none;
+        }
+        .app .body p.choose {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div id="app" class="app">
+        <div class="header">
+            <!-- 默认选中第一个 -->
+            <span class="choose">精选</span>
+            <span>社会</span>
+            <span>娱乐</span>
+            <span>体育</span>
+        </div>
+        <div class="body">
+            <p class="choose">精选新闻内容</p>
+            <p>社会新闻内容</p>
+            <p>娱乐新闻内容</p>
+            <p>体育新闻内容</p>
+        </div>
+    </div>
+    <script>
+        // 获取元素
+        var app = document.getElementsById('app');
+        // 获取span
+        var spans = document.getElementsByTagName('span');
+        // 获取p
+        var ps = document.getElementsByTagName('p');
+        //绑定事件
+        for (i = 0, len = spans.length; i < len; i++) {
+            spans[i].index = i;
+            spans[i].onclick = function() {
+                // 排他设置
+                for(var j = 0 ; j < len; j++) {
+                    spans[j].className = ' ';
+                }
+                spans[this.index].className = 'choose';
+                // for(var k = 0; k < ps.length; k++) {
+                //     ps[k].className = '';
+                // }
+                // ps[this.index].className = 'choose';
+            }
+        }
+    </script>
+</body>
+</html>

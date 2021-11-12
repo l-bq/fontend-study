@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- 2 内嵌式  -->
+    <!-- <script type="text/javascript"></script> -->
+    <!-- 3 外链岁 -->
+    <!-- <script type="text/javascript" src="./js/01.js"></script> -->
+    <style>
+        button {
+            /* 写在一行，必须用;隔开 */
+            color: red; font-size: 50px;
+        }
+    </style>
+</head>
+<body>
+    <!-- 1 行内式 -->
+    <!-- 双引号中只能嵌套单引号，单一号中只能嵌套双引号 -->
+    <!-- 注意：这里的分号，冒号，引号，逗号等等必须是英文的，不能是中文的 -->
+    <!-- <button onclick="alert("hello")">按钮</button> -->
+    <!-- 注意，在html规范中，属性值要使用双引号，因此建议属性值使用双引号，内部使用单引号 -->
+    <button onclick="alert('hello')">按钮</button>
+    <!-- <button onclick='alert("hello")'>按钮</button> -->
+    <script type="text/javascript" src="./js/01.js"></script>
+    <!-- 2 内嵌式  -->
+    <script type="text/javascript">
+        // 分号表示一句话的结束
+        alert('第一句话1111');
+        alert("第二句话2222");
+    </script>
+    <!-- 3 外链岁 -->
+    <!-- <script type="text/javascript" src="./js/01.js"></script> -->
+</body>
+</html>

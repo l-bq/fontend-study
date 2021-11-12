@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id='app' class="demo" class="red" style="color:green; background:pink">hello ickt</h1>
+    <input id='inp' type="text" style="padding: 20px; margin-top: 50px;">
+    <script>
+        var app = document.getElementById('app');
+        var inp = document.getElementById('inp');
+        // // 监听点击app事件
+        // app.onclick = function(){
+        //     console.log('click h1');
+        // }
+        // // 多次绑定，后面的会覆盖前面的
+        // app.onclick = function() {
+        //     console.log('click h2');
+        // }
+
+        // // 双击，
+        // function fn(){
+        //     console.log('click h1');
+        // }
+        // app.ondblclick = fn;
+
+        // 鼠标的移入与移除
+        app.onmouseenter = function() {
+            console.log('hell0 ick1t');
+        }
+        app.onmouseleave = function() {
+            console.log('helli ickt2');
+        }
+
+        // 输入框
+        inp.onfocus = function(){
+            console.log('获取焦点');
+        }
+        inp.onblur = function() {
+            console.log('失去焦点');
+            
+        }
+    </script>
+</body>
+</html>

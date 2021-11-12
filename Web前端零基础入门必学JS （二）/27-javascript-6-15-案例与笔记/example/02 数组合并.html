@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<script>
+// 数组
+var arr1 = [1, 2, 3, 4, 5],
+    arr2 = [6, 7, 8];
+// 合并在一起
+// var result = arr1.concat(arr2);
+// var result = arr1.concat(arr2, [10, 11, 12], 20, 21, 22);
+// console.log(result, 11, arr1, 222, arr2);
+
+// 数组截取
+var arr = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
+// console.log(arr[5])
+// 赋值4， 5， 6
+// end等于start + 截取的个数
+// var result = arr.slice(4, 7);
+// 数组从起始位置截取到数组结尾
+// var result = arr.slice(4);
+// 复制了一份数组
+// var result = arr.slice();
+// 是真正的复制
+// result[5] = 10;
+// 传递负数表示倒数（倒数就是加上长度）
+// var result = arr.slice(-5, -2); // slice(5, 8)
+// 如果起始位置大于结束位置
+var result = arr.slice(8, 5); // slice(5, 8)
+
+console.log(result, arr);
+</script>
+</body>
+</html>

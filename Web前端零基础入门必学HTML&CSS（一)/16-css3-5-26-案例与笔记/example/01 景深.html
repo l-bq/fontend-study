@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            width: 331px;
+            height: 195px;
+            border: 2px solid green;
+            margin: 50px auto;
+            /* 沿着y轴旋转 */
+            transform: rotateY(30deg);
+            /* 让3d生效 */
+            transform-style: preserve-3d;
+            /* 设置景深 */
+            perspective: 1000px;
+            position: relative;
+        }
+        img {
+            position: absolute;
+        }
+        /* 垂直屏幕方向，向用户移动300px */
+        .img1 {
+            transform: translateZ(300px);
+        }
+        .img2 {
+            transform: translateZ(-300px);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img class="img1" src="./images/byamaj.jpg" alt="">
+        <img class="img2" src="./images/gamepic2.jpg" alt="">
+    </div>
+</body>
+</html>

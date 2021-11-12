@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<script>
+// 变量
+var ickt;
+
+// 为变量赋值
+ickt = 100;
+
+// js按照从上到下的顺序执行，因此此时还没有更改成hello
+console.log(ickt)
+
+// 继续赋值
+ickt = 'hello';
+
+console.log(ickt);
+
+// 变量名规则
+var a;
+var ickt100;
+var ickt_100;
+var ICKT$100;
+// 不能以数字开头
+// var 100ickt;
+// 可以以$或者_开头
+var $100;
+var $abc;
+var _100;
+var _ABC;
+
+// 不能使用关键字或者表刘子
+// var function;
+// var for;
+// var class;
+
+// 工作中，不建议使用中文
+// var 你好;
+// 你好 = 200;
+// console.log(你好)
+
+
+// // 声明变量
+// var color;
+// // 变量赋值
+// color = 'red';
+// // 多次赋值
+// color = 'green';
+// color = 'blue';
+// // var使用一次就可以，不需要重复声明
+// var color = 'orange';
+
+// 变量的赋值和声明可以写在一起
+// var color = 'red';
+// var num = 100;
+// var title = '爱创课堂';
+// 简写：将分号变成逗号（建议）
+var color = 'green',
+    num = 200,
+    // 分号表示赋值完成
+    title = '爱创课堂';
+console.log(color);
+console.log(num);
+console.log(title);
+</script>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<script>
+// 定义一个数组
+var arr = [0, 1, 2, 3, 4, 5];
+// 倒置
+// var result = arr.reverse();
+// console.log(result, arr);
+
+// 定义数组
+var arr = [1, 3, 5, 4, 2, 1, 6, 9, 2, 0];
+// 对数组排序
+// var result = arr.sort();
+var result = arr.sort(function(a, b) {
+    console.log(a, b)
+});
+// 参数可以是比较函数, 升序
+// var result = arr.sort(function(a, b) {
+//     // a表示后一个成员，b表示前一个成员
+//     // console.log(a, b)
+//     // 如果a小于b， 
+//     if (a < b) {
+//         // 返回负数，表示a在b的前面
+//         return -10;
+//     // a等于b，不需要改变顺序
+//     } else if (a == b) {
+//         return 0;
+//     // 如果a大于b
+//     } else {
+//         // 返回正数，a在b的后面
+//         return 20;
+//     }
+// })
+// 简写, 返回值正负数可以用减法获取
+// 升序
+// var result = arr.sort(function(a, b) {
+//     // a代表后一个项，b代表前一项
+//     // console.log(a, b)
+//     // 升序
+//     return a - b;
+// })
+// 降序
+// var result = arr.sort(function (a, b) {
+//     return b - a;
+// })
+// 乱序: 随机返回一个正负1, 
+// random方法。随机返回一个[0, 1)之间的一个随机数
+// console.log(Math.random())
+// var result = arr.sort(function(a, b) {
+//     return Math.random() >= 0.5 ? 1 : -1;
+// })
+
+console.log(result, arr);
+</script>
+</body>
+</html>

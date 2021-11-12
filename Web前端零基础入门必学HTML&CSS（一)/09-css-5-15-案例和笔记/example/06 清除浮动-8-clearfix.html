@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+        .list1 {
+            background: green;
+            width: 800px;
+        }
+        .list2 {
+            background: gold;
+        }
+        .box1,
+        .box2,
+        .box3 {
+            width: 100px;
+            height: 100px;
+            float: left;
+        }
+        .box1 {
+            background: yellowgreen;
+        }
+        .box2 {
+            background: skyblue;
+        }
+        .box3 {
+            background: purple;
+        }
+        .box4 {
+            height: 50px;
+            background: pink;
+        }
+        /* 创建clearfix类，来复用 */
+        .clearfix:after {
+            /* 内容 */
+            content: "";
+            /* 块元素 */
+            display: block;
+            /* 清除浮动 */
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+    <div class="list1 clearfix">
+        <div class="box1"></div>
+        <div class="box2"></div>
+        <div class="box3"></div>
+    </div>
+    <div class="box4"></div>
+    <div class="list2 clearfix">
+        <div class="box1"></div>
+        <div class="box2"></div>
+        <div class="box3"></div>
+    </div>
+    <div class="box4"></div>
+</body>
+</html>

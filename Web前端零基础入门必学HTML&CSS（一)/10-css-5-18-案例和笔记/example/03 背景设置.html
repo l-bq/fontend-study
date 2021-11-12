@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .demo {
+            width: 400px;
+            height: 1000px;
+            padding: 100px;
+            border: 50px dotted orange;
+            /* 通过一个属性，实现效果 */
+            background: green url("./images/meng.jpg") no-repeat left top fixed;
+        }
+        /* 渐变背景 */
+        .nav {
+            width: 150px;
+            height: 60px;
+            line-height: 60px;
+            font-size: 20px;
+            background: url(./images/nav_bg.png) repeat-x;
+        }
+        /* 设置banner */
+        .banner {
+            height: 400px;
+            width: 1200px;
+            margin: 0 auto;
+            background: url(./images/banner.png) center;
+        }
+        li {
+            line-height: 36px;
+        }
+        /* 插入图标 */
+        li span {
+            padding: 13px;
+            /* background-color: green; */
+            background-repeat: no-repeat;
+            /* margin-top: 10px; */
+            display: inline-block;
+            vertical-align: middle;
+        }
+        .item1 span {
+            background-image: url(./images/jd_01.png);
+        }
+        .item2 span {
+            background-image: url(./images/jd_02.png);
+        }
+        .item3 span {
+            background-image: url(./images/jd_03.png);
+        }
+        /* 通过伪元素设置 */
+        li:before {
+            content: "";
+            padding: 13px;
+            /* background-color: gold; */
+            font-size: 0;
+            vertical-align: middle;
+        }
+        .item1:before {
+            background-image: url(./images/jd_01.png);
+        }
+        .item2:before {
+            background-image: url(./images/jd_02.png);
+        }
+        .item3:before {
+            background-image: url(./images/jd_03.png);
+        }
+        /* SEO */
+        h1 {
+            background-image: url(./images/taobao.png);
+            background-repeat: no-repeat;
+            width: 143px;
+            height: 59px;
+            /* 第一种 */
+            /* text-indent: -1000em; */
+            /* 第二种 */
+            /* line-height: 1000px;
+            overflow: hidden; */
+            /* 第三种 */
+            /* font-size: 0; */
+            overflow: hidden;
+            padding-top: 59px;
+            height: 0;
+        }
+    </style>
+</head>
+<body>
+    <!-- <div class="demo"></div> -->
+    <!-- 渐变背景 -->
+    <!-- <div class="nav">主页</div> -->
+    <!-- 设置banner -->
+    <!-- <div class="banner"></div> -->
+    <!-- 列表图标 -->
+    <!-- <ul>
+        <li class="item1"><span></span>衣服</li>
+        <li class="item2"><span></span>裤子</li>
+        <li class="item3"><span></span>鞋</li>
+    </ul> -->
+    <!-- <ul>
+        <li class="item1">衣服</li>
+        <li class="item2">裤子</li>
+        <li class="item3">鞋</li>
+    </ul> -->
+    <!-- SEO -->
+    <h1>淘宝网</h1>
+
+</body>
+</html>

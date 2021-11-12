@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<body>
+<script>
+// 获取一个整数的约束个数
+// var num = prompt('请输入一个正整数');
+// // 累加器
+// var sum = 0;
+// // 遍历
+// for (var i = 1; i <= num; i++) {
+//     // 1 累加器绝对不能定义在循环体中
+//     // var sum = 0;
+//     // 条件
+//     if (num % i === 0) {
+//         // 满足条件的
+//         sum++;
+//     }
+//     // 2 不能在循环体中打印sum
+//     // console.log(sum);
+// }
+// // 打印结果
+// console.log(sum);
+
+
+// 累乘器
+var num = prompt('请输入一个正整数');
+// 累乘器
+var result = 1;
+// 遍历
+for (var i = num; i >= 1; i--) {
+    // 求累乘结果
+    result *= i;
+}
+console.log(result);
+</script>
+</body>
+</html>

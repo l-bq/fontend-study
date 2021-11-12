@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            font-size: 30px;
+        }
+    </style>
+</head>
+<body>
+    <!-- <section id="app">
+        <div>1
+            <div>2
+                <div id="div3">3
+                    <div>4</div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+    <div>4</div>
+    <div>5</div>
+    <div>6</div>
+    <div>7</div>
+<script>
+// // 获取页面中所有div
+// var divs = document.getElementsByTagName('div');
+// // 遍历divs
+// for (var i = 0; i < divs.length; i++) {
+//     // 类数组对象，可以通过每一个索引值访问数组成员。
+//     console.log(divs[i]);
+// }
+// console.log(divs)
+
+// 后去section元素
+// var app = document.getElementById('app');
+// 通过app寻找其内部的div元素
+// var divs = app.getElementsByTagName('div');
+// console.log(divs)
+// getElementById只能被document调用，元素无法调用。
+
+// console.log(document.getElementsByTagName('section'));
+
+// 批量的绑定事件
+var divs = document.getElementsByTagName('div');
+// 绑定事件
+// for (var i = 0; i < divs.length; i++) {
+//     // 绑定事件
+//     divs[i].onclick = function() {
+//         console.log(i)
+//     }
+// }
+// 方案一 IIFE和闭包
+// for (var i = 0; i < divs.length; i++) {
+//     // 绑定事件
+//     divs[i].onclick = (function(a) {
+//         return function() {
+//             console.log(a)
+//         }
+//     })(i + 1)
+// }
+// 方案二 通过this获取
+// for (var i = 0; i < divs.length; i++) {
+//     // 为元素添加一个属性，存储数据
+//     // 获取的元素是对象，因此可以添加属性。
+//     divs[i].index = i + 1;
+//     // 绑定事件
+//     divs[i].onclick = function() {
+//         // this指向函数调用者，就是元素。
+//         // console.log(this)
+//         // 通过this访问元素。再访问属性
+//         console.log(this.index)
+//     }
+// }
+
+// 方案三 
+for (var i = 0; i < divs.length; i++) {
+    // 绑定事件
+    divs[i].onclick = function() {
+        // 由于这个案例中，元素的内容与索引值等价，因此可以将内容看成是索引值
+        console.log(this.innerHTML);
+    }
+}
+
+</script>
+</body>
+</html>

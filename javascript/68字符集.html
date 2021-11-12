@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 字符集
+        console.log(/[abc]/.test('aqwe'));
+        console.log(/[abc]/.test('qwe'));
+        console.log(/[0-9]/.test('6'));
+        console.log(/[a-z]/.test('a'));
+        console.log(/[A-Z]/.test('a'));
+        // 十六进制
+        console.log(/[0-9a-f]/.test('d'));
+        console.log(/[0-9a-f]/.test('g'));
+
+        // 负向类,不包含
+        console.log(/[^0-9]/.test('a'));
+        console.log(/[^0-9]/.test('6'));
+
+        // // 边界符
+        // var str = 'abchello\nhelloabc\nabchello\nhelloabc';
+        // console.log(str);
+        // // 将开头的abc换成ickt
+        // console.log(str.replace('abc','ickt'));
+        // // 全换
+        // console.log(str.replace(/abc/g,'ickt'));
+        // // 仅换开头
+        // console.log(str.replace(/^abc/g,'ickt'));
+        // // 多行匹配
+        // console.log(str.replace(/^abc/gm,'ickt'));
+        // // 换结尾
+        // console.log(str.replace(/abc$/m,'ickt'));
+        // // 多行匹配
+        // console.log(str.replace(/abc$/gm,'ickt'));
+
+        var str = 'hello ickt';
+        console.log(str.replace(/\b/,'--'));
+        console.log(str.replace(/\B/,'-'))
+        console.log(str.replace(/\b/g,'--'));
+        console.log(str.replace(/\B/g,'-'))
+    </script>
+</body>
+</html>

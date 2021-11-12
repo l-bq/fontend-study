@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            width: 800px;
+            height: 800px;
+            background: gold;
+            margin: 0 auto;
+        }
+        .container div {
+            width: 100px;
+            height: 100px;
+            font-size: 50px;
+            color: red;
+            /* 浮动 */
+            float: left;
+        }
+        .box1 {
+            background: green;
+            margin-left: -50px;
+        }
+        .box2 {
+            background: pink;
+            /* 水平方向设置边距 */
+            margin-left: -50px;
+            opacity: 0.7;
+        }
+        .box3 {
+            background: skyblue;
+            opacity: 0.7;
+            margin-left: -50px;
+        }
+        /* 重写参考位置的容器 */
+        .ickt {
+            height: 100px;
+            background: rgb(180, 119, 162);
+        }
+        .ickt div {
+            margin-left: 0;
+        }
+        /* 结论 */
+        /* 浮动元素移动的距离受前面元素影响，移动的距离就是前面元素移动距离之和 */
+        /* box3移动的距离 = box1移动的距离 + box2移动的距离 + 自身移动的距离 = 50 + 50 + 50 = 150 */
+        /* w代表自身宽度，d代表移动距离 */
+        /* 依次贴边： d3 = d1 + d2 + d3 */
+    </style>
+</head>
+<body>
+    <!-- 参考容器 -->
+    <div class="container ickt">
+        <div class="box1">1</div>
+        <div class="box2">2</div>
+        <div class="box3">3</div>
+    </div>
+    <div class="container">
+        <div class="box1">1</div>
+        <div class="box2">2</div>
+        <div class="box3">3</div>
+    </div>
+</body>
+</html>

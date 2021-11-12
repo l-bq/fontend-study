@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #app {
+            font-size: 40px;
+            width: 200px;
+            height: 200px;
+            background-color: green;
+            border-bottom-color: #000;
+            border-bottom-width: 20px;
+            border-bottom-style: solid;
+        }
+    </style>
+</head>
+<body>
+    <div id="app" style="color: red;">
+        hello
+    </div>
+<script>
+
+/***
+ * 封装一个getStyle方法，可以在不同浏览器下获取样式
+ * @obj         元素对象
+ * @key         属性名称
+ * return       获取的样式
+ **/
+function getStyle(obj, key) {
+    // 能力检测：判断浏览器的能力，能做什么就做什么
+    // 浏览器是否支持getComponent方法，支持就使用
+    if (window.getComputedStyle) {
+        // 通过该方法获取
+        // 已经确定了该方法存在，就可以直接使用了
+        // 方法一
+        return getComputedStyle(obj)[key];
+        // 方法二
+        // 将key转成横杠法      borderLeftColor => border-left-color
+        // key = key.replace(/([A-Z])/g, function(match, $1) {
+        //     // 返回的是
+        //     return '-' + $1.toLowerCase();
+        // })
+        // return getComputedStyle(obj).getPropertyValue(key);
+    } else {
+        var style = obj.currentStyle;
+        // 如果有样式，可以获取
+        if (style) {
+            // 将横杠法转成驼峰式命名法    border-left-color => borderLeftColor
+            key = key.replace(/-([a-z])?/g, function(match, $1) {
+                return $1.toUpperCase();
+            })
+            // 返回样式
+            return style[key]
+        } else {
+            // 没有样式，要提示
+            alert('你的浏览器不支持获取计算样式功能。')
+        }
+    }
+}
+
+// 测试
+// 获取元素
+var app = document.getElementById('app');
+alert(getStyle(app, 'color'));
+alert(getStyle(app, 'fontSize'));
+alert(getStyle(app, 'font-size'));
+
+// function demo() {
+
+// }
+// console.log(demo)
+// console.log(window.demo)
+
+</script>
+</body>
+</html>

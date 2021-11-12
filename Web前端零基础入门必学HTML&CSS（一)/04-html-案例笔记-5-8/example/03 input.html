@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="/create" target="_self">
+        <label for="username">用户名</label>
+        <!-- 1 单行文本框 -->
+        <!-- pattern  对输入的内容做校验，有兼容性问题 [0-9]{2,5} 2到5位数字， -->
+        <!-- <input type="text" id="username" pattern="[0-9]{2,5}" value="hello"> -->
+        <input type="text" id="username" name="username" value="hello">
+        <hr>
+        <!-- 2 密码框 -->
+        <!-- input:password + tab -->
+        <input type="password">
+        <hr>
+        <!-- 3 单选框：只能选择一次 -->
+        <label>性别</label>
+
+        <!-- 注意：单选框要统一设置name属性， 通过value设置不同的值， 通常通过label标签来说明input -->
+        <label for="man">男</label>
+        <!-- 男  -->
+        <input type="radio" id="man" name="sex" value="男">
+
+        <label for="woman">女</label>
+        <input type="radio" id="woman" name="sex" value="女">
+
+        <hr>
+        <!-- 4 多选框 -->
+        <label>兴趣爱好</label>
+
+        <!-- <label for="basketball">篮球</label>
+        <input type="checkbox" id="basketball" name="intrest" value="篮球"> -->
+        <!-- a代表篮球 -->
+        <label for="lanqiu">篮球</label>
+        <input type="checkbox" id="langqiu" name="intrest" value="篮球">
+        <!-- zuball -->
+        <label for="football">足球</label>
+        <input type="checkbox" id="football" name="intrest" value="足球">
+
+        <label for="pingpang">乒乓球</label>
+        <input type="checkbox" id="pingpang" name="intrest" value="乒乓球">
+
+        <hr>
+        <!-- 5 图片 -->
+        <input type="image" src="./images/1.jpg" width="60" height="100">
+
+        <hr>
+        <!-- 6 文件 -->
+        <input type="file">
+        
+        <hr>
+        <!-- 7 隐藏文本 -->
+        <input type="hidden" name="color" value="red">
+
+        <hr>
+        <!-- 8 按钮 -->
+        <input type="button" value="普通按钮">
+
+        <hr>
+        <!-- 9 重置按钮 -->
+        <input type="reset" value="重置">
+
+        <hr>
+        <!-- 10 提交按钮 -->
+        <input type="submit" value="提交">
+
+        <hr>
+        <!-- <button>提交</button> -->
+        <!-- 快捷键 -->
+        <!-- +  标签并列关系  div+span -->
+        <!-- *  创建多个    div*5 -->
+        <!-- :  给input元素设置类型  -->
+        <!-- {} 设置内容 -->
+        <!-- () 对内部的内容，统一添加功能  (tr>td*3)*3 -->
+        <!-- [] 设置属性  div[id=demo class] -->
+        <!-- [key=value] 可以为属性赋值-->
+        <!-- $  设置起始数字  div{$}*5 -->
+        <!-- @  设置$符号起始数字 div{$@5}*5 -->
+    </form>
+
+</body>
+</html>

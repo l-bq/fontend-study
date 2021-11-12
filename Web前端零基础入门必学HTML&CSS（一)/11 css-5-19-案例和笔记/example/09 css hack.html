@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* css hack */
+        h1 {
+            color: red;
+            /* IE6和7 */
+            !color: pink;
+            /* ie6 显示绿色 */
+            _color: green;
+            /* ie8和ie9 */
+            color: orange\0;
+            /* ie6-10 */
+            color: blue\9;
+        }
+        /* 选择器hack */
+        /* ie6 */
+        * html .title {
+            font-size: 50px;
+            background-color: yellow;
+        }
+        /* ie7 */
+        .title, {
+            background: pink;
+        }
+        /* 非ie6浏览器 */
+        body > .title {
+            font-size: 100px;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="title">爱创课堂</h1>
+</body>
+</html>

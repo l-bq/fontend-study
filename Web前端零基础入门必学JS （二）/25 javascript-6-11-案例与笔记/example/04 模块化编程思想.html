@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<script>
+// 模块化编程思想：将一些通用的部分封装在一个函数中，并得以复用
+// 输入一个数，判断是否是质数
+// var num = prompt('输入一个正整数');
+// 工作中：我们定义的一些通用方法要写多行注释，来说明函数的用法。
+/***
+ * 判断是否是质数
+ * description: 将判断的过程封装在函数内，并复用
+ * @num     传递的数字
+ * return   是一个布尔值，true表示是质数，false表示不是质数
+ **/
+function checkNum(num) {
+    // 从1到num遍历，判断约数的个数是否超过2
+    // 从2到num-1 判断是否存在约束
+        // 有约数不是质数，没有约数是质数
+    for (var i = 2; i < num - 1; i++) {
+        // 如果存在约束
+        if (num % i === 0) {
+            // 找到了约束，说明不是质数
+            // 找到一个就够了，不需要再往下运行了，可以返回结果了
+            return false;
+        }
+    }
+    // 说明是质数
+    return true;
+}
+// 查看检测的结果
+// console.log(checkNum(num))
+
+// 寻找1-100之间的质数
+for (var i = 1; i <= 100; i++) {
+    // 判断是不是质数
+    if (checkNum(i)) {
+        // 是质数，打印出来
+        console.log(i);
+    }
+}
+
+</script>
+</body>
+</html>

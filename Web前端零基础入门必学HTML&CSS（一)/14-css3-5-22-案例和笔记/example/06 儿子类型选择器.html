@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 儿子类型选择器 */
+        /* 不考虑其它类型元素 */
+        /* 首先找出父容器中同类型的元素，然后从同类型元素中找出第一个元素 */
+        /* p:first-of-type {
+            background-color: orange;
+        } */
+        /* 考虑其它类型元素 */
+        /* 直接在父容器中按照顺序找出第一个元素，发现不是p元素，没有选中 */
+        /* p:first-child {
+            background-color: green;
+        } */
+        /* 同类型最后一个 */
+        /* p:last-of-type {
+            background-color: green;
+        } */
+        /* 偶数个 */
+        /* p:nth-of-type(even) {
+            background-color: pink;
+        } */
+        /* 奇数个 */
+        /* p:nth-of-type(odd) {
+            background-color: pink;
+        } */
+        /* 第二个 */
+        /* p:nth-of-type(2) {
+            background-color: pink;
+        } */
+        /* 公式 */
+        /* p:nth-of-type(4n+1) {
+            background-color: pink;
+        } */
+        /* 从后面数 */
+        /* p:nth-last-of-type(4n+1) {
+            background-color: pink;
+        } */
+        .item:nth-of-type(4n+1) {
+            background-color: orange;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <div>div</div>
+        <div>div</div>
+        <div>div</div>
+        <p class="item">1-1-1</p>
+        <p class="item">2-2-2</p>
+        <p class="item">3-3-3</p>
+        <p class="item">4-4-4</p>
+        <p class="item">5-5-5</p>
+        <p class="item">6-6-6</p>
+        <p class="item">7-7-7</p>
+        <p class="item">8-8-8</p>
+        <p class="item">9-9-9</p>
+        <p class="item">10-10-10</p>
+        <h3 class="item">1-1</h3>
+        <h3 class="item">2-2</h3>
+        <h3 class="item">3-3</h3>
+        <h3 class="item">4-4</h3>
+        <h3 class="item">5-5</h3>
+    </div>
+    <!-- 每一个父容器寻找一次，彼此之间互不影响 -->
+    <div>
+        <div>div</div>
+        <p class="item">1-1-1</p>
+        <p class="item">2-2-2</p>
+        <p class="item">3-3-3</p>
+        <p class="item">4-4-4</p>
+        <p class="item">5-5-5</p>
+        <p class="item">6-6-6</p>
+        <p class="item">7-7-7</p>
+        <p class="item">8-8-8</p>
+        <p class="item">9-9-9</p>
+        <p class="item">10-10-10</p>
+        <h3 class="item">1-1</h3>
+        <h3 class="item">2-2</h3>
+        <h3 class="item">3-3</h3>
+        <h3 class="item">4-4</h3>
+        <h3 class="item">5-5</h3>
+    </div>
+</body>
+</html>

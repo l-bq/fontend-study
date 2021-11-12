@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<script>
+// 封装一个方法，检测完美数
+// 工作中，建议用多行注释描述这个方法
+function findNum(num) {
+    // 找出出来自身之外的所有约数，并求和
+    // 累加器
+    var sum = 0;
+    // 遍历
+    for (var i = 1; i < num; i++) {
+        // 找约数
+        if (num % i === 0) {
+            // 求和
+            sum += i;
+        }
+    }
+    // 判断完美数
+    if (sum === num) {
+        return true
+    } 
+    // else {
+    //     // 不是一个完美数
+    //     return false
+    // }
+    return false
+    // if 语句中，有return，else语句可以省略，
+}
+
+// 测试
+// console.log(findNum(6));
+// console.log(findNum(8));
+// console.log(findNum(10));
+
+// 寻找1000以内的完美数
+for (var i = 1; i <= 1000; i++) {
+    // 判断是不是完美数
+    if (findNum(i)) {
+        // 找到了完美数，打印出来。
+        console.log(i)
+    }
+}
+</script>
+<script>
+    // 复用
+    console.log(28, findNum(28))
+</script>
+<script src="./demo.js"></script>
+</body>
+</html>

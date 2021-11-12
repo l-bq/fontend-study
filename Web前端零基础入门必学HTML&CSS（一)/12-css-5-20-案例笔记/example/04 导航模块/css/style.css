@@ -1,0 +1,90 @@
+body {
+    background: url(../index.jpg) no-repeat center top;
+}
+/* 导航 */
+.nav {
+    height: 58px;
+    /* background-color: pink;
+    opacity: 0.5; */
+}
+.nav .nav-container {
+    background-color: #191d3a;
+    position: fixed;
+    left: 0;
+    right: 0;
+    height: 58px;
+    top: 0;
+}
+.nav .nav-inner {
+    margin: 0 auto;
+    height: 58px;
+    line-height: 58px;
+    width: 1000px;
+    /* background-color: pink; */
+}
+.nav .logo {
+    float: left;
+    margin-top: 12px;
+    margin-left: 20px;
+    width: 157px;
+    height: 35px;
+    text-indent: -999em;
+    background: url(../images/logo.png) no-repeat center;
+}
+.nav  ul {
+    float: left;
+    color: #fff;
+    margin-left: 50px;
+    text-align: center;
+}
+.nav  ul li {
+    float: left;
+}
+.nav .list-item {
+    height: 58px;
+    width: 85px;
+    /* 改变鼠标图形 */
+    cursor: pointer;
+    border-right: 1px solid #252847;
+}
+.nav .choose,
+.nav .list-item:hover {
+    background-color: #252847;
+}
+/* 加入我们 */
+.nav .last-item {
+    width: 100px;
+    height: 34px;
+    line-height: 34px;
+    background-color: #38b774;
+    margin-top: 12px;
+    margin-left: 14px;
+}
+.nav .nav-lang {
+    float: right;
+    color: #3a4866;
+}
+.nav .lang-zh {
+    color: #38b774;
+    margin-left: 15px;
+}
+/* 大图片 */
+.banner {
+    height: 460px;
+    /* background-color: green;*/
+    /* opacity: 0.5;  */
+}
+/* 内容区域 */
+.content {
+    height: 700px;
+    margin: 0 auto;
+    width: 1000px;
+    background-color: orange;
+    opacity: 0.5;
+}
+/* 页脚 */
+.footer {
+    height: 140px;
+    /* background: pink;
+    opacity: 0.5; */
+}

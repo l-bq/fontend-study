@@ -1,0 +1,215 @@
+/* 清空默认样式： reset.css */
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+a {
+    color: #000;
+    text-decoration: none;
+}
+/* 原子类 */
+.container {
+    width: 1128px;
+    margin: 0 auto;
+}
+/* 按钮 */
+.btn {
+    padding: 6px 20px;
+    border-radius: 6px;
+    color: #fff;
+    background-color: #e5004f;
+    text-align: center;
+    font-size: 14px;
+    display: inline-block;
+    position: relative;
+    padding-right: 30px;
+}
+.btn::before,
+.btn::after {
+    content: "";
+    position: absolute;
+    right: 12px;
+    top: 11px;
+    border: 6px solid transparent;
+    border-left-color: #fff;
+}
+.btn::after {
+    right: 14px;
+    border-left-color: #e5004f;
+}
+
+/* 定义状态栏 */
+.status {
+    height: 28px;
+    line-height: 28px;
+    font-size: 14px;
+    color: #fff;
+    /* background-image: -webkit-linear-gradient(top, #037ecc, #1bbae2); */
+    background-image: url(../imgs/topbar-bg.gif);
+}
+.status .container {
+    display: flex;
+    justify-content: flex-end;
+}
+.status span {
+    white-space: pre;
+}
+.status .user {
+    position: relative;
+    width: 20px;
+    margin-left: 50px;
+}
+.status .user:before {
+    content: "";
+    border-radius: 50%;
+    border: 1px solid #fff;
+    position: absolute;
+    top: 8px;
+    width: 6px;
+    height: 6px;
+}
+.status .user:after {
+    content: "";
+    border-radius: 50%;
+    border: 1px solid #fff;
+    border-bottom: none;
+    border-radius: 6px 6px 0 0;
+    position: absolute;
+    top: 14px;
+    left: -3px;
+    width: 12px;
+    height: 6px;
+}
+.status .text {
+    margin-right: 15px;
+}
+/* 导航部分 */
+.nav {
+    height: 50px;
+    line-height: 50px;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
+}
+.nav .container {
+    display: flex;
+    align-items: center;
+}
+.nav img {
+    width: 106px;
+    height: 22px;
+    margin-right: 60px;
+}
+.nav ul {
+    display: flex;
+    /* 占满剩余空间，将input挤到右侧去 */
+    flex: 1;
+}
+.nav li {
+    margin-right: 55px;
+}
+.nav .search {
+    position: relative;
+}
+.nav input {
+    padding: 6px 16px;
+    /* 外边框 */
+    outline: none;
+    border-radius: 16px;
+    border: 1px solid #999;
+}
+.nav .search .search-hover {
+    position: absolute;
+    font-size: 12px;
+    top: 21px;
+    right: 20px;
+    line-height: 1;
+}
+.nav .search .search-hover span {
+    margin-left: 6px;
+    background-color: #ccc;
+    padding: 2px 5px;
+}
+.banner .container {
+    position: relative;
+    height: 555px;
+    background: url(../imgs/5.jpg) no-repeat center top;
+}
+.banner .arrow {
+    position: absolute;
+    width: 42px;
+    height: 42px;
+    /* background-color: rgba(0, 0, 0, 0.5); */
+    top: 50%;
+    margin-top: -21px;
+    /* background-image: url(../imgs/right.png); */
+    background: rgba(0, 0, 0, 0.5) url(../imgs/right.png) no-repeat center;
+    right: 30px;
+    /* left: 30px; */
+}
+.banner .arrow1 {
+    left: 30px;
+    /* right: 30px; */
+    /* left: auto; */
+    background-image: url(../imgs/left.png);
+}
+/* 手机介绍模块 */
+.phone .container {
+    text-align: center;
+}
+.phone h2 {
+    font-weight: normal;
+    font-size: 36px;
+    padding: 40px 0 30px;
+}
+.phone .select-list {
+    display: flex;
+    justify-content: center;
+}
+.phone select {
+    width: 140px;
+    margin: 10px;
+    height: 30px;
+}
+.phone .range img {
+    vertical-align: middle;
+}
+.phone .range .btn {
+    background-color: #00b5e2;
+}
+.phone .range .btn::after {
+    border-left-color: #00b5e2;
+}
+.phone .content {
+    display: flex;
+    margin-top: 60px;
+    justify-content: center;
+}
+.phone .content img {
+    margin-right: 90px;
+}
+.phone .content .info {
+    flex-basis: 450px;
+    text-align: left;
+}
+.phone .content .info h3 {
+    font-size: 30px;
+    padding: 20px 0 10px;
+}
+.phone .content .info h3 span {
+    border: 1px solid #000;
+    border-radius: 3px;
+    font-size: 14px;
+    position: relative;
+    top:-10px;
+    padding: 1px 2px;
+}
+.phone .content .intro {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.phone .content .info p {
+    line-height: 40px;
+}
+.phone .content .info .btn {
+    margin-top: 40px;
+}

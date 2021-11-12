@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<script>
+// 定义数组
+var arr = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
+// 删除, 4, 5, 6
+// var result = arr.splice(4, 3)
+
+// 插入: 4 后面插入10， 11， 12， 13
+// var result = arr.splice(4, 0, 10, 11, 12, 13)
+// 不能写数组，否则数组将作为整体被插入
+// var result = arr.splice(4, 0, 10, [11, 12, 13])
+
+// 替换：将4， 5， 6换成20， 21， 22
+// var result = arr.splice(4, 3, 20, 21, 22)
+// 替换的成员不能放在数组中，此时数组将作为整体去替换
+var result = arr.splice(4, 3, 20, [21, 22])
+
+
+console.log(result, arr);
+</script>
+</body>
+</html>

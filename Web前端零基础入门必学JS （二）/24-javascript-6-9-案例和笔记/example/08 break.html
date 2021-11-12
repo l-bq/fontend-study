@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<script>
+// 输入一个正整数，找到比该数字大，离它最近的质数  50 => 53
+// var num = prompt('请输入一个正整数');
+// 判断非质数：
+// for (var i = 2; i < num - 1; i++) {
+//     console.log('before', i)
+//     // 判断约数
+//     if (num % i === 0) {
+//         // 就不是质素
+//         console.log(num + '不是一个质数')
+//         // 会在该位置中断循环语句
+//         break;
+//     }
+//     console.log('after', i)
+// }
+
+// 找到离它最近的质数 
+// for (; true; num++) {
+//     // 定义累加器
+//     var sum = 0;
+//     // 找到了质数就停止
+//     for (var i = 2; i <= num -1; i++) {
+//         // 判断是否有约数
+//         if (num % i === 0) {
+//             // 该数字不是质数
+//             sum++;
+//         }
+//     }
+//     // 如果sum大于0，就不是质数了
+//     if (sum > 0) {
+//         console.log(num + '不是一个质数')
+//     } else {
+//         console.log('找到了这个质数，就是' + num)
+//         break;
+//     }
+// }
+// for (; true; num--) {
+//     // 定义累加器
+//     var sum = 0;
+//     // 找到了质数就停止
+//     for (var i = 2; i <= num -1; i++) {
+//         // 判断是否有约数
+//         if (num % i === 0) {
+//             // 该数字不是质数
+//             sum++;
+//         }
+//     }
+//     // 如果sum大于0，就不是质数了
+//     if (sum > 0) {
+//         console.log(num + '不是一个质数')
+//     } else {
+//         console.log('找到了这个质数，就是' + num)
+//         break;
+//     }
+// }
+// 如果条件始终为真，工作中，常常用while代替for
+// while (true) {
+//     // 定义累加器
+//     var sum = 0;
+//     // 找到了质数就停止
+//     for (var i = 2; i <= num -1; i++) {
+//         // 判断是否有约数
+//         if (num % i === 0) {
+//             // 该数字不是质数
+//             sum++;
+//         }
+//     }
+//     // 如果sum大于0，就不是质数了
+//     if (sum > 0) {
+//         console.log(num + '不是一个质数')
+//     } else {
+//         console.log('找到了这个质数，就是' + num)
+//         break;
+//     }
+//     // 更改num
+//     num--;
+// }
+
+
+
+// 苹果5元一个，鸭梨4元一个，桃子1元一个。现在想用200元买100个水果，在控制台中列出所有可能性。
+// i 苹果， j 鸭梨， k 桃子
+// 遍历苹果
+ickt: for (var i = 0; i <= 100; i++) {
+    // 遍历鸭梨
+    for (var j = 0; j <= 100; j++) {
+        // 遍历桃子
+        for (var k = 0; k <= 100; k++) {
+            // 条件
+            if (i + j + k === 100 && i * 5 + 4 * j + 1 * k === 200) {
+                console.log(i, j, k)
+                // 终止最外层循环
+                break ickt;
+                // console.log(i, j, k)
+            }
+        }
+    }
+}
+</script>
+</body>
+</html>

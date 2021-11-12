@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+        .list1 {
+            background: green;
+            width: 800px;
+            /* 父容器浮动 */
+            float: left;
+        }
+        /* .list2 {
+            background: gold;
+        } */
+        .box1,
+        .box2,
+        .box3 {
+            width: 100px;
+            height: 100px;
+            float: left;
+        }
+        .box1 {
+            background: yellowgreen;
+        }
+        .box2 {
+            background: skyblue;
+        }
+        .box3 {
+            background: purple;
+        }
+        .box4 {
+            /* 清除浮动 */
+            clear: both;
+            height: 50px;
+            background: pink;
+        }
+    </style>
+</head>
+<body>
+    <div class="list1">
+        <!-- <span>aaaaa</span> -->
+        <div class="box1"></div>
+        <div class="box2"></div>
+        <div class="box3"></div>
+    </div>
+    <div class="box4"></div>
+    <!-- <div class="list2">
+        <div class="box4"></div>
+        <div class="box1"></div>
+        <div class="box2"></div>
+        <div class="box3"></div>
+    </div> -->
+</body>
+</html>

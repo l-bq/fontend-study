@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            border: 5px solid green;
+        }
+        span {
+            border: 1px solid #000;
+            background-color: pink;
+        }
+        .span1 {
+            margin-top: 20px;
+        }
+        .span2 {
+            margin-bottom: 20px;
+            /* 如果浮动，打乱了顺序 */
+            float: left;
+        }
+        .span3 {
+            padding-top: 30px;
+        }
+        .span4 {
+            padding-bottom: 30px;
+        }
+        .span5 {
+            display: inline-block;
+            /* 父盒子高度有最高的子盒子确定 */
+            height: 70px;
+        }
+        /* 容器 */
+        .container {
+            border: 5ox solid green;
+        }
+        .box1 {
+            width: 100px;
+            height: 100px;
+            background-color: pink;
+            /* word-wrap 打断单词 */
+            word-wrap: break-word;
+            display: inline-block
+        }
+        .box2 {
+            padding-bottom: 100px;
+            background-color: gold;
+            display: inline-block
+        }
+        .box3 {
+            padding-bottom: 50px;
+            width: 100px;
+            background-color: skyblue;
+            display: inline-block
+        }
+        .span6 {
+            background-color: yellowgreen;
+        }
+        .span7 {
+            background-color: teal;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <!-- 插入块元素: 将其隔IFC，切割后与块元素垂直并列 -->
+    <!-- <div class="container">
+        <span class="span1">span1</span>
+        <span class="span2">span2</span>
+        <span class="span3">span3</span>
+        <div></div>
+        <span class="span4">span4</span>
+        <span class="span5">span5</span>
+    </div> -->
+    <!-- 基线 -->
+    <!-- 在IFC下， -->
+    <!-- 1 inline元素的边缘是content-box -->
+    <!-- 2 inline-block元素的边缘是margin-box -->
+    <!-- 3 inline-block元素，如果没有内容，则基线与下边界对齐 -->
+    <!-- 4 inline-block元素，如果有内容，则基线与内容的基线对齐 -->
+    <!-- 5 inline-block元素，如果有多行内容，则基线与最后一行内容的基线对齐 -->
+    <!-- 6 inline元素，基线就是内容的基线 -->
+    <div class="container">
+        <div class="box2">ggg22222ggg</div>
+        <div class="box1">1111111111111111111111111ggg</div>
+        <div class="box3"></div>
+        <span class="span7"></span>
+        <span class="span6">ggg33333</span>
+    </div>
+</body>
+</html>

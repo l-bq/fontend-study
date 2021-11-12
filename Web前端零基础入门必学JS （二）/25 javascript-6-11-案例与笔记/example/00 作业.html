@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<script>
+// 盈数是一种特殊的自然数，除去它本身以外的一切正约数的和大于它本身。
+// 输出1~100的所有盈数。
+// 循环100次
+// for (var i = 1; i <= 100; i++) {
+//     // 定义累加器
+//     var sum = 0;
+//     // 寻找约数
+//     for (var j = 1; j < i; j++) {
+//         // 是不是约数
+//         if (i % j === 0) {
+//             // 累加器
+//             sum += j;
+//         }
+//     }
+//     // 判断结果
+//     if (sum > i) {
+//         // 找的结果
+//         console.log(i);
+//     }
+// }
+
+// 用户输入一个整数n：
+// 求1! + 2! + 3! + 4! + …… + n!的和
+// 叹号表示阶乘，如4! = 1 * 2 * 3 * 4
+var num = prompt('请输入一个正整数');
+// 外循环做累加，内循环做累乘
+var sum = 0;
+// 循环
+for (var i = 1; i <= num; i++) {
+    // 累乘器
+    var result = 1;
+    // 对i进行累乘
+    for (var j = 1; j <= i; j++) {
+        // 累乘
+        result *= j;
+    }
+    // 更新累加器
+    sum += result;
+}
+// 输出结果
+console.log(sum);
+
+</script>
+</body>
+</html>

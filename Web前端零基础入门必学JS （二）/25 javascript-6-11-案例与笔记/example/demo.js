@@ -1,0 +1,1 @@
+console.log(6, findNum(28))

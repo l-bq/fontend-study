@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<script>
+// 汽车
+var obj = {
+    color: 'red',
+    // 属性名可以用引号包裹，例如出现不合法的属性名称，可以添加引号
+    'car-num': 10,
+    "price": 100,
+    getColor: function() {},
+    size: {
+        width: 10,
+        height: 20,
+    },
+    num: [1, 2, 3, '4', null, false, true, undefined, NaN, Infinity]
+}
+// json
+var json = '{ "color": "red", "car-num": 10, "price": 100 }'
+// json语法要求很严格，出现错误，就无法转换了
+// var json = '{ "color": "red", "car-num": 10, "price": 100, }'
+// var json = '{ "color": "red", "car-num": 10, price: 100 }'
+// console.log(obj);
+
+// 将对象转成json字符串
+// 注意：函数被过滤掉
+// console.log(JSON.stringify(obj));
+console.log(JSON.parse(json));
+</script>
+</body>
+</html>

@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding:0 ;
+            margin: 0;
+            list-style-type: none;
+        }
+        .list {
+            width: 560px;
+            height: 300px;
+            margin: 50px auto;
+            position: relative;
+            overflow: hidden;
+        }
+        .container {
+            width: 4200px;
+            height: 300px;
+            font-size: 0;
+            position: absolute;
+            left: 0px;
+        }
+        .container img {
+            width: 560px;
+            height: 300px;
+        }
+        .prev,
+        .next {
+            position: absolute;
+            top:50%;
+            width: 30px;
+            height: 50px;
+            margin-top: -25px;
+            color: #fff;
+            background-color: rgba(0,0,0,0.6);
+            font-size: 30px;
+            text-align: center;
+            line-height: 50px;
+        }
+        .prev {
+            left: 0;
+        }
+        .next {
+            right: 0;
+        }
+        .btns {
+            position: absolute;
+            left: 0;
+            right: 0;
+            text-align: center;
+            bottom: 30px;
+        }
+        .btns span {
+            padding: 6px;
+            margin: 0 6px;
+            font-size: 0;
+            background-color:#fff;
+            border-radius: 50%;
+        }
+        .btns span.choose {
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="list">
+        <div class="container">
+            <img src="img/4.jpg" alt="">
+            <img src="img/0.jpg" alt="">
+            <img src="img/1.jpg" alt="">
+            <img src="img/2.jpg" alt="">
+            <img src="img/3.jpg" alt="">
+            <img src="img/4.jpg" alt="">
+            <img src="img/0.jpg" alt="">
+        </div>
+        <div class="btns">
+            <span class="choose"></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="prev"><</div>
+        <div class="next">></div>
+    </div>
+    <script src='./jquery.js'></script>
+    <script>
+        var $container = $('.container');
+        var $btns = $('.btns span');
+        // 维护当前显示图片的索引值
+        var index = 0;
+       
+        //  循环定时器
+        var timbar;
+        function startInterval() {
+            timbar = setInterval(function(){
+            console.log(index);
+            // 显示下一张
+            index++;
+            // 更改content位置
+            if(index >= 7) {
+            index = 0;
+        }
+            change();
+        
+        }, 3000);
+    }
+    
+    // 页面加载完成后，启动轮播
+    startInterval();
+    // 更改图片及按钮
+         function change(fn) {
+            $container.stop(true).animate({left: -index * 560},500,function(){
+            // 更新小圆点
+            $btns.eq(index - 1).addClass('choose')
+            // 兄弟节点，删除
+            .siblings().removeClass('choose');
+            // 启动轮播
+            if(fn){
+                fn();
+            }
+            // 修改猫腻图
+            if(index === 0) {
+                index = 4;
+                $container.css('left',-560 * 5);
+            } else if(index ===6 ) {
+                index = 1;
+                $container.css('left',-560 * 1);
+            }
+            
+        })
+        }
+        $btns.click(function(){
+            // 清除轮播
+            clearInterval(timbar);
+            // 获取索引值
+            // 更改container位置
+            index = $(this).index() + 1;
+            // 修改按钮位置
+            // 修改按钮样式
+            change(function(){
+                // 启动轮播
+                startInterval();
+            });
+        })
+        // 下一张
+        $('.next').click(function(){
+            // 清除定时器
+            clearInterval(timbar);
+            // 更换索引值
+            index++;
+            if(index >= 7) {
+                index = 0;
+            }
+            // 切换图片
+            change(startInterval);
+        });
+        $('.prev').click(function(){
+            // 清除定时器
+            clearInterval(timbar);
+            // 更换索引值
+            index--;
+            if(index < 0) {
+                index = 4;
+            }
+            // 切换图片
+            change(startInterval);
+        });
+    </script>
+</body>
+</html>

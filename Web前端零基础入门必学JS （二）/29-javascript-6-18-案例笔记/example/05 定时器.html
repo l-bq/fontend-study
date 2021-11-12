@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<script>
+// 单次定时器
+// console.log('start')
+// // 过两秒钟打印hello
+// // setTimeout(function() {
+// //     console.log('hello')
+// // }, 2000)
+// // 传递具名函数
+// // function demo() {
+// //     console.log('hello')
+// // }
+// // setTimeout(demo, 2000)
+// // 从第二个参数开始，表示传递的数据
+// var timebar = setTimeout(function() {
+//     console.log('hello', arguments)
+// }, 2000, 'ickt', 100, true)
+// // 清空定时器
+// clearTimeout(timebar)
+// // 定时器是异步的，不会堵塞后面程序的执行
+// console.log('end')
+
+
+// 循环定时器
+console.log('start')
+// 每隔1秒钟打印hello
+// setInterval(function() {
+//     console.log('hello')
+// }, 1000)
+// 传递具名函数
+// var demo = function() {
+//     console.log('hello')
+// }
+// setInterval(demo, 1000)
+// 给回调函数传递参数
+// 回调函数：给方法传递的参数函数就是回调函数。
+var timebar = setInterval(function() {
+    console.log('hello', arguments)
+}, 1000, 100, false, 'abc')
+// 中断执行
+clearInterval(timebar)
+// 定时器是异步的，不会堵塞后面程序的执行
+console.log('end')
+
+</script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+DOCTYPE     	文档类型
+html            页面标签
+head        	头部标签
+   	 title       	页面标题标签
+   	 base           页面基本信息
+        	target		打开链接方式
+                _blank      新窗口
+                _self       当前窗口
+       		href		相对地址 
+    link			引入外部资源标签
+        rel             外部资源关系  
+            shortcut icon   设置tab页上的小logo  
+    meta			页面配置标签
+        http-equiv      服务器配置信息
+        name            字段名称
+            keywords        关键字
+            description     描述
+        content         字段内容值
+        charset         编码格式
+            utf-8           字符集
+body        		页面正文标签
+    id              标签id
+    class           标签类
+    lang            语言
+    title           鼠标滑过显示的内容
+    style           定义样式
+img				图片标签
+    src             图片地址
+    alt             图片为加载时候显示的内容
+    onClick         点击事件
+    width           宽度
+    height          高度
+    border          边框
+h1-h6           标题标签
+p               段落标签

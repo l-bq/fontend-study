@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<script>
+// 无穷数（超过1.7976931348623157e+308）
+console.log(1.7976931348623157e+308);
+console.log(1.7976931348623157e+309);
+console.log(1/0);
+console.log(-1/0);
+// 特殊单词表示
+console.log(Infinity)
+console.log(-Infinity)
+
+// 如果一个小数比较接近0（小于5e-324），计算机还无法表示，此时将作为0来处理
+console.log(5e-324);
+console.log(5e-325);
+// 如果负数比较接近0，计算机无法表示，将变成-0
+console.log(-5e-324);
+console.log(-5e-325);
+
+// 非数字
+console.log(NaN);
+// 将字符串转成数字
+console.log(+'hello');
+
+// 可以通过0和1来实现-Infinify, +Infinify， 0， -0， NaN
+console.log('---------------------');
+console.log(-1/0);
+console.log(1/0);
+console.log(0/1);
+console.log(0/-1);
+console.log(0/0);
+
+</script>
+</body>
+</html>

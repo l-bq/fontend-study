@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 多个选择器设置!important，要考虑选择器的权重 */
+        /* #ickt strong {
+            color: pink!important;
+        }
+        #ickt {
+            color: gold!important;
+        }
+        .demo p strong { */
+            /* 权重是最大的 */
+            /* color: red!important;
+        }
+        div.demo strong {
+            color: green!important;
+        } */
+
+        /* 选中最外层div */
+        #ickt {
+            color: pink!important;
+        }
+        /* 选中的是p */
+        .demo p {
+             color: red!important;
+        }
+        p {
+            color: blue!important;
+        }
+        /* 选中的是具有demo类的div */
+        div.demo  {
+            color: green!important;
+        }
+    </style>
+</head>
+<body>
+    <div id="ickt">
+        <div>
+            <div class="demo">
+                <p>
+                    <span>
+                        <!-- <strong style="color: blue;">爱创课堂</strong> -->
+                        <!-- <strong style="color: blue!important;">爱创课堂</strong> -->
+                        <!-- 去离得最近的父元素上继承样式 -->
+                        <strong>爱创课堂</strong>
+                    </span>
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

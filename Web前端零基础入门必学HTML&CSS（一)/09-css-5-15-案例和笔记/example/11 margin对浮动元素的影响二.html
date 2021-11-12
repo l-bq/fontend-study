@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            width: 800px;
+            height: 800px;
+            background: gold;
+            margin: 0 auto;
+        }
+        .container div {
+            width: 100px;
+            height: 100px;
+            font-size: 50px;
+            color: red;
+            /* 浮动 */
+            float: left;
+        }
+        div.box1 {
+            background: green;
+            width: 200px;
+            margin-left: -100px;
+        }
+        div.box2 {
+            background: pink;
+            width: 300px;
+            /* 水平方向设置边距 */
+            margin-left: -500px;
+            opacity: 0.7;
+        }
+        div.box3 {
+            background: skyblue;
+            opacity: 0.7;
+            /* margin-left: -50px; */
+        }
+        /* 重写参考位置的容器 */
+        .ickt {
+            height: 100px;
+            background: rgb(180, 119, 162);
+        }
+        .ickt div {
+            margin-left: 0;
+        }
+        /* 结论 */
+        /* 让盒子2移动到盒子1的前面，盒子2移动的距离与盒子1无关，与盒子2与盒子1的宽度有关 */
+        /* 移动的距离：盒子2的宽度 + 盒子1的宽度 */
+        /* w代表自身宽度，d代表移动距离 */
+        /* 2贴1边： d2 = w1 + w2 */
+    </style>
+</head>
+<body>
+    <!-- 参考容器 -->
+    <div class="container ickt">
+        <div class="box1">1</div>
+        <div class="box2">2</div>
+        <div class="box3">3</div>
+    </div>
+    <div class="container">
+        <div class="box1">1</div>
+        <div class="box2">2</div>
+        <div class="box3">3</div>
+    </div>
+</body>
+</html>

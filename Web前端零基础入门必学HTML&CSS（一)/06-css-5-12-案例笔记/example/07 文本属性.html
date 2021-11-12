@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 文本设置样式 */
+        a {
+            color: red;
+            /* 文本修饰 */
+            /* text-decoration: none; */
+            /* 快捷键：tdn +  */
+            /* 上划线 */
+            /* text-decoration: overline; */
+            /* 删除线 */
+            text-decoration: line-through;
+        }
+        p {
+            width: 800px;
+            /* 首行缩进 */
+            /* em单位表示文字个数 */
+            text-indent: 2em;
+            /* font-size: 40px; */
+            /* fz + tab */
+            font-size: 18px;
+            /* 对其方式 */
+            /* 右侧对其 */
+            /* text-align: right; */
+            /* 居中对其 */
+            /* text-align: center; */
+            /* 两侧都对其 */
+            text-align: justify;
+        }
+        .demo-1 {
+            /* 字母之间距离 */
+            letter-spacing: 10px;
+        }
+        .demo-2 {
+            word-spacing: 20px;
+            letter-spacing: 10px;
+        }
+        img {
+            /* 居中对其 */
+            /* vertical-align: middle; */
+            /* 默认值是baseline */
+            /* 设置像素值 */
+            vertical-align: -100px;
+        }
+        /* 处理空白 */
+        .ickt {
+            /* 文本不换行 */
+            /* white-space: nowrap; */
+            /* 暴露空白 */
+            /* white-space: pre; */
+            /* 保留空白，正常换行 */
+            /* white-space: pre-wrap; */
+            /* 空白折叠，保留换行符 */
+            /* white-space: pre-line; */
+            width: 120px;
+            /* 边框 */
+            border: 1px solid green;
+        }
+        .ickt2 {
+            width: 100px;
+            border: 1px solid #000;
+            /* css3, 截取 */
+            text-overflow: ellipsis;
+            /* 配合white-space，不要换行 */
+            white-space: nowrap;
+            /* 移除隐藏 */
+            overflow: hidden;
+        }
+        /* 继承性 */
+        .ickt-3 {
+            color: red;
+            font-size: 30px;
+            text-decoration: overline;
+            line-height: 50px;
+            /* 不能继承 */
+            border: 1px solid green;
+        }
+    </style>
+</head>
+<body>
+    <!-- 继承性 -->
+    <div class="ickt-3">
+        div content
+        <p>hello ickt!</p>
+    </div>
+    <!-- white-space -->
+    <div class="ickt">
+        hello       ickt!
+        hello       ickt!
+    </div>
+    <!-- 截字 -->
+    <div class="ickt2">hello ickt! hello ickt!</div>
+    <!-- 字符|单词之间的距离 -->
+    <h1 class="demo-1">hello ickt！</h1>
+    <h1 class="demo-2">hello ickt！</h1>
+    <h1 class="demo-2">爱创 课堂</h1>
+    <!-- 对齐方式 -->
+    <p>hello icktggggfff <img src="./images/1.jpg" alt=""></p>
+    <!-- 字体修饰 -->
+    <a href="">hello ickt!</a>
+    <a href="#abc">hello ickt!</a>
+    <!-- 有css的替代方案了，该标签语义不强，被移除了 -->
+    <!-- <u>hello</u> -->
+    <!-- del是h5新增的，语义强 -->
+    <del>hello ickt</del>
+    <!-- 首行缩进 -->
+    <p>5月初的深圳，天气已经非常炎热。烈日当下，中介黄经理带了好几波客户看房。“我在罗湖水贝这边做了十几年的中介，算是见证了学位房市场的惊人变化。”黄经理打趣说，“这边有两个相似的小区，一个叫洪湖东岸，一个叫洪湖春天，相隔一条马路，东岸的楼龄还新一些，但目前二手房价格在每平方米5万到6万左右，洪湖春天小户型的售价已经超过每平方米11万元，因为是深圳中学初中部的学位房。”</p>
+    
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* id 斤， 类 两，  标签 钱 */
+        /* 3钱 */
+        /* div p strong {
+            color: red;
+        } */
+        /* 1两1钱 */
+        /* .demo strong {
+            color: green;
+        } */
+        
+        /* 比较权重的时候，一定要让选择器作用到元素上。 */
+        #ickt strong {
+            color: pink;
+        }
+        /* #ickt {
+            color: pink;
+        } */
+        /* 权重相同优先显示后面的绿色 */
+        /* 1两2钱 */
+        .demo p strong {
+            color: red;
+        }
+        div.demo strong {
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <div id="ickt">
+        <div>
+            <div class="demo">
+                <p>
+                    <span>
+                        <strong>爱创课堂</strong>
+                    </span>
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

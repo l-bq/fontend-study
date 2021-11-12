@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+        .list1 {
+            background: green;
+            width: 800px;
+            /* 内容溢出处理方式 */
+            /* 溢出隐藏 */
+            /* overflow: hidden; */
+            /* 有溢出出现滚动条 */
+            /* overflow: auto; */
+            /* 显示滚动条 */
+            /* overflow: scroll; */
+            /* 溢出显示，不能清除浮动 */
+            overflow: visible;
+        }
+        .box1,
+        .box2,
+        .box3 {
+            width: 100px;
+            height: 100px;
+            float: left;
+        }
+        .box1 {
+            background: yellowgreen;
+        }
+        .box2 {
+            background: skyblue;
+        }
+        .box3 {
+            background: purple;
+        }
+        .box4 {
+            height: 50px;
+            background: pink;
+        }
+    </style>
+</head>
+<body>
+    <div class="list1">
+        <div class="box1"></div>
+        <div class="box2"></div>
+        <div class="box3"></div>
+    </div>
+    <div class="box4"></div>
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<script>
+// 输入一个数，判断是否为质数
+var num = prompt('请输入一个正整数');
+// 累加器
+var sum = 0;
+// 遍历
+for (var i = 1; i <= num; i++) {
+    // 判断i是否是i的约数
+    if (num % i === 0) {
+        // 更新累加器
+        sum++;
+    }
+}
+// 判断质数
+if (sum === 2) {
+    console.log(num + '是一个质数');
+} else {
+    console.log(num + '不是一个质数')
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// // 不用看，后面会将开关技术，（节流）
+// // 开关 
+// var notRight = false;
+// // 不用累加器
+// // for (var i = 1; i <= num; i++) {
+// //     // 判断i是否是i的约数
+// //     if (num % i === 0) {
+// //         // 如果i不是1也不是num该num就不是质数
+// //         if (i !== 1 && i !== +num) {
+// //             // console.log(num + '不是一个质数')
+// //             // 不是只是
+// //             notRight = true;
+// //         }
+// //     }
+// // }
+// for (var i = 2; i <= num - 1; i++) {
+//     // 判断i是否是i的约数
+//     if (num % i === 0) {
+//         // 不是只是
+//         notRight = true;
+//     }
+// }
+// // 判断开关
+// if (notRight) {
+//     console.log(num + '不是一个质数')
+// } else {
+//     console.log(num + '是一个质数');
+// }
+</script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id='app' class="demo" style="color:green"></div>
+    <script>
+        var app = document.getElementById('app');
+        console.log(app.className);
+        // getattribute
+        console.log(app.getAttribute('class'));
+        // 获取style
+        // 可以通多点语法获得
+        console.log(app.style);
+        console.log(app.getAttribute("style"));
+        console.log(app.color);
+        console.log(app.getAttribute('color'));
+        console.log(app.id);
+        console.log(app.getAttribute('id'));
+
+        // 设置属性
+        app.className='hello ickt';
+        console.log(app.className);
+        app.setAttribute('class','ickt');
+        app.setAttribute('color','red');
+
+        // 新增
+        app.title='hello';
+        app.msg='hello';
+        app.setAttribute('title','ickt');
+    </script>
+</body>
+</html>

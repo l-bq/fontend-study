@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            margin: 50px;
+            border: 50px dashed green;
+            padding: 50px;
+            width: 400px;
+            height: 400px;
+            background-color: pink;
+            float: left;
+            font-size: 30px;
+        }
+        /* 默认是标准盒模型，是外扩的 */
+        /* 内减盒模型 */
+        .box2 {
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1">box1</div>
+    <div class="box2">box2</div>
+</body>
+</html>

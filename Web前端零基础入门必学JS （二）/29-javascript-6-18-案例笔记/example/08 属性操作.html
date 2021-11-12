@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="app" class="demo" color="red" style="color: green">hello ickt</h1>
+<script>
+// 获取元素
+// var app = document.getElementById('app')
+// // 可以通过点语法获取
+// console.log(app.className);
+// // getAttribute
+// console.log(app.getAttribute('class'));
+// // 获取style
+// // 可以通过点语法获取
+// console.log(app.style);
+// // getAttribute
+// console.log(app.getAttribute('style'));
+// // 获取自定义属性
+// // 可以通过点语法获取
+// console.log(app.color);
+// // getAttribute
+// console.log(app.getAttribute('color'));
+// // 其它属性没有区别
+// // 可以通过点语法获取
+// console.log(app.id);
+// // getAttribute
+// console.log(app.getAttribute('id'));
+
+// 修噶属性
+// app.className = 'demo ickt'
+app.setAttribute('class', 'ickt')
+// 自定义属性
+app.setAttribute('color', 'green')
+// 新增
+// app.title = 'hello'
+// app.msg = 'hello'
+app.setAttribute('title', '爱创课堂')
+app.setAttribute('data-num', 100)
+// 修改样式
+// 点语法要转成驼峰式命名，原有基础之上修改
+app.style.fontSize = '100px';
+// 按照css规则书写， 覆盖原有的
+// app.setAttribute('style', 'font-size: 100px')
+
+</script>
+</body>
+</html>

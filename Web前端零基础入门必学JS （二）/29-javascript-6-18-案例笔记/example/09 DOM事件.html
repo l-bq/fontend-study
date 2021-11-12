@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<script>
+// window是一个全局对象，包含dom的一些API，例如可以通过window监听页面加载完成
+window.onload = function() {
+    // 绑定事件监听用户与页面之间的交互。
+    var app = document.getElementById('app')
+    var inp = document.getElementById('inp')
+    console.log(app, inp)
+    // 监听点击h1元素
+    // app.onclick = function() {
+    //     console.log('click h1')
+    // }
+    // // 多次绑定，会导致后面的覆盖前面的，
+    // app.onclick = function() {
+    //     console.log('click h1 2222')
+    // }
+    // 双击
+    // function fn() {
+    //     console.log('click h1')
+    // }
+    // app.ondblclick = fn;
+    // 鼠标移入和移出
+    app.onmouseenter = function() {
+        console.log('mouseenter')
+    }
+    app.onmouseleave = function() {
+        console.log('onmouseleave')
+    }
+    // 输入框
+    inp.onfocus = function() {
+        console.log('获取焦点');
+    }
+    inp.onblur = function() {
+        console.log('失去焦点');
+    }
+}
+
+</script>
+</head>
+<body>
+    <h1 id="app" class="demo" color="red" style="color: green; background: pink;">hello ickt</h1>
+    <input id="inp" type="text" style="padding: 10px; margin-top: 50px;">
+<script>
+// // 绑定事件监听用户与页面之间的交互。
+// var app = document.getElementById('app')
+// var inp = document.getElementById('inp')
+// // 监听点击h1元素
+// // app.onclick = function() {
+// //     console.log('click h1')
+// // }
+// // // 多次绑定，会导致后面的覆盖前面的，
+// // app.onclick = function() {
+// //     console.log('click h1 2222')
+// // }
+// // 双击
+// // function fn() {
+// //     console.log('click h1')
+// // }
+// // app.ondblclick = fn;
+// // 鼠标移入和移出
+// app.onmouseenter = function() {
+//     console.log('mouseenter')
+// }
+// app.onmouseleave = function() {
+//     console.log('onmouseleave')
+// }
+// // 输入框
+// inp.onfocus = function() {
+//     console.log('获取焦点');
+// }
+// inp.onblur = function() {
+//     console.log('失去焦点');
+// }
+
+
+</script>
+</body>
+</html>
+<script>
+    console.log('页面加载完成了');
+</script>

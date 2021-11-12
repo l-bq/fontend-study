@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<script>
+// 定义字符串
+// var str = 'hello icketang';
+
+// 获取alt=hello
+// var reg = /e(?=[a-z])/g;
+// var reg = /e(?=l)/g;
+// var reg = /e(?!l)/g;
+
+var str = '<img alt="hello" />'
+var reg = /alt=(?="hello")/
+console.log(str.replace(reg, function() {
+    console.log(arguments);
+}));
+
+// () [] {} + * ? ^ $ . \ / |
+
+</script>
+</body>
+</html>

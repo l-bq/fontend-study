@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            background: pink;
+            height: 800px;
+        }
+        .box1 {
+            margin-top: 100px;
+            height: 200px;
+            background: green;
+            /* display: inline; */
+        }
+        .box2 {
+            /* 不是第一个子元素，不能传递margin */
+            /* margin-top: 100px; */
+            height: 200px;
+            background: gold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        container
+        <div class="box1"></div>
+        <div class="box2"></div>
+    </div>
+</body>
+</html>

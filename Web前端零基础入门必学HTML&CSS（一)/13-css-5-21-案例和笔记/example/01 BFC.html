@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+        .container {
+            border: 5px solid green;
+            height: 500px;
+            background-color: pink;
+        }
+        .container div {
+            /* margin: 50px 0; */
+        }
+        .box1 {
+            width: 100px;
+            height: 100px;
+            background-color: gold;
+            float: left;
+        }
+        .box2 {
+            width: 200px;
+            height: 200px;
+            background-color: skyblue;
+            /* 盒子设置为bfc之后，不会与浮动的盒子遮盖 */
+            /* display: inline-block; */
+            /* float: left; */
+            overflow: hidden;
+            /* position: absolute; */
+        }
+        .box3 {
+            width: 100px;
+            height: 100px;
+            background-color: yellowgreen;
+            float: left;
+        }
+        .container2 {
+            border: 5px solid green;
+            /* 触发bfc */
+            /* float: left; */
+            /* display: inline-block; */
+            /* position: absolute; */
+            overflow: hidden;
+        }
+        .box4 {
+            width: 100px;
+            height: 100px;
+            background-color: pink;
+            float: left;
+        }
+    </style>
+</head>
+<body>
+    <!-- 盒子设置为bfc之后，不会与浮动的盒子遮盖 -->
+    <!-- <div class="container">
+        <div class="box1"></div>
+        <div class="box2"></div>
+    </div>
+    <div class="box3"></div> -->
+    <!-- bfc计算高度要包括浮动 -->
+    <div class="container2">
+        <div class="box4"></div>
+    </div>
+</body>
+</html>

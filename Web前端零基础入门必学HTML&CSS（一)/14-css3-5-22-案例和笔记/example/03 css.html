@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background: url(./images/bannerdz01.png) no-repeat;
+            padding-left: 400px;
+        }
+        .box {
+            width: 200px;
+            height: 200px;
+            /* css中不存在的样式 */
+            ickt: hello;
+            background-color: pink;
+            /* 圆角 */
+            /* chrome，safari */
+            -webkit-border-radius: 50%;
+            /* ff: firefox */
+            -moz-border-radius: 50%;
+            /* IE */
+            -ms-border-radius: 50%;
+            /* opera */
+            -o-border-radius: 50%;
+            border-radius: 50%;
+            
+        }
+        .demo {
+            width: 100px;
+            height: 100px;
+            background-color: green;
+        }
+        /* 透明度 */
+        .box1 {
+            background-color: rgba(200, 100, 50, 0.5);
+        }
+        /* opacity设置透明 */
+        .box2 {
+            opacity: 0.5;
+        }
+        /* hsl */
+        .box3 {
+            background-color: hsl(200, 50%, 50%);
+            float: left;
+        }
+        .box4 {
+            background-color: hsla(200, 50%, 50%, 50%);
+            float: left;
+        }
+    </style>
+</head>
+<body>
+    <div class="box box1">
+        <div class="demo"></div>
+    </div>
+    <div class="box box2">
+        <div class="demo"></div>
+    </div>
+    <div class="box box3"></div>
+    <div class="box box4"></div>
+</body>
+</html>

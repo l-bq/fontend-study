@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 1 空白折叠， 2 换行符是否生效， 3 是否自动换行 */
+        .ickt {
+            width: 120px;
+            border: 1px solid green;
+            /* 默认： 1 空白折叠，2 换行符没有生效， 3 自动换行  */
+            /* 以下属性，参考默认值 */
+            /* pre 与默认相反 */
+            /* white-space: pre; */
+            /* nowrap 第三条改变：不会自动换行 */
+            /* white-space: nowrap; */
+            /* pre-line 第二条改变 换行符生效 */
+            /* white-space: pre-line; */
+            /* pre-wrap：前两项：1 空白没有折叠， 2 换行符生效 */
+            /* white-space: pre-wrap; */
+        }
+    </style>
+</head>
+<body>
+    <div class="ickt">
+        hello       ickt!
+        hello       ickt!!!!!!!!!!!!!! !!!!!!!!!! !!!!!!!!!!!!!!!!
+    </div>
+</body>
+</html>

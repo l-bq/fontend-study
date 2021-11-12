@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<script>
+// 输入分数
+var score = prompt('请输入分数');
+
+// 判断分数
+// 可以是表达式
+// switch (+score) {
+//     // case定义每一个条件
+//     case 100:
+//         alert('满分');
+//         // 跳出switch语句
+//         break;
+//     case 90:
+//     case 95:
+//         alert('优秀');
+//         // 跳出switch语句
+//         break;
+//     case 80:
+//         alert('良');
+//         // 跳出switch语句
+//         break;
+//     case 60:
+//         alert('及格');
+//         // 跳出switch语句
+//         break;
+//     // 默认值
+//     default:
+//         alert('不及格');
+//         // default是最后一个条件了，可以省略break，工作中，default都是写在最后面的。
+//         break;
+// }
+// switch (score) {
+//     // case定义每一个条件
+//     case 100:
+//         alert('满分');
+//         // 跳出switch语句
+//         break;
+//     case 90:
+//         alert('优秀');
+//         // 跳出switch语句
+//         break;
+//     case '90':
+//         alert('是优秀的');
+//         // 跳出switch语句
+//         break;
+//     case 80:
+//         alert('良');
+//         // 跳出switch语句
+//         break;
+//     case 60:
+//         alert('及格');
+//         // 跳出switch语句
+//         break;
+//     // 默认值
+//     default:
+//         alert('不及格');
+//         // default是最后一个条件了，可以省略break，工作中，default都是写在最后面的。
+//         break;
+// }
+
+// 让switch条件是true
+switch (true) {
+    // case定义每一个条件
+    case score == 100:
+        alert('满分');
+        // 跳出switch语句
+        break;
+    case score >= 90 && score < 100:
+        alert('优秀');
+        // 跳出switch语句
+        break;
+    case score >= 80 && score < 09:
+        alert('良');
+        // 跳出switch语句
+        break;
+    case score >= 60 && score < 80:
+        alert('及格');
+        // 跳出switch语句
+        break;
+    // 默认值
+    default:
+        alert('不及格');
+        // default是最后一个条件了，可以省略break，工作中，default都是写在最后面的。
+        break;
+}
+</script>
+</body>
+</html>

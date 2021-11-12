@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* .inp {
+            color: red;
+        } */
+        /* 伪类 */
+        /* .inp:focus {
+            color: red;
+        } */
+        /* 伪元素 */
+        /* .demo:before {
+            content: "before input";
+        } */
+        .container {
+            height: 300px;
+            width: 300px;
+            background: green;
+        }
+        /* 鼠标滑过container，让input文本变成红色 */
+        /* .container:hover input {
+            color: red;
+        } */
+        .container:HOVER input {
+            color: red;
+        }
+        /* 设置伪元素的语法不合法，伪元素只能添加在最后一个简单的选择器上 */
+        /* .container:before .demo { */
+        /* .container .demo:before {
+            content: "before div";
+            font-size: 50px;
+        } */
+        .container .demo:BEFORE {
+            content: "before div";
+            font-size: 50px;
+        }
+        /* love hate： link, visited, hover, active */
+        /* 链接样式 */
+        /* a:link {
+            color: red;
+        }
+        a:visited {
+            color: green;
+        }
+        a:hover {
+            color: orange;
+        }
+        a:active {
+            color: skyblue;
+        } */
+    </style>
+</head>
+<body>
+    <div class="container">
+        <input class="inp" type="text" value="hello">
+        <div class="demo"></div>
+    </div>
+    <a href="#/demo33"> link-1 </a> <br>
+    <a href="#/demo333"> link-2 </a> <br>
+    <a href="#/demo3333"> link-3 </a> <br>
+    <a href="#/demo33333"> link-4 </a> <br>
+    <a href="#/demo333333"> link-5 </a> <br>
+</body>
+</html>

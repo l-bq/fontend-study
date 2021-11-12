@@ -8,19 +8,23 @@
 </head>
 <body>
     <script>
-        var num = 1;
-        function fn1() {
-            // var num = 3;
-            function fn2() {
-                function fn3() {
-                    console.log(num);
+        function findNum(num) {
+            var sum = 0;
+            for(var i = 1; i < num; i++) {
+                if(num % i === 0) {
+                    sum += i;
                 }
-            fn3();
             }
-            fn2();
+            if(sum === num) {
+                return true;
+            }
+            return false;
         }
-        var num = 6;
-        fn1();
+        for (var i = 2; i < 1000; i++) {
+            if(findNum(i)) {
+                console.log(i);
+            }
+        }
 
     </script>
 </body>

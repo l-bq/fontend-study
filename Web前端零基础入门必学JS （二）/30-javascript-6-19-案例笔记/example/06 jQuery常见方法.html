@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            height: 80px;
+            border-right: 10px solid #f30;
+        }
+        div:first-child {
+            border-right-color: gold;
+        }
+    </style>
+</head>
+<body>
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+    <div>4</div>
+<script src="./jquery.js"></script>
+<script>
+// 获取元素
+// 工作中，我们常常将jQuery获取的元素存储在一个变量中，让$方法执行一次，后面就可以多次使用了
+var divs = $('div');
+// console.log(divs.length)
+// console.log(divs.size())
+// 设置样式
+divs.css('font-size', '50px')
+divs.css('borderBottom', '1px solid green')
+// 设置多个属性
+divs.css({
+    backgroundColor: 'pink',
+    // 像素单位可以省略
+    width: 400
+})
+// 获取样式
+// 第一个元素的样式
+// console.log(divs.css('border-right'))
+// console.log(divs.css('borderRight'))
+// console.log(divs.css('height'))
+// 想运算要转成字符串
+// console.log(parseInt(divs.css('height')) + 20)
+
+// 绑定事件
+// divs.on('click', function() {
+//     // this指向当前的元素
+//     // console.log(this)
+//     // this是js中的dom对象，因此要使用源生的方式操作
+//     // this.style.backgroundColor = 'skyblue'
+//     // 想使用jquery方式要转成jquery对象
+//     // 工作中，建议转成jq对象，因为兼容性更好，使用更方便
+//     $(this).css('backgroundColor', 'yellowgreen')
+// })
+// 事件简写
+// 给函数传递的方法，我们称之为回调
+divs.click(function() {
+    // 跟on方法一样，会对所有获取的元素绑定事件
+    console.log(this)
+})
+</script>
+</body>
+</html>

@@ -1,0 +1,131 @@
+/* 清空默认样式 */
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+/* 引入一个reset.css */
+/* table布局 */
+.nav {
+    display: table;
+    height: 50px;
+    width: 100%;
+    background: #f8f8f8;
+    /* 让行高与高度一致，可以垂直居中 */
+    line-height: 50px;
+    border-bottom: 1px solid #c9c9c9;
+}
+/* 对该模块的样式，设置命名空间 */
+.nav .nav-left {
+    display: table-cell;
+    width: 200px;
+}
+.nav .nav-left img {
+    width: 84px;
+    margin-left: 50px;
+}
+.nav .nav-right {
+    /* 右侧对齐 */
+    text-align: right;
+    padding-right: 50px;
+}
+/* 标题区域 */
+.banner {
+    background: #f8f8f8;
+    padding: 40px 0 60px;
+}
+.banner .banner-inner {
+    /* 居中 */
+    width: 900px;
+    margin: 0 auto;
+}
+.banner .banner-inner h1 {
+    font-size: 40px;
+    line-height: 70px;
+    margin-bottom: 30px;
+}
+.banner .banner-inner img {
+   width: 50px; 
+   /* 设置圆角 */
+   border-radius: 50%;
+   vertical-align: top;
+}  
+.banner .banner-inner .intro div {
+    display: inline-block;
+    margin-left: 8px;
+}
+.banner .banner-inner .intro p {
+    color: #999;
+    font-size: 12px;
+    margin-top: 6px;
+}
+/* 内容区域 */
+.main {
+    /* 居中 */
+    width: 900px;
+    margin: 0 auto;
+    font-size: 0;
+}
+/* 行内快布局 */
+.main .main-left {
+    /* 真实占用宽度：width + padding + border */
+    width: 610px;
+    display: inline-block;
+    border-right: 1px solid #ccc;
+    font-size: 16px;
+    padding-top: 40px;
+    padding-right: 40px;
+}
+.main .main-left p {
+    margin-bottom: 25px;
+    line-height: 26px;
+    text-align: justify;
+}
+.main .main-left img {
+    width: 100%;
+}
+.main .main-left h3 {
+    margin-bottom: 25px;
+}
+.main .main-right {
+    width: 249px;
+    /* width: 220px; */
+    display: inline-block;
+    font-size: 16px;
+    vertical-align: top;
+    padding-top: 40px;
+    font-size: 14px;
+}
+.main .main-right ul {
+    margin-left: 40px;
+}
+.main .main-right ul ul {
+    margin-left: 0;;
+}
+.main .main-right li {
+    margin-bottom: 30px;
+}
+/* .main .main-right ul li li */
+.main .main-right ul ul li {
+    border-bottom: 1px solid #ccc;
+    padding: 20px 0;
+    line-height: 22px;
+    margin-bottom: 0;
+}
+.main .main-right a {
+    color: #000;
+    text-decoration: none;
+}
+.main .main-right img {
+    width: 200px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+.footer {
+    text-align: center;
+    padding: 20px 0 10px;
+    line-height: 20px;
+    font-size: 12px;
+    color: #999;
+    border-top: 1px solid #ccc;
+}

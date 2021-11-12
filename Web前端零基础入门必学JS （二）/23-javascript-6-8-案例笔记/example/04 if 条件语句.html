@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<script>
+// 输入一个分数
+// var score = prompt('请输入分数')
+// 如果及格
+// if (score >= 60) {
+//     // 及格
+//     alert('分数及格')
+// } else {
+//     alert('分数没有及格')
+// }
+
+// 省略else
+// if (score >= 60) {
+//     alert('您的分数及格了')
+// }
+
+// 省略{}
+// if (score >= 60)
+//     // 及格
+//     alert('分数及格')
+//     // 不建议省略{},因为省略之后，只能在else之前写一条语句
+//     // alert('hello')
+// else
+//     alert('分数没有及格')
+
+// // 多条件
+// if (score == 100) {
+//     alert('满分')
+// // 第二个条件
+// } else if (score >= 90 && score < 100) {
+//     alert('优秀')
+// // 第三个条件
+// } else if (score >= 80 && score < 90) {
+//     alert('良')
+// // 第四个条件
+// } else if (score >= 60 && score < 80) {
+//     alert('及格')
+// // 默认情况下
+// } else {
+//     alert('不及格')
+// }
+
+// 多条件
+// if (score == 100) {
+//     alert('满分')
+// // 第二个条件
+// } else if (score >= 90 && score < 100) {
+//     alert('优秀')
+// // 第三个条件
+// } else if (score >= 80 && score < 90) {
+//     alert('良')
+// // 第四个条件
+// } else if (score >= 60 && score < 80) {
+//     alert('及格')
+// }
+// 可以省略else，此时以上条件不满足，将跳出if语句，执行后面语句
+
+// 跳楼现象
+// 满足一个条件，将跳出if语句，不会再往后匹配条件
+// if (score == 100) {
+//     alert('满分')
+// // 第二个条件
+// } else if (score >= 90) {
+//     alert('优秀')
+// // 第三个条件
+// } else if (score >= 80) {
+//     alert('良')
+// // 第四个条件
+// } else if (score >= 60) {
+//     alert('及格')
+// }
+
+// alert('您参加了考试')
+
+
+// if 嵌套
+// 法定结婚结婚年龄： 男22， 女20
+// var sex = prompt('输入性别')
+// var age = prompt('输入年龄')
+// // 判断性别
+// if (sex === '男') {
+//     // 如果大于等于22岁
+//     if (age >= 22) {
+//         alert('可以')
+//     } else {
+//         alert('不可以')
+//     }
+// } else {
+//     // 如果大于等于20岁
+//     if (age >= 20) {
+//         alert('可以')
+//     } else {
+//         alert('不可以')
+//     }
+// }
+
+
+// if 语句比较简单，可以简写成三元运算符
+var score = prompt('请输入分数')
+// 判断成绩
+// var result = score >= 60 ? '及格' : '不及格';
+// alert(result)
+// if (score >= 60) {
+//     // 及格
+//     alert('分数及格')
+// } else {
+//     alert('分数没有及格')
+// }
+// 三元运算符拓展：后两个部分可以是语句
+// score >= 60 ? alert('分数及格') : alert('分数没有及格');
+// 如果条件语句非常简单，可以简化，
+</script>
+</body>
+</html>

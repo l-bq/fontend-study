@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<script>
+// 定义三个数字
+var a = 10;
+var b = 20;
+var c = 30;
+// 一个变量存储一个数组，想用一个变量存储多个数据，可以使用数组
+// 数组是一个有序数据集合。
+// var arr = [10, 20, 30]
+var arr = [10, 20, 30, 40]
+// console.log(arr)
+// 通过索引值访问（从0开始计数了）
+console.log(arr[1])     // 20
+console.log(arr[0])     // 10
+// 修改数据，也要通过索引值
+arr[0] = 50;
+console.log(arr[0])
+
+// 查看成员总数
+console.log(arr.length)
+// 最后一个成员
+// console.log(arr[arr.length]);
+// 有效长度：0 - arr.length - 1;
+console.log(arr[arr.length - 1]);
+
+// 通过length为数组设置成员，数据就被拉长了
+arr[arr.length] = 100;
+// 无规律拉长，中间的成员是看不到的
+arr[10] = 60;
+arr[arr.length] = 'hello'
+arr[arr.length] = true
+
+console.log(arr)
+
+</script>
+</body>
+</html>

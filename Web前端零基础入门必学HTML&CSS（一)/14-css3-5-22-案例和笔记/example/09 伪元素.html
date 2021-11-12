@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* css3中建议使用::，开发pc端，要兼容ie6，7，8建议使用:，其它情况建议使用:: */
+        h1::before {
+            content: "hello";
+            color: red;
+        }
+        /* 后面插入 */
+        h1::after {
+            content: "专业前端技术培训学校";
+            color: gold;
+        }
+        /* 段落 */
+        p {
+            width: 400px;
+            border: 1px solid green;
+        }
+        /* 第一个字母 */
+        p::first-letter {
+            font-size: 50px;
+            color: red;
+        }
+        /* 第一行 */
+        p::first-line {
+            color: gold;
+        }
+        /* 选择文本 */
+        p::selection {
+            background-color: pink;
+        }
+    </style>
+</head>
+<body>
+    <h1>爱创课堂</h1>
+    <p>爱创课堂-专业前端技术培训学校！爱创课堂-专业前端技术培训学校！爱创课堂-专业前端技术培训学校！爱创课堂-专业前端技术培训学校！爱创课堂-专业前端技术培训学校！爱创课堂-专业前端技术培训学校！爱创课堂-专业前端技术培训学校！</p>
+</body>
+</html>

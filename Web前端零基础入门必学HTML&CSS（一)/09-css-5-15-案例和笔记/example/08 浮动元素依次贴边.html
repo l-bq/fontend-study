@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+        .container {
+            width: 800px;
+            height: 800px;
+            background: orange;
+            margin: 20px auto;
+        }
+        .container div {
+            /* 可以贴到浮动元素上显示 */
+            /* float: left; */
+            /* 另起一行显示 */
+            display: inline-block;
+            font-size: 50px;
+        }
+        .box1 {
+            width: 100px;
+            height: 600px;
+            background: gold;
+        }
+        .box2 {
+            /* width: 200px; */
+            /* 增加老二宽度 */
+            width: 400px;
+            /* height: 500px; */
+            /* 降低2的高度 */
+            height: 200px;
+            background: green;
+        }
+        .box3 {
+            /* width: 400px; */
+            /* 减少老三宽度 */
+            width: 200px;
+            height: 300px;
+            background: pink;
+        }
+        .box4 {
+            width: 300px;
+            height: 100px;
+            background: skyblue;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box1">1</div>
+        <div class="box2">2</div>
+        <div class="box3">3</div>
+        <div class="box4">4</div>
+    </div>
+</body>
+</html>

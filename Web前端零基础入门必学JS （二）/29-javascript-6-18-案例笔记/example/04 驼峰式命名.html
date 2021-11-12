@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<script>
+// 驼峰式命名：从第二个单词开始，首字母大写
+var str = 'border-left-color';
+// var result = str.replace(/-(\w)/g, function(match, $1) {
+//     // console.log($1);
+//     return $1.toUpperCase()
+// })
+// 只需要将小写字母转成大写的。
+var result = str.replace(/-([a-z])/g, function(match, $1) {
+    // console.log($1);
+    return $1.toUpperCase()
+})
+console.log(result);
+</script>
+</body>
+</html>

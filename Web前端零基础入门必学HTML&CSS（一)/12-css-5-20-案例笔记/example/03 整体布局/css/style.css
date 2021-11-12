@@ -1,0 +1,27 @@
+body {
+    background: url(../index.png) no-repeat center top;
+}
+/* 导航 */
+.nav {
+    height: 58px;
+    background-color: pink;
+    opacity: 0.5;
+}
+/* 大图片 */
+.banner {
+    height: 460px;
+    background-color: green;
+    opacity: 0.5;
+}
+/* 内容区域 */
+.content {
+    height: 700px;
+    background-color: orange;
+    opacity: 0.5;
+}
+/* 页脚 */
+.footer {
+    height: 140px;
+    background: pink;
+    opacity: 0.5;
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<script>
+// 定义数组
+var arr = [1, 2, 3, 4, 5];
+
+// 删除末尾成员
+// var result = arr.pop();
+// 添加成员
+// var result = arr.push(10);
+// var result = arr.push(10, 20, 30);
+// 删除第一个成员
+// var result = arr.shift();
+// 添加成员
+// var result = arr.unshift(0);
+// var result = arr.unshift(0, -1, -2);
+// console.log(result, arr);
+
+// 堆栈
+// 最后一个成员后进，先出
+// arr.push(6)
+// console.log(arr);
+// arr.pop();
+// console.log(arr)
+
+// 队列
+// 最会一个成员后进，后出
+// arr.push(6);
+// console.log(arr);
+// arr.shift();
+// console.log(arr);
+
+// 数组
+var arr = ['春', '晓', '秋', '冬'];
+// 后面的删除一个
+// var item = arr.pop();
+// // 前面插入成员
+// arr.unshift(item);
+// 合并一步
+arr.unshift(arr.pop())
+console.log(arr);
+</script>
+</body>
+</html>

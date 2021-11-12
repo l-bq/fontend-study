@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 伪元素 */
+        h1:before {
+            /* 必须设置content属性 */
+            content: "before content";
+            color: red;
+            font-size: 50px;
+            display: block;
+        }
+        /* 后面插入伪元素 */
+        h1:after {
+            content: "after content";
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="box">hello</h1>
+</body>
+</html>

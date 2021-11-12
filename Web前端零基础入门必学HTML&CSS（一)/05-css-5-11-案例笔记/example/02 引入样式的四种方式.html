@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 在style之前引入link -->
+    <link href="./css/style1.css" rel="stylesheet" type="text/css" />
+    <!-- 2 内嵌式样式 -->
+    <!-- type： 说明style标签是一个css文本标签 -->
+    <style type="text/css">
+        /* 修改p的样式 */
+        p {
+            color: green;
+            font-size: 50px;
+        }
+        /* 修改a标签颜色 */
+        a {
+            color: red;
+        }
+    </style>
+    <!-- 3 外链式 -->
+    <!-- href属性引入样式文件 -->
+    <!-- type属性表示该文件的类型是css文本 -->
+    <!-- rel属性表示文件与页面的关系 -->
+    <!-- <link href="./css/style1.css" rel="stylesheet" type="text/css" /> -->
+    <!-- <link href="./css/1.css" rel="stylesheet" type="text/css" /> -->
+    <!-- 4 导入式 -->
+    <!-- <style type="text/css">
+        @import url("./css/style2.css");
+    </style> -->
+    <!-- 还可以在css文件中导入 -->
+    <!-- <link rel="stylesheet" href="./css/import.css" type="text/css"> -->
+    <title>Document</title>
+</head>
+<body>
+    <!-- 1 行内式添加样式 -->
+    <!-- color: 设置字体颜色 -->
+    <!-- font-size: 设置字体大小 -->
+    <!-- 问题 -->
+        <!-- 1 样式和html耦合在一起了 -->
+        <!-- 2 不能复用 -->
+    <!-- <p style="color: red; font-size: 50px" >爱创课堂</p>
+    <p style="color: red; font-size: 50px">爱创课堂</p>
+    <p>爱创课堂</p> -->
+
+    <!-- 内嵌式 -->
+    <p>爱创课堂</p>
+    <p>爱创课堂</p>
+    <p>爱创课堂</p>
+    <!-- <ul>
+        <li>
+            <p><a href="">蛋壳公寓回应App遭iOS下架：正在处理中，老用户不受影响</a></p>
+            <a href=""><img src="./img/5.jpg" alt=""></a>
+        </li>
+        <li>
+            <p><a href="">镇德桥镇：助推新时代基层武装“星级达标”工作再上台阶</a></p>
+            <a href=""><img src="./img/6.jpg" alt=""></a>
+        </li>
+        <li>
+            <p><a href="">塞北清华！合并普通高校就能打造双一流？</a></p>
+            <a href=""><img src="./img/7.jpg" alt=""></a>
+        </li>
+        <li>
+            <p><a href="">国泰君安证券策略：经济和政策的空窗期也要保持警醒</a></p>
+            <a href=""><img src="./img/8.jpg" alt=""></a>
+        </li>
+    </ul> -->
+</body>
+</html>

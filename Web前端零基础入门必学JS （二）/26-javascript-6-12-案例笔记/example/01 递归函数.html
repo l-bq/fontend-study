@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<script>
+// // 定义函数
+// function demo(num) {
+//     // 设置临界条件
+//     if (num <= 1) {
+//         // 当num到达1的时候，就停止递归了
+//         return 1;
+//     }
+//     // 递归函数就是在函数内部调用该函数
+//     return num + demo(num - 1)
+// }
+// // 执行demo
+// var result = demo(5);
+// // 运行顺序
+// // 5 + demo(5 - 1)                          => 5 + demo(4)
+// // 5 + (4 + demo(4 - 1))                    => 5 + (4 + demo(3))
+// // 5 + (4 + (3 + demo(3 - 1)))              => 5 + (4 + (3 + demo(2)))
+// // 5 + (4 + (3 + (2 + demo(2 - 1))))        => 5 + (4 + (3 + (2 + demo(1))))
+// // 5 + (4 + (3 + (2 + 1)) 
+
+// console.log(result);
+
+
+// 波非那切数列
+function ickt(num) {
+    // 临界条件
+    if (num === 1 || num === 2) {
+        // 前两项都是 1 
+        return 1;
+    }
+    // 当前项等于前两项之和
+    return ickt(num - 1) + ickt(num - 2);
+}
+// 测试
+console.log(ickt(1))
+console.log(ickt(2))
+console.log(ickt(3))
+console.log(ickt(4))
+console.log(ickt(5))
+console.log(ickt(6))
+console.log(ickt(7))
+
+</script>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<script>
+// 与，或，非
+// console.log(true && true)
+// console.log(true && false)
+// console.log(true || false)
+// console.log(false || false)
+// console.log(!true)
+// console.log(!false)
+
+// !!可以将任何数据转成布尔值。
+// console.log(!!false);
+// 对任何数据求布尔值
+// console.log(!!0);
+// console.log(!!'');
+// console.log(!!NaN);
+// console.log(!!null);
+// console.log(!!undefined);
+// console.log(!!false);
+// // 其余的数据，转成布尔值都是true
+// console.log(!!Infinity);
+// console.log(!!100);
+// console.log(!!'hello');
+
+// // 短路语法
+// console.log('hello' && 100);
+// console.log(0 && 100);
+// // 逻辑或
+// console.log('hello' || 100);
+// console.log(0 || 100);
+
+// 联系
+// console.log(false || !false && false || true);  // true
+// console.log(false || !false && false || 100);   // 100
+// // console.log(false || (!false && 200) || 100);     // 200
+// console.log(false || false && 200 || 100);      // 100
+// console.log(false || (false && 200) || 100);      // 100
+
+// console.log(4 && "hello" || !false || (!true && null));
+console.log(4 && "hello" || !false || !true && null);
+
+
+</script>
+</body>
+</html>

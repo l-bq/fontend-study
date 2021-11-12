@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // var str = "hello ickt"; 
+        // // 大写
+        // var result = str.toUpperCase();
+        // console.log(result);
+        // // 小写
+        // console.log(result.toLowerCase());
+
+
+        // var str = '0123456789';
+        // // 截取3,4,5，包含起始位置，不包含终止位置
+        // console.log(str.slice(3,6));
+        // console.log(str.substring(3,6));
+        // // 从3开始截取3个
+        // console.log(str.substr(3,3));
+
+        // // 负数截取，从后向前数，截取4,5，6
+        // console.log(str.slice(-6,-3));    //相当于（4,7）
+        // // 负数变成0
+        // console.log(str.substring(-3,6)); //相当于（0,6）
+        // // 从3开始截取3个
+        // console.log(str.substr(-3,3));  //相当于（7,3）
+        // console.log(str.substr(-26,3));  //相当于（-16,3）
+        // console.log(str.substr(-26,-5));  //相当于（-16,0）
+
+
+        var str = '0123456789';
+        // 截取不到
+        console.log(str.slice(6,3));
+        // 颠倒位置
+        console.log(str.substring(6,3));  //相当于substring(3,6)
+        // 没有影响
+        console.log(str.substr(6,2));  //从6开始截取两个
+
+        // 测试
+
+        console.log(str.slice(-2,-8));      //相当于slice(8,2)
+        console.log(str.substring(-2,-8));  //相当于substring(8,0)
+        console.log(str.substring(2,-8));  //相当于substring(2,0)->substring(0,2)
+        console.log(str.substr(-2,-5));     //相当于substr(8,0)
+        </script></body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            width: 400px;
+            height: 400px;
+            margin: 50px;
+            border: 5px solid green;
+            /* 设置渐变 */
+            /* 线性渐变 */
+            /* 兼容浏览器添加前缀 */
+            /* background-image: -webkit-linear-gradient(); */
+            /* background-image: -webkit-linear-gradient(top, green, orange, red); */
+            /* 左上角 */
+            /* background-image: -webkit-linear-gradient(top left, green 0%, orange 80%, red 100%); */
+
+            /* 径向渐变 */
+            /* 默认是圆形 */
+            /* background-image: -webkit-radial-gradient(red, green, blue); */
+            /* 还存在兼容性问题 */
+            /* 椭圆形状 */
+            /* background-image: -webkit-radial-gradient(ellipse, red, green, blue);
+            background-image: -moz-radial-gradient(ellipse, red, green, blue); */
+            /* 渲染位置 */
+            /* background-image: -webkit-radial-gradient(circle at 50px 50px, red, green, blue); */
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+</body>
+</html>

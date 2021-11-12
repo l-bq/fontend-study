@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 共用的样式 */
+        .box {
+            height: 100px;
+            font-size: 50px;
+        }
+        /* 媒体查询 */
+        @media screen and (max-width: 800px) {
+            /* 小屏幕 */
+            .box {
+                background-color: pink;
+                color: blue;
+                /* font-size: 50px; */
+            }
+        }
+        /* 中型屏幕 */
+        @media screen and (max-width: 1000px) and (min-width: 801px)  {
+            .box {
+                background-color: gold;
+                color: skyblue;
+            }
+        }
+        /* 大屏幕 */
+        @media screen and (min-width: 1001px) {
+            .box {
+                background-color: green;
+                color: red;
+                /* font-size: 50px; */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box">hello 爱创课堂</div>
+</body>
+</html>

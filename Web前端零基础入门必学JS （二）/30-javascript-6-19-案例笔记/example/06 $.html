@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div></div>
+    <h1>hello</h1>
+    <div class="container">
+        <p>1</p>
+        <p>2</p>
+        <p>3</p>
+        <p class="demo">4</p>
+    </div>
+    <h2 class="demo"></h2>
+    <div id="app"></div>
+    <div color="red"></div>
+<!-- 引入jq -->
+<script src="./jquery.js"></script>
+<script>
+// // 通过$方法获取div
+// var div = $('div');
+// // div.html('hello')
+// // 我们一定要区分开jquery对象和js对象
+// // jquery对象只能使用jquery方法
+// // js对象不能使用jqiuery方法
+
+// // jq对象转成js对象
+// // jq对象是类数组对象，通过下标可以获取js对象
+// div[0].innerHTML = 'abc'
+// console.log(div[0])
+
+// jquery支持css2.1以及css3的选择器
+// console.log($('div'));
+// console.log($('#app'));
+// console.log($('.demo'));
+// // 组合形式
+// console.log($('h2.demo'));
+// console.log($('[color=red]'));
+// console.log($('.container p:first-child'));
+// console.log($('p:first'));
+// console.log($('p:last'));
+// // 从0开始计数
+// console.log($('p:even'));
+
+// 二次筛选
+// console.log($('div').eq(1))
+// console.log(jQuery('div').eq(1))
+
+// 获取将window转成jquery
+// 转成jquery对象后，就可以使用jquery的一些方法了
+console.log($(window))
+console.log($(document))
+console.log($(function() {}))
+console.log($([]))
+console.log($({}))
+console.log($(''))
+
+</script>
+</body>
+</html>

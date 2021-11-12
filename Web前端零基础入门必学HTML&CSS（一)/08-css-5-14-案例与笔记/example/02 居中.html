@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+        /* 单行为本居中 */
+        .box1 {
+            width: 200px;
+            height: 200px;
+            border: 1px solid #000;
+            /* 水平方向 */
+            text-align: center;
+            /* 垂直方向 */
+            /* 让行高与高度一致 */
+            line-height: 200px;
+        }
+        .box2 {
+            width: 200px;
+            /* height: 200px; */
+            border: 1px solid #000;
+            margin-top: 20px;
+            line-height: 30px;
+            /* 水平方向 */
+            text-align: center;
+            /* 垂直方向 */
+            /* 通过padding来设置高度 */
+            padding: 90px 0;
+        }
+        .container {
+            width: 300px;
+            height: 300px;
+            border: 1px solid #000;
+            margin-top: 20px;
+            /* 行内元素：设置容器元素 */
+            /* 水平居中 */
+            /* text-align: center; */
+            /* 垂直居中 */
+            /* line-height: 300px; */
+            
+            /* 让块元素居中，可以设置上下padding */
+            /* padding: 200px 0; */
+
+            /* 行内块元素 */
+            /* 水平居中 */
+            text-align: center;
+            /* 垂直居中 */
+            line-height: 300px;
+        }
+        .box3 {
+            width: 100px;
+            height: 100px;
+            background: green;
+            margin: 0 auto;
+            /* 如果已知高度，设置margin-top，但是不要塌陷 */
+            /* margin-top: 100px; */
+            /* margin: 100px auto; */
+            /* 如果父容器高度不确定，可以在父容器中，设置padding居中 */
+        }
+        img {
+            width: 120px;
+            height: 80px;
+            /* 注意：垂直居中的时候，要更改图片的对其方式 */
+            vertical-align: middle;
+        }
+        /* 模拟表格实现居中 */
+        .ickt {
+            width: 600px;
+            height: 600px;
+            border: 10px solid pink;
+            /* 模拟表格 */
+            display: table-cell;
+            /* 水平居中 */
+            text-align: center;
+            /* 垂直居中 */
+            vertical-align: middle;
+        }
+    </style>
+</head>
+<body>
+    <!-- 通过表格居中 -->
+    <!-- 借助于表格特性，我们可以将单行文本，多行文本，行内元素，块元素，行内块元素等，实现居中 -->
+    <div class="ickt">
+        hello
+        <br>
+        hello ickt;
+        <span>span</span>
+        <div>div</div>
+        <img src="./img/7.jpg" alt="">
+    </div>
+    <!-- 表格 -->
+    <table border="1" width="500" height="500" align="center">
+        <tbody>
+            <tr>
+                <!-- th设置居中，会将字体加粗 -->
+                <!-- 单行文本 -->
+                <!-- <td align="center">
+                    hello ickt!
+                </td> -->
+                <!-- 多行文本 -->
+                <!-- <td align="center">
+                    hello ickt!
+                    <br>
+                    hello ickt!
+                </td> -->
+                <!-- 行内元素 -->
+                <!-- <td align="center">
+                    <span>hello</span>
+                </td> -->
+                <!-- 块元素 -->
+                <!-- <td align="center">
+                    <div>hello ickt!</div>
+                </td> -->
+                <!-- 行内块元素 -->
+                <td align="center">
+                    <img src="./img/7.jpg" alt="">
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <!-- 文本居中 -->
+    <div class="box1">
+        hello ickt!
+    </div>
+    <div class="box2">
+        hello ickt!
+        <br>
+        hello ickt!
+        hello ickt!
+    </div>
+    <!-- 盒子居中 -->
+    <div class="container">
+        <!-- 行内元素 -->
+        <!-- <span>hello</span> -->
+        <!-- <div class="box3">hello</div> -->
+        <img src="./img/7.jpg" alt="">
+    </div>
+</body>
+</html>

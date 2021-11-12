@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<script>
+// 函数封闭数据
+// function demo() {
+//     // 内部的数据：变量
+//     var num = 10;
+//     // 内部的语句
+//     console.log(num)
+// }
+// demo()
+// 外部不能访问内部的数据
+// console.log(num)
+
+// 在函数内部定义一个函数，内部函数可以访问外部函数的数据
+// function demo() {
+//     // 定义变量
+//     var num = 10;
+//     // 定义内部函数
+//     function inner() {
+//         console.log(num)
+//     }
+//     // 执行函数，访问数据
+//     inner();
+// }
+// demo();
+// 如果将内部的函数，暴露在外部，就可以在外部访问内部的数据了
+// function demo() {
+//     // 定义变量
+//     var num = 10;
+//     // 定义内部函数
+//     function inner() {
+//         console.log(num)
+//     }
+//     // 将内部的函数暴露出来
+//     return inner
+// }
+// // 此时demo执行的结果就是内部的inner函数
+// var outer = demo();
+// console.log(outer)
+// // 通过outer访问demo内部的数据
+// outer();
+// outer();
+// outer();
+// outer();
+// outer();
+
+// function demo() {
+//     // 外部环境中的数据是可以改变的。
+//     var num = 10;
+//     // 内部函数
+//     return function inner() {
+//         num++;
+//         console.log(num)
+//     }
+// }
+// // 获取闭包
+// var outer = demo();
+// outer();
+// outer();
+// outer();
+// outer();
+// outer();
+
+// // 每一次执行demo，都会得到一个全新的外部环境和内部语句
+// var outer1 = demo();
+// outer1()
+// outer1()
+// outer1()
+// // 此时环境都是全新的了
+// var outer2 = demo();
+// outer2();
+// outer2();
+// outer2();
+// // 再次执行，又是新的了
+// var outer3 = demo();
+// outer3();
+// outer3();
+// outer3();
+// outer3();
+
+// // 总结
+// // 1 执行一次demo函数，闭包inner函数每次执行，外部的环境可能会变化
+// // 2 多次执行demo函数。闭包inner函数都会获取一个全新的内部环境和外部环境。
+
+// // 变量
+// function init(x, y) {
+//     // 返回一个闭包
+//     // 由于在外部，不需要知道闭包函数的名称，所以可以写成匿名函数
+//     return function(y) {
+//         // x使用的是外部的，y使用的是内部的。
+//         console.log(x + y)
+//     }
+// }
+// // 注意：闭包函数本身也具有一个作用域，因此与外界产生命名冲突的时候，根据作用域链原则，会优先使用内部的数据、
+// var add = init(2, 4)
+// // 计算结果
+// add(5)
+// add(6)
+// add(7)
+
+var num = 1;
+function a() {
+    num++;
+    console.log(num)
+}
+a()
+a()
+a()
+// 变量放在全局无法被保护，因此所有函数都有权利去修改它。
+function b() {
+    num += 2;
+    console.log(num)
+}
+b()
+
+</script>
+</body>
+</html>

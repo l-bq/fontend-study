@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/bootstrap.css" />
+    <title>Document</title>
+    <style>
+        .row div {
+            background-color: green;
+            height: 50px;
+            color: #fff;
+            font-size: 40px;
+            /* 不要设置间距，会打乱 */
+            /* margin: 0 10px; */
+            margin-bottom: 20px;
+        }
+        .container {
+            background-color: orange;
+        }
+    </style>
+</head>
+<body>
+    <!-- 容器 -->
+    <div class="container">
+        <!-- 行 -->
+        <div class="row">
+            <!-- 列, lg, md, sm, xs -->
+            <div class="col-lg-1 col-md-1">1</div>
+            <div class="col-lg-1 col-md-1">2</div>
+            <div class="col-lg-1 col-md-1">3</div>
+            <div class="col-lg-1 col-md-1">4</div>
+            <div class="col-lg-1 col-md-1">5</div>
+            <div class="col-lg-1 col-md-1">6</div>
+            <div class="col-lg-1 col-md-1">7</div>
+            <div class="col-lg-1 col-md-1">8</div>
+            <div class="col-lg-1 col-md-1">9</div>
+            <div class="col-lg-1 col-md-1">10</div>
+            <div class="col-lg-1 col-md-1">11</div>
+            <div class="col-lg-1 col-md-1">12</div>
+            <div class="col-lg-1 col-md-1">13</div>
+            <div class="col-lg-3 col-md-3">333</div>
+            <!-- <div class="col-lg-5 col-lg-offset-1">555</div> -->
+            <!-- <div class="col-lg-5 col-lg-offset-2">555</div> -->
+            <div class="col-lg-5 col-lg-offset-5  col-md-5  col-md-offset-5">555</div>
+        </div>
+    </div>
+</body>
+</html>

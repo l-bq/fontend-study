@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+/* 原子类 */
+.center {
+    width: 1190px;
+    margin: 0 auto;
+}
+/* 清空浮动 */
+.clearfix:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+/* 导航 */
+.nav {
+    line-height: 80px;
+}
+.nav img {
+    vertical-align: middle;
+}
+.nav .logo {
+    float: left;
+    margin-top: 19px;
+    margin-right: 50px;
+}
+/* 导航的列表 */
+.nav ul {
+    float: left;
+}
+.nav ul li {
+    float: left;
+    height: 75px;
+    padding: 0 10px;
+    margin: 0 20px;
+    text-align: center;
+    font-size: 16px;
+    /* 5像素透明上边框，占位置 */
+    border-top: 5px solid transparent;
+}
+.nav ul li.choose,
+.nav ul li:hover {
+    border-top: 5px solid #f30;
+    color: #f30;
+}
+.nav .nav-right {
+    float: right;
+}
+.nav .nav-right img,
+.nav .nav-right span {
+    float: left;
+}
+.nav .nav-right img {
+    margin-top: 25px;
+}
+.nav .nav-right span {
+    border: 5px solid transparent;
+    border-top-color: #f30;
+    /* font-size: 0; */
+    /* vertical-align: middle; */
+    margin-top: 38px;
+    margin-left: 6px;
+}
+/* banner图片 */
+.banner {
+    /* 图片居中 */
+    text-align: center;
+    /* 剪切两侧 */
+    overflow: hidden;
+}
+.banner img {
+    height: 400px;
+}
+/* 课程模块 */
+.lesson {
+    padding-top: 10px;
+}
+.lesson .title {
+    line-height: 90px;
+}
+.lesson .title h2 {
+    font-size: 26px;
+    font-weight: normal;
+}
+.lesson .title span {
+    float: right;
+}
+.lesson .title span:after {
+    content: "";
+    display: inline-block;
+    border: 6px solid transparent;
+    border-left-color: #999;
+    margin-left: 6px;
+}
+.lesson .list {
+    margin-right: -36px;
+}
+.lesson .list li {
+    float: left;
+    width: 270.5px;
+    margin-right: 36px;
+}
+.lesson .list li img {
+    width: 100%;
+}
+.lesson .list h3 {
+    font-weight: normal;
+    font-size: 16px;
+    color: #666;
+    margin-top: 10px;
+    line-height: 28px;
+    height: 56px;
+}
+.lesson .list p {
+    color: #999;
+    font-size: 14px;
+    padding: 10px 0 20px;
+}
+/* 页脚 */
+.footer {
+    font-size: 12px;
+    text-align: center;
+    margin-top: 60px;
+    line-height: 30px;
+    color: #999;
+}

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<script>
+// 手机号 11为数字  （5G是十二位）
+// 1开头，后面都是数字
+var reg = /^1[0-9]{10,11}$/;
+// console.log(reg.test(12345678901));
+// console.log(reg.test(123456789012));
+// console.log(reg.test(1234567890123));
+// 匹配16位数字
+var reg = /^[0-9a-f]*$/
+// console.log(reg.test('11f'));
+// console.log(reg.test('f00'));
+// console.log(reg.test('g11'));
+// console.log(reg.test('aabbcc'));
+// 变量字母，数字，下划线，$，不能以数字开头
+var reg = /^[a-zA-Z_$][0-9a-zA-Z_$]*$/;
+console.log(reg.test('ickt'))
+console.log(reg.test('$ickt'))
+console.log(reg.test('$ickt1'))
+console.log(reg.test('1ickt1'))
+</script>
+</body>
+</html>

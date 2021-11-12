@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<script>
+// 全局的this指向window
+console.log(window)
+console.log(this)
+// 全局定义的变量，方法都会挂载在window上
+var color = 'red';
+function demo() {
+    // 全局定义的函数，this也指向window
+    console.log('demo', this);
+}
+console.log(window.color);
+window.demo();
+demo()
+
+// 对象中的方法
+var ickt = {
+    msg: 'hello',
+    // 方法
+    getMsg() {
+        console.log(this, this.msg)
+    }
+}
+// 执行对象的方法
+// this指向调用者
+ickt.getMsg();
+</script>
+</body>
+</html>

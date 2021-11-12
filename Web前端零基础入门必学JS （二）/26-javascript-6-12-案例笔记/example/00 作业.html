@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<script>
+// // 获取用户输入的数字
+// var num = prompt('请输入正整数')
+// // console.log(num, typeof num)
+// // 封装一个函数
+// // function rev(num) {
+// //     // 字符串有一个length属性，代表其长度
+// //     // console.log((num + '').length)
+// //     // 转字符串
+// //     var str = num + '';
+// //     // 获取长度
+// //     var len = str.length;
+// //     // 定义累加器
+// //     var sum = '';
+// //     // 遍历字符串
+// //     for (var i = len - 1; i >= 0; i--) {
+// //         // 可以通过索引值访问每一个字符
+// //         sum += str[i]
+// //     }
+// //     // 返回结果
+// //     return sum;
+// // }
+
+// // 原理：一个数不论多么大，一次一次的除以10，早晚有一天是个位数
+// function rev(num) {
+//     // 创建一个累加器
+//     var str = '';
+//     // 循环  for (; true; ) {}
+//     while (true) {
+//         // 获取个位数
+//         var a = num % 10;
+//         // 存储这个字符串
+//         str += a;
+//         // 小数点向左移动一位
+//         // num = num / 10;
+//         num /= 10
+//         // num取整
+//         num = parseInt(num);
+//         // num小于0了，没必要再次循环了
+//         if (num < 1) {
+//             // 终止循环
+//             break;
+//         }
+//     }
+//     // 返回结果
+//     return str;
+// }
+
+// // 测试
+// console.log(rev(num))
+
+// 亲密数
+function ickt(num) {
+    // 累加器
+    var sum = 0;
+    var sumB = 0;
+    // num的约数之和是b
+    for (var i = 1; i < num; i++) {
+        // 判断约数
+        if (num % i === 0) {
+            // 累加器累加
+            sum += i;
+        }
+    }
+    // sum就是B，num是A，要求B的约数之和是A，也就是说sum的约数之和是num
+    for (var i = 1; i < sum; i++) {
+        // 如果i是sum的约数
+        if (sum % i === 0) {
+            // 对累加器累加
+            sumB += i;
+        }
+    }
+    // b的累加结果等于a，即 sumB 要等于 num
+    // 如果是亲密数，返回数字B
+    if (sumB === num) {
+        return sum;
+    } else {
+        // 返回false
+        return false;
+    }
+}
+// 寻找2000以内的亲密数
+// for (var i = 1; i < 2000; i++) {
+//     // 获取i的亲密数
+//     var b = ickt(i);
+//     // 判断亲密数
+//     if (b) {
+//         // 找到了亲密数
+//         console.log(i, b)
+//     }
+// }
+
+for (var i = 1; i < 2000; i++) {
+    // 获取i的亲密数
+    var b = ickt(i);
+    // 判断亲密数, 亲密数是不同的数字
+    if (b && b !== i) {
+        // 找到了亲密数
+        console.log(i, b)
+    }
+}
+
+
+</script>
+</body>
+</html>

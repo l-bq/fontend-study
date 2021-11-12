@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<script>
+// // 变量声明提升
+// console.log(a);
+// // 定义了变量
+// var a = 10;
+
+// 等价语法
+// var a;
+// console.log(a);
+// a = 10;
+
+// 函数声明提升
+// 访问demo
+// console.log(demo);
+// // 可以先使用，后定义
+// demo();
+// // 函数定义式
+// function demo() {
+//     console.log("demo")
+// }
+
+// 访问函数
+// 函数表达式的提升与变量的提升是一样的。
+// console.log(ickt);
+// // 函数表达式
+// var ickt = function() {
+//     console.log('ickt')
+// }
+
+// var a = 1;
+// console.log(a);
+// function b() {}
+// console.log(b)
+
+// 定义的函数
+function ickt(num) {
+    console.log(111, num)
+    // 定义了一个变量
+    var num = 20;
+    console.log(333, num)
+    var num = function() {
+        console.log(2222)
+    }
+    // 声明一个函数
+    function num() {
+        console.log(1111)
+    }
+    console.log(222, num)
+}
+// 执行函数
+ickt(10);
+
+
+</script>
+</body>
+</html>

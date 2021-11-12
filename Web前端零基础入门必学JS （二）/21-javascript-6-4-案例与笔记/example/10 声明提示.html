@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<script>
+// 运行js之前，先预览代码，将变量的声明放到代码的最前面。
+// 只是声明的提升，赋值没有提升。
+var ickt;
+
+// 声明提升有的人也称之为声明前置
+console.log(ickt)
+
+// 声明了变量
+// var ickt = 100;
+// 声明
+// var ickt;
+// 赋值
+ickt = 100;
+
+// 已经赋值了，所以可以访问到
+console.log(ickt)
+
+</script>
+</body>
+</html>

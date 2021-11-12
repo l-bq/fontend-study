@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<script>
+// 函数定义式 定义函数
+function demo() {
+    console.log('demo');
+}
+
+// 函数表达式 定义函数
+var ickt = function() {
+    console.log('ickt')
+}
+
+// // 使用方式都是一样的
+// demo();
+// ickt();
+// // 查看数据类型
+// console.log(typeof demo);
+// console.log(typeof ickt);
+
+// 简单（值）类型
+// var a = 20;
+// // 变量a为变量b赋值
+// var b = a;
+// // 修改b
+// b = 30;
+// console.log(a, b)
+
+// 引用类型
+var a = function() {
+    console.log('这是一个函数')
+};
+var b = a;
+// 引用类型的数据可以添加属性，通过点语法添加
+b.color = 'red'
+// 为b添加了属性
+console.log('a', a.color)
+console.log(a, b)
+
+</script>
+</body>
+</html>

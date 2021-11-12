@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <iframe src="http://open.iqiyi.com/developer/player_js/coopPlayerIndex.html?vid=32c69096bebc00867b048f017a0facca&tvId=16251558400&accessToken=2.f22860a2479ad60d8da7697274de9346&appKey=3955c3425820435e86d0f4cdfe56f5e7&appId=1368&height=100%&width=100%" frameborder="0" allowfullscreen="true" width="100%" height="100%"></iframe> -->
+    <!-- html4.01中，通过flash引入视频 -->
+    <!-- <embed src="https://player.video.iqiyi.com/32c69096bebc00867b048f017a0facca/0/0/v_19rxv6bass.swf-albumId=16251558400-tvId=16251558400-isPurchase=0-cnId=undefined" allowFullScreen="true" quality="high" width="480" height="350" align="middle" allowScriptAccess="always" type="application/x-shockwave-flash"></embed> -->
+
+    <!-- html5方式引入 -->
+    <!-- <video src="./video/1.mp4" autoplay controls></video> -->
+    <!-- muted：静音， 设置静音之后，可以自动播放，不会影响用户体验 -->
+    <!-- poster: 视频加载之前显示的图片 -->
+    <video autoplay controls loop poster="./images/bannerdz01.png" muted>
+        <source src="./video/1.mp4">
+        <source src="./video/2.mp4">
+    </video>
+</body>
+</html>

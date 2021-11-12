@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<script>
+// 赋值
+var a = 10;
+// 让a加上5；
+// a = a + 5;
+// 简便写法
+// a += 5;
+// a -= 5;
+// a *= 5;
+// a /= 5;
+// a %= 5;
+// 让a加一或者减一
+// a = a + 1;
+// 简写
+// a++
+// a--
+// 还可以写在变量前面
+// ++a
+// --a;
+// 自加自减运算符会返回原来的变量
+// console.log(a);
+// console.log(++a);
+// console.log(a++);
+// console.log(a);
+
+// ++ 或 -- 写在前面，会先运算，后返回变量
+// ++ 或 -- 写在后面，会先返回变量，后运算
+
+// var a = 4;
+// var sum = 1 * (2 + 3) && a++ || 5 > 6 && 7 < 8 || 9;
+// // sum = 5 && 4 || false && true || 9;
+// console.log(sum);
+
+var a = 4;
+// 1 + 2 && 3 * 4 % 5 || 6 < 7 == 8 / true
+// 1 + 2 && 2 || 6 < 7 == 8 / 1
+// 3 && 2 || 6 < 7 == 8
+// 3 && 2 || false
+console.log(1 + 2 && 3 * a++ % 5 || 6 < 7 == 8 / !false);
+
+// 1 + 2 && 3 * 4 % 5 || 6 < 7 == 8 / true
+// 3 && 2 || 6 < 7 == 8
+// 3 && 2 || false
+
+</script>
+</body>
+</html>

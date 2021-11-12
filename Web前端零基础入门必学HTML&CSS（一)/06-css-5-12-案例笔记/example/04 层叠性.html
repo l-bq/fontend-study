@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        /* 并集选择器拆开看 */
+        body,
+        h1 {
+            color: red;
+        }
+        /* 拆开的结果 */
+        /* body {
+            color: red;
+        }
+        h1 {
+            color: red;
+        } */
+        /* 优先使用权重高的、 */
+        /* div h1 {
+            color: pink;
+        } */
+    </style>
+    <div class="ickt">
+        <!-- 让然显示green -->
+        <!-- <style>
+            h1 {
+                color: red;
+            }
+        </style> -->
+        <h1>爱创课堂</h1>
+    </div>
+    <Style>
+        h1 {
+            color: green;
+        }
+    </Style>
+    <style>
+        h1 {
+            color: blue;
+        }
+    </style>
+</body>
+</html>

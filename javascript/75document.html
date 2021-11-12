@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="app" class="demo" color="red">hello ickt</h1>
+    <!-- //id不要同名
+    <h1 id="app">hello ickt 222</h1> -->
+    <script>
+        console.log(document.title);
+        console.log(document.head);
+        console.log(document.body);
+
+        // var app = document.getElementById('app'); //获取第一个
+        // console.log(app);
+
+        // 获取属性
+        console.log(app.id);
+        console.log(app.title);
+        // style获取的是对象
+        console.log(app.style);
+        // 特殊关键字
+        console.log(app.className);
+        console.log(app.color);
+        // 修改属性
+        app.title = 'ickt';
+        app.className = 'ickt';
+        app.id = 'ickt';
+    </script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="app"></div><div>1</div><div>2</div><div>3</div><div>4</div><div>5</div>
+    <script>
+    // 创建h1元素
+    var h1 = document.createElement('h1');
+    // 创建文本
+    var text = document.createTextNode('爱创课堂');
+
+    // console.log(h1,text);
+    // 让1上树
+    // 获取容器元素
+    var app = document.getElementById('app');
+    // 添加在最后面
+    app.appendChild(h1);
+    // 让文本上树
+    app.appendChild(text);
+    // 通过inner设置内容
+    h1.innerHTML = 'hello';
+    </script>
+    </s>
+</body>
+</html>

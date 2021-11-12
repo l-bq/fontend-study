@@ -1,0 +1,20 @@
+数组
+    length          数组长度
+    pop             删除最后一项
+    push            数组尾部添加
+    shift           删除第一项
+    unshift         数组头部添加
+    队列            push    pop
+    堆栈            push    shift
+    concat          数组合并
+    slice           数组截取
+    splice          数组插入，删除与替换
+    reverse         数组倒置
+    sort            数组排序
+    join            数组转字符串
+Math.random     获取随机数
+arguments       类数组对象
+JSON
+    parse           将json字符串转成对象
+    stringify       将对象转成json字符串
+

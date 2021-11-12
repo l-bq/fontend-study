@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            margin: 10px auto;
+            width: 800px;
+            background-color: green;
+        }
+        .container div {
+            /* width: 100px; */
+            height: 100px;
+        }
+        /* 前三个元素浮动 */
+        .box1 {
+            background: pink;
+            float: left;
+            /* float: right; */
+            margin: 50px;
+            margin-bottom: 100px;
+        }
+        .box2 {
+            background: yellow;
+            float: left;
+            /* float: right; */
+            margin: 50px;
+            margin-bottom: 100px;
+        }
+        .box3 {
+            background: blue;
+            float: left;
+            /* float: right; */
+            margin: 50px;
+            margin-bottom: 100px;
+        }
+        .box4 {
+            background: orange;
+            /* 清除浮动 */
+            /* both属性更常用 */
+            clear: both; 
+            /* clear: right; */
+            /* clear: left; */
+        }
+        .box5 {
+            background: gold;
+        }
+        .box6 {
+            background: purple;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box1">1-1-1</div>
+        <div class="box2">2-2-2</div>
+        <div class="box3">3-3-3</div>
+        <div class="box1">1-1-1</div>
+        <div class="box2">2-2-2</div>
+        <div class="box3">3-3-3</div>
+        <div class="box1">1-1-1</div>
+        <div class="box2">2-2-2</div>
+        <div class="box3">3-3-3</div>
+        <div class="box1">1-1-1</div>
+        <div class="box2">2-2-2</div>
+        <div class="box3">3-3-3</div>
+        
+        <!-- <div class="box4">4-4-4</div>
+        <div class="box5">5-5-5</div>
+        <div class="box6">6-6-6</div> -->
+        <!-- 浮动之后元素会塌陷 -->
+        <div class="box6">6-6-6</div>
+    </div>
+</body>
+</html>

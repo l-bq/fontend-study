@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<script>
+// var str = 'hello ickt!';
+// // 大写
+// var result = str.toUpperCase();
+// console.log(result);
+// // 小写
+// console.log(result.toLowerCase());
+
+// 定义字符串
+// 索引值与字符是一致的， 10个字符
+var str = '0123456789';
+// 截取345
+// console.log(str.slice(3, 6));
+// console.log(str.substring(3, 6));
+// console.log(str.substr(3, 3));
+// 负数
+// 从后向前数   length + 负数
+// console.log(str.slice(-6, -3));     // slice(4, 7)
+// // 10 - 26 = 16 < 0
+// console.log(str.slice(-26, -3));     // slice(-16, 7)
+// // 负数变成0
+// console.log(str.substring(-3, 6));  // substring(0, 6)
+// console.log(str.substring(-3, -6));  // substring(0, 0)
+// // 起始位置从后向前数，长度变成0
+// console.log(str.substr(-6, 3));     // substr(4, 3)
+// console.log(str.substr(-26, 3));     // substr(-16, 3)
+// console.log(str.substr(-26, -5));     // substr(-16, 0)
+
+// start大于end
+// 截取不到
+// console.log(str.slice(8, 4)); 
+// // 颠倒位置
+// console.log(str.substring(8, 4));       // substring(4, 8)
+// // 没有影响，一个是起始位置，一个长度
+// console.log(str.substr(6, 2));
+
+// 说出结果
+var str = '0123456789';
+console.log(str.slice(-2, -8))          // ''       slice(8, 2)
+console.log(str.substring(-2, -8))      // ''       substring(0, 0)
+console.log(str.substring(2, -8))      // '01'      substring(0, 2)
+console.log(str.substr(-2, -8))         // ''       substr(8, 0)
+</script>
+</body>
+</html>

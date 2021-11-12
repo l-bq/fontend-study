@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            width: 1200px;
+            height: 400px;
+            background-color: pink;
+            border: 1px solid #000;
+            margin: 0 auto;
+            /* flex */
+            display: flex;
+            /* 终点对齐 */
+            align-items: flex-end;
+            flex-wrap: wrap;
+        }
+        .box {
+            color: #fff;
+            text-align: center;
+            height: 100px;
+            font-size: 50px;
+        }
+        .box1 {
+            width: 300px;
+            background-color: green;
+            /* order调节顺序 */
+            /* order: 3; */
+            /* 不希望缩小 */
+            /* flex-shrink: 0; */
+            /* 占据空间 */
+            /* flex-basis: 400px; */
+            /* 简写 */
+            /* flex: 0 0 400px; */
+        }
+        .box2 {
+            width: 200px;
+            background-color: skyblue;
+            /* order: 1; */
+            /* order: 2; */
+            /* 放大 */
+            /* flex-grow: 1; */
+            /* flex-grow: 3; */
+            /* 缩小比例 */
+            /* flex-shrink: 2; */
+            /* 简写 */
+            /* flex: 1 1 auto; */
+            /* 简写 */
+            /* flex: 1; */
+            /* 交叉轴对齐方式 */
+            align-self: center;
+        }
+        .box3 {
+            width: 400px;
+            background-color: yellowgreen;
+            /* order: 1; */
+            /* 放大 */
+            /* flex-grow: 1; */
+            /* flex-shrink: 3; */
+            /* 简写 */
+            /* flex: 1 1 auto; */
+            /* flex: auto; */
+            /* flex: 1; */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box box1">1</div>
+        <div class="box box2">2</div>
+        <div class="box box3">3</div>
+        <!-- <div class="box box1">1</div>
+        <div class="box box2">2</div>
+        <div class="box box3">3</div> -->
+    </div>
+</body>
+</html>

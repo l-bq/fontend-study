@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<script>
+// console.log(2 + 3);
+// console.log(2 - 3);
+// console.log(2 * 3);
+// console.log(2 / 3);
+
+// // 求余
+// console.log(5 % 3);
+// // 负数也可以求余
+// console.log(-5 % 3);
+
+// // 浮点数加减法
+// // 所有的数据都是以二进制进行存储的
+// // 例如 5 => 101
+// // 原因：js中小数采用的是单精度浮点数的形式
+// console.log(0.1 + 0.2);
+// console.log(0.5 + 0.25);
+// // 不免精确的问题：转成整数解决
+// console.log((0.1 * 10 + 0.2 * 10) / 10);
+// console.log(0.4 - 0.1);
+
+// // 乘，除，求余优先级是一样的
+// console.log(4 + 5 * 2);
+// console.log(4 + 5 % 2);
+// console.log(4 * 5 / 2 % 5);
+// console.log(4 % 5 * 5 / 2);
+// console.log(4 % (5 * 5 / 2));
+// // 优先级相同由左到右的顺序执行。
+// console.log(4 + 5 - 2);
+
+
+
+// 转换
+console.log(true + 1);
+console.log(false + 1);
+// null 表示空对象
+console.log(null + 1);
+// 字符串拼接优先级要高于数字的加法
+console.log('123' + 1);
+// 字符串没有乘法，因此会作为数字处理
+console.log('123' * 2);
+// NaN和undefined作为NaN处理，NaN不论做什么运算，其结果都是NaN
+console.log(undefined + 2);
+console.log(NaN + 2);
+console.log('hello' * 2);
+console.log(Infinity + 2);
+console.log(Infinity - 2);
+
+</script>
+</body>
+</html>

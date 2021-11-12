@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<script>
+// 字符串
+console.log("你好");
+console.log('hello');
+// 成对出现的
+// console.log('hello");
+// console.log("hello');
+// 单引号与双引号之间是可以相互嵌套的(只能嵌套一层，但是可以多次使用)(单引号字符串中，只能双引号，双信号字符串中，只能出现单引号)
+console.log("hello' 'i'c''kt'");
+console.log('hello" "ic"kt"');
+// 想嵌套同类引号，要使用转义字符
+console.log("hello \" ickt");
+console.log('hello \' ickt');
+// \表示转义符号，可以对任何字符转义，
+// 第一个\对第二个\进行了转义，第三个斜杠对'进行转了
+console.log('hello \\\' ickt');
+console.log('hello \\   \' ickt');
+// 如果在字母前添加\字母也会转义
+// 字符串不能换行，想换行使用\n
+// console.log('hello 
+// ickt');
+console.log('hello \nickt');
+// 并不是所有的字符转义都有意义
+console.log('\h\e\l\l\o \nickt');
+// 注意：转义字符串是一个整体，不能拆开使用
+console.log('h e\tllo \n \ n \nickt');
+</script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            height: 800px;
+            background: pink;
+        }
+        .container div {
+            width: 100px;
+            height: 100px;
+        }
+        .box1 {
+            background: green;
+            /* 隐藏：不占位 */
+            display: none;
+        }
+        .box2 {
+            background: orange;
+            /* 隐藏：占位 */
+            visibility: hidden;
+        }
+        .box3 {
+            background: skyblue;
+            /* 透明隐藏：占位 */
+            opacity: 0;
+        }
+        .box4 {
+            background: gold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box1">box1</div>
+        <div class="box2">box2</div>
+        <div class="box3">box3</div>
+        <div class="box4">box4</div>
+    </div>
+</body>
+</html>

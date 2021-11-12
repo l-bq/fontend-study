@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<script>
+// console.log(typeof '100');
+// // console.log 可以传递多个参数，参数之间用逗号隔开
+// // parseInt方法优先级高于typeof，因此会先执行
+// console.log(parseInt('100'), typeof parseInt('100'));
+// // 只能取整
+// console.log(parseInt('123.456'), typeof parseInt('123.456'));
+// // 会保留字母前面的数字
+// console.log(parseInt('123abc456'), typeof parseInt('123abc456'));
+// // 如果字母前面没有数字，将得到NaN
+// console.log(parseInt('aaa123abc456'), typeof parseInt('aaa123abc456'));
+// // parseInt会保留字母前面的或者是小数点掐面的。
+// // 幂
+// console.log(parseInt('1.23e4'), typeof parseInt('1.23e4'));
+
+// // 对数字取整
+// console.log(parseInt(1.23e4), typeof parseInt(1.23e4));
+// 可以携带进制前缀,得到的结果是10进制的
+// console.log(parseInt(011));
+// console.log(parseInt(0O11));
+// console.log(parseInt(0o11));
+// console.log(parseInt(0X11));
+// console.log(parseInt(0x11));
+// // 第二个参数表示进制
+// console.log(parseInt(11, 5));
+// console.log(parseInt(11, 18));
+// // 0和10以及默认值，都是10进制
+// console.log(parseInt(11, 0));
+// console.log(parseInt(11, 10));
+// console.log(parseInt(11));
+// // 1以及负数将得到NaN
+// console.log(parseInt(11, 1));
+// console.log(parseInt(11, -1));
+// // 最多36进制
+// console.log(parseInt(11, 36));
+// console.log(parseInt(11, 37));
+// // 如果前面有前缀，不要添加进制
+// console.log(parseInt(011, 6));
+
+// // 处理小数
+// console.log(parseFloat('1.23'));
+// console.log(parseFloat('1.23.456'));
+// console.log(parseFloat('1.23abc'));
+// console.log(parseFloat('abc1.23abc'));
+// // 数字
+// console.log(parseFloat(123));
+// console.log(parseFloat(1.23e4));
+// console.log(parseFloat(1.23e-4));
+// console.log(parseFloat(0x11));
+// // 第二个参数无意义，不是表示进制
+// console.log(parseFloat(11, 12));
+
+// +可以将字符串转成数字(隐形转换)
+console.log(+10)
+// +出现在字符串的前面，会将字符串转成数字
+console.log(typeof '10', typeof +'10', +'10')
+// 可以包含小数
+console.log(typeof +'10.123', +'10.123')
+// +只能隐形的转换正确的数字（只有一个小数点）
+console.log(+'10.123.456')
+console.log(+'1.123e4')
+console.log(+'1.1a23e4')
+console.log(+'011')
+console.log(+'0O11')
+console.log(+'0x11')
+// 工作中，不太注意转换细节的时候，可以使用+转换
+// +作用
+// 表示正数符号         +10
+// 字符串片接符号       'abc' + 'efg'
+// 数字加法             5 + 6
+// 数字的隐形转换       +'123'
+
+</script>
+</body>
+</html>

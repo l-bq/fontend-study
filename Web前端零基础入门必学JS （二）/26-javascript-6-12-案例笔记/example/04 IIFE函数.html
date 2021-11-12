@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<script>
+// 普通函数
+// function demo() {
+//     console.log('demo');
+// }
+// // 函数表达式
+// var demo2 = function() {
+//     console.log('demo2');
+// }
+
+// 创建即执行函数： IIFE
+// var demo3 = function() {
+//     console.log('demo3')
+// }()
+// 在函数定义式中，直接在函数后面添加()。有语法错误，所以要将函数转成表达式
+// console.log(demo)
+// +function demo() {
+//     console.log('demo');
+// }();
+// console.log(111, demo)
+// -function demo() {
+//     console.log('demo');
+// }();
+// ~function demo() {
+//     console.log('demo');
+// }();
+// !function demo() {
+//     console.log('demo');
+// }();
+// 工作中，通常使用()
+// 主要，IIFE函数后面要加;
+// (function demo() {
+//     console.log('demo');
+// })();
+
+// 注意：这已经不是函数表达式定义函数了，而是用变量存储函数运行的结果，
+// // demo3是函数的运行结果，demo6是函数的名称
+// var demo3 = function demo6() {
+//     console.log('demo3')
+//     return 100;
+// }()
+// // var a = 1 + 2;
+// // var b = function() {}
+// console.log(demo3)
+// // console.log(123123, demo6)
+
+// // 表达式无法直接访问，但是可以存储在变量中去访问
+// 10 + 2
+// var a = 10 + 2;
+// console.log(a)
+// // var b = +function demo() {
+// //     console.log('demo');
+// //     return 100;
+// // }();
+// var b = !function demo() {
+//     console.log('demo');
+// }();
+// console.log(1111, b)
+
+
+// iife函数内部也生成了作用域
+// var demo = function() {
+//     var num = 10;
+// }()
+// console.log(num)
+
+// 我们可以将函数看成是方法名称，将()看成是参数集合
+// var demo = (function(num) {
+//     console.log(1111, num)
+// })(100);
+
+// IIFE返回值
+// var demo = (function() {
+//     return 100;
+// })();
+// 定义函数能否参与运算: 函数被转成字符串
+// var demo = function() { return 10 } + 200 
+// IIFE的返回值可以参与运算
+// var demo = (function() {
+//     return 100
+// })() + 200;
+// console.log(demo)
+
+</script>
+</body>
+</html>

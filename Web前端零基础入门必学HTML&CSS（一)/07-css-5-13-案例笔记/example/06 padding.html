@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+        .container {
+            width: 800px;
+            height: 800px;
+            border: 5px solid orange;
+        }
+        .box {
+            width: 100px;
+            height: 100px;
+            background: green;
+            margin: 100px;
+            /* 内边距 */
+            /* 单值法 */
+            /* padding: 100px; */
+            /* 二值法 */
+            /* padding: 100px 50px; */
+            /* 三值法 */
+            /* padding: 100px 50px 20px; */
+            /* 四值法 */
+            /* padding: 50px 70px 90px 30px; */
+            /* 等价写法 */
+            padding-top: 50px;
+            padding-right: 70px;
+            padding-bottom: 90px;
+            padding-left: 30px;
+        }
+        /* 百分比设置 */
+        .ickt {
+            width: 1000px;
+            height: 500px;
+            border: 10px solid pink;
+            padding: 100px;
+        }
+        .demo {
+            width: 100px;
+            height: 100px;
+            background: green;
+            /* 二值法 */
+            margin: 10% 20%;
+            padding: 10% 20%;
+            /* 使用百分比的时候，相对于父元素的宽度。 */
+        }
+    </style>
+</head>
+<body>
+    <!-- 百分比设置 -->
+    <div class="ickt">
+        <div class="demo"></div>
+    </div>
+    <!-- 内边距 -->
+    <div class="container">
+        <div class="box"></div>
+    </div>
+</body>
+</html>

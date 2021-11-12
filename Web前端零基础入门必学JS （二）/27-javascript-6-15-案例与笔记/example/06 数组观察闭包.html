@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<script>
+// 创建数组，存储5个函数
+var arr = [];
+// for循环。
+// for (var i = 0; i < 5; i++) {
+//     // 存储函数
+//     arr[i] = function() {
+//         // 打印索引值
+//         console.log(i);
+//     }
+// }
+// // 说出结果
+// arr[3]();   // 5
+// arr[2]();   // 5
+
+// 希望输出的结果是3.函数应该如何改动。
+// 让数组存储闭包函数，就可以访问外部环境存储的数据了
+for (var i = 0; i < 5; i++) {
+    // 存储函数, 让outer在定义的时候就执行，用IIFE
+    arr[i] = (function outer(i) {
+        // 变量：内部定义，参数
+        // 返回的函数是闭包
+        return function inner() {
+            // 此时访问的就是闭包外部环境存储的变量了
+            console.log(i);
+        }
+    })(i)
+}
+// 查看结果
+arr[3]()
+arr[2]()
+console.log(arr)
+</script>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<script>
+// 定义在全局的
+var color = 'red';
+
+// 函数
+function fn1(msg) {
+    // 局部变量
+    var num = 10;
+    // 只能在当前函数中访问局部变量
+    console.log(msg, num)
+    // 访问全局变量
+    console.log(color);
+    // 嵌套函数
+    function fn2() {
+        // 访问全局变量
+        console.log(color);
+        // 嵌套的函数可以访问局部变量
+        console.log(msg)
+        console.log(num)
+    }
+    fn2()
+}
+fn1('hello')
+
+// 函数的外面无法局部变量
+// console.log(msg)
+// console.log(num)
+
+// 其它的函数
+function fn3() {   
+    // 访问全局变量
+    console.log(color);
+    //其它函数内无法局部变量
+    // console.log(msg)
+    // console.log(num)
+}
+fn3()
+
+// 访问全局变量
+console.log(color);
+
+</script>
+<script>
+// 访问全局变量
+console.log(color);
+</script>
+<script src="demo2.js"></script>
+</body>
+</html>

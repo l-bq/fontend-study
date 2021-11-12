@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<script>
+// while循环
+// 循环变量
+var i = 1;
+// 循环
+while (i <= 5) {
+    // 修改循环变量的语句位置将影响输出结果
+    // i++;
+    // 不能在循环内部初始化循环变量
+    // var i = 1;
+    console.log(i);
+
+    // 必须在循环内部修改循环变量
+    // 工作中，常常将修改循环变量语句的位置，写在循环的最后面。
+    i++;
+}
+
+// 通过for循环来改写
+// for (var i = 1; i <= 5; i++) {
+//     console.log(i)
+// }
+</script>
+</body>
+</html>

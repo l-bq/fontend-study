@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<script>
+// 当工作年限为不满1年，工资小于8000，年终奖为工资倍数的1倍，否则是1.2倍；
+// 当工作年限为不满2年，工资小于10000，年终奖为工资倍数的1.5倍，否则是1.7倍；
+// 当工作年限为超过2年，工资小于13000，年终奖为工资倍数的2.3倍，否则是3倍；
+
+// 输入工资
+var year = prompt('工作年限', 1)
+var num = prompt('请输入工资', 10000)
+// 在外部定义
+var result;
+
+// 如果不满一年
+if (year < 1) {
+    // 计算年终奖
+    result = num * (num < 8000 ? 1 : 1.2);
+} else if (year < 2) {
+    // 计算年终奖
+    result = num * (num < 10000 ? 1.5 : 1.7);
+} else if (year >= 2) {
+    // 计算年终奖
+    result = num * (num < 13000 ? 2.3 : 3);
+    // 条件体中定义的变量
+    var msg = 'hello';
+}
+
+// 打印结果
+// 备用选项：一般使用逻辑运算符进行书写。
+// a成立用a，a不成立用b
+alert('您的年终奖是' + (result || 0))
+
+// 工作中，用户经常会输入一些不正规（不合法）的内容，这些内容是我们要测试的，以保证程序的容错性。
+
+
+// 外部访问条件体中的变量
+alert(msg)
+</script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 检测是否为本地电话，如010-12345678,0418-1234567
+        // 前面是3位，后面是8位，或者前面是四位，后面是8位
+        // var reg = /[0-9]{3}-[0-9]{8}|[0-9]{4}-[0-9]{7}/;
+
+        // // \d代表数字
+        // var reg = /\d{3}-\d{8}|\d{4}-\d{7}/;
+        // console.log(reg.test('042-12345678'));
+
+        // // |表示分组
+        // var a = 'abcafg';
+        // // var reg = /a(bc)|a(fg)/g;
+        // // 或者使用局部
+        // var reg = /a(bc|fg)/g;
+        // console.log(a.replace(reg,'a**'));
+
+        // // 测试是不是图片 .gif,.png,jpg,.css
+        // var reg = /\.(gif|png|jpg|css)/;
+        // console.log(reg.test('a.png'));
+        // console.log(reg.test('b.html'));
+
+        // 匹配中文
+        var reg = /[\u4e00-\u9fa5]+/g;
+        console.log(reg.test('hello'));
+        console.log(reg.test('中文'))
+
+
+    </script>
+</body>
+</html>
